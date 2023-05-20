@@ -7,6 +7,9 @@ import javafx.scene.control.TextField;
 public class CustomerSignUpController {
 
     @FXML
+    private TextField emailField;
+
+    @FXML
     private TextField addressField;
 
     @FXML
@@ -20,6 +23,11 @@ public class CustomerSignUpController {
 
     @FXML
     void createCustomerAccount() {
-
+        if (emailField.getText().isBlank() || addressField.getText().isBlank() || countryField.getText().isBlank() ||
+        phoneNumberField.getText().isBlank()) {
+            // TODO Alert user for missing field
+            return;
+        }
+        // TODO Insert new user into db
     }
 }

@@ -7,6 +7,9 @@ import javafx.scene.control.TextField;
 public class AirlineSignupController {
 
     @FXML
+    private TextField iataCodeField;
+
+    @FXML
     private TextField addressField;
 
     @FXML
@@ -18,9 +21,16 @@ public class AirlineSignupController {
     @FXML
     private TextField phoneNumberField;
 
+    @FXML
+    private TextField airOperatorCertificateField;
 
     @FXML
     void createAirlineAccount() {
-
+        if (iataCodeField.getText().isBlank() || addressField.getText().isBlank() || countryField.getText().isBlank() ||
+        phoneNumberField.getText().isBlank() || airOperatorCertificateField.getText().isBlank()) {
+            // TODO Alert user for missing fields
+            return;
+        }
+        // TODO Insert new user in db
     }
 }
