@@ -81,7 +81,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.fis.project.flightbookingapp/com.fis.project.flightbookingapp.HelloApplication
+                                com.fis.project.flightbookingapp/com.fis.project.flightbookingapp.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
