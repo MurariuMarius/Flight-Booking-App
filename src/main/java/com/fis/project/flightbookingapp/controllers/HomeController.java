@@ -19,12 +19,25 @@ public class HomeController {
 
     @FXML
     void goToLoginPage() {
-        System.out.println("Button clicked");
         try {
             Stage stage = (Stage) loginButton.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 600, 400);
             stage.setTitle("Flight Booking App - Log In");
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void goToSignupPage() {
+        try {
+            Stage stage = (Stage) signupButton.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("signup.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+            stage.setTitle("Flight Booking App - Sign Up");
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {

@@ -21,7 +21,7 @@
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="signupButton" layoutX="430.0" layoutY="48.0" mnemonicParsing="false" text="Sign Up" textAlignment="CENTER" />
+                  <Button fx:id="signupButton" layoutX="430.0" layoutY="48.0" mnemonicParsing="false" onAction="#goToSignupPage" text="Sign Up" textAlignment="CENTER" />
                </children>
             </HBox>
          </children>
