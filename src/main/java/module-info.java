@@ -8,4 +8,6 @@ module com.fis.project.flightbookingapp {
 
     opens com.fis.project.flightbookingapp to javafx.fxml;
     exports com.fis.project.flightbookingapp;
+    exports com.fis.project.flightbookingapp.controllers;
+    opens com.fis.project.flightbookingapp.controllers to javafx.fxml;
 }
