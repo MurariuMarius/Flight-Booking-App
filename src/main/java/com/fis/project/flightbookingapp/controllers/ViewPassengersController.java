@@ -1,4 +1,4 @@
-package com.fis.project.flightbookingapp;
+package com.fis.project.flightbookingapp.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
