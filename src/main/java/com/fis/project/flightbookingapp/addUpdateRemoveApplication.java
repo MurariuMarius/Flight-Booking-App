@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AddFlightApplication extends Application {
+public class addUpdateRemoveApplication extends Application {
 
     private static Stage stg;
 
@@ -16,7 +16,7 @@ public class AddFlightApplication extends Application {
     public void start(Stage primaryStage) throws Exception{
         stg = primaryStage;
         primaryStage.setResizable(false);
-        Parent root = FXMLLoader.load(getClass().getResource("add_flights.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("add_update_remove.fxml"));
         primaryStage.setTitle("add/update/delete");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
