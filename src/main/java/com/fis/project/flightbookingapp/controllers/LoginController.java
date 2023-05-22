@@ -1,11 +1,13 @@
 package com.fis.project.flightbookingapp.controllers;
 
 import com.fis.project.flightbookingapp.Main;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -33,6 +35,14 @@ public class LoginController {
     private TextField usernameField;
 
     @FXML
+    private Text titleText;
+
+    @FXML
+    private Button loginAsAirlineButton;
+
+    private boolean logInAsAirline = false;
+
+    @FXML
     void goToSignupPage() {
         try {
             Stage stage = (Stage) signupButton.getScene().getWindow();
@@ -49,5 +59,12 @@ public class LoginController {
     @FXML
     void login() {
         // TODO
+    }
+
+    public void logInAsAirline() {
+        System.out.println("Here");
+        logInAsAirline = true;
+        loginAsAirlineButton.setVisible(false);
+        titleText.setText("Airline Log In");
     }
 }
