@@ -11,7 +11,7 @@ import org.dizitart.no2.objects.Indices;
 @Indices({
         @Index(value="username", type = IndexType.Unique)
 })
-public class User implements Serializable {
+public abstract class User implements Serializable {
 
     @Id
     private String username;
