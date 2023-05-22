@@ -1,6 +1,9 @@
 package com.fis.project.flightbookingapp.controllers;
 
 import com.fis.project.flightbookingapp.Main;
+import com.fis.project.flightbookingapp.exceptions.InvalidCredentialsException;
+import com.fis.project.flightbookingapp.services.AirlineUserService;
+import com.fis.project.flightbookingapp.services.ClientUserService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -58,11 +61,26 @@ public class LoginController {
 
     @FXML
     void login() {
-        // TODO
+        String username = usernameField.getText().trim();
+        String password = passwordField.getText().trim();
+
+        try {
+            if (logInAsAirline) {
+                AirlineUserService.checkCredentials(username, password);
+            } else {
+                ClientUserService.checkCredentials(username, password);
+            }
+
+            System.out.println("Logged in successfully as " + username);
+
+            // TODO Redirect to home page based on role
+
+        } catch (InvalidCredentialsException e) {
+            System.out.println(e);
+        }
     }
 
     public void logInAsAirline() {
-        System.out.println("Here");
         logInAsAirline = true;
         loginAsAirlineButton.setVisible(false);
         titleText.setText("Airline Log In");
