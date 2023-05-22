@@ -23,7 +23,7 @@ public class BookingService {
         }
     }
 
-    public static List<Booking> getClientUsers() {
+    public static List<Booking> getBookings() {
         return bookingRepository.find().toList();
     }
 }
