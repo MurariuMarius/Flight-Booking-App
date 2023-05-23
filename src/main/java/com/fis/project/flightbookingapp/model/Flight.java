@@ -65,16 +65,26 @@ public class Flight implements Serializable {
         return AirportService.getAirportByCode(departureAirportCode);
     }
 
-    public void setDepartureAirportCode(Airport departureAirport) {
-        this.departureAirportCode = departureAirport.getAirportCode();
+    public void setDepartureAirport(Airport departureAirport) throws NotInDatabaseException {
+        this.departureAirportCode = AirportService.getAirportByCode(departureAirport.getAirportCode()).getAirportCode();
+    }
+
+    public void setDepartureAirportCode(String departureAirportCode) throws NotInDatabaseException {
+        AirportService.getAirportByCode(departureAirportCode);
+        this.departureAirportCode = departureAirportCode;
     }
 
     public Airport getArrivalAirportCode() throws NotInDatabaseException {
         return AirportService.getAirportByCode(arrivalAirportCode);
     }
 
-    public void setArrivalAirportCode(Airport arrivalAirportCode) {
-        this.arrivalAirportCode = arrivalAirportCode.getAirportCode();
+    public void setArrivalAirport(Airport arrivalAirport) throws NotInDatabaseException {
+        this.arrivalAirportCode = AirportService.getAirportByCode(arrivalAirport.getAirportCode()).getAirportCode();
+    }
+
+    public void setArrivalAirportCode(String arrivalAirportCode) throws NotInDatabaseException {
+        AirportService.getAirportByCode(arrivalAirportCode);
+        this.arrivalAirportCode = arrivalAirportCode;
     }
 
     public List<DayOfWeek> getOperatingWeekDays() {
@@ -89,16 +99,38 @@ public class Flight implements Serializable {
         return OffsetTime.parse(departureTime);
     }
 
-    public void setDepartureTime(String departureTime) {
+    void setDepartureTime(String departureTime) {
         this.departureTime = departureTime;
+    }
+
+    /**
+     * Sets the flight's departure time, taking the local departure time as an argument
+     */
+    public void setDepartureTime(LocalTime localDepartureTime) {
+        try {
+            this.departureTime = OffsetTime.of(localDepartureTime, AirportService.getAirportByCode(departureAirportCode).getZoneOffset()).toString();
+        } catch (NotInDatabaseException e) {
+            System.out.println(e);
+        }
     }
 
     public OffsetTime getArrivalTime() {
         return OffsetTime.parse(arrivalTime);
     }
 
-    public void setArrivalTime(String arrivalTime) {
+    void setArrivalTime(String arrivalTime) {
         this.arrivalTime = arrivalTime;
+    }
+
+    /**
+     * Sets the flight's arrival time, taking the local arrival time as an argument
+     */
+    public void setArrivalTime(LocalTime localArrivalTime) {
+        try {
+            this.arrivalTime = OffsetTime.of(localArrivalTime, AirportService.getAirportByCode(arrivalAirportCode).getZoneOffset()).toString();
+        } catch (NotInDatabaseException e) {
+            System.out.println(e);
+        }
     }
 
     @Override
