@@ -1,8 +1,11 @@
 package com.fis.project.flightbookingapp.services;
 
 import com.fis.project.flightbookingapp.exceptions.FlightAlreadyExistsException;
+import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
 import com.fis.project.flightbookingapp.model.Flight;
+import org.dizitart.no2.objects.Cursor;
 import org.dizitart.no2.objects.ObjectRepository;
+import org.dizitart.no2.objects.filters.ObjectFilters;
 
 import java.util.List;
 
@@ -17,6 +20,26 @@ public class FlightService {
 
     public static void updateFlight(Flight flight) {
         flightObjectRepository.update(flight);
+    }
+
+    public static void removeFlight(Flight flight) {
+        flightObjectRepository.remove(flight);
+    }
+
+    public static void removeFlight(String flightNumber) {
+        try {
+            flightObjectRepository.remove(getFlightByNumber(flightNumber));
+        } catch (NotInDatabaseException e) {
+            System.out.println("Flight not in database");
+        }
+    }
+
+    public static Flight getFlightByNumber(String flightNumber) throws NotInDatabaseException {
+        Cursor<Flight> cursor = flightObjectRepository.find(ObjectFilters.eq("flightNumber", flightNumber));
+        if (cursor.totalCount() != 1) {
+            throw new NotInDatabaseException(String.format("Flight %s is not in the database", flightNumber));
+        }
+        return cursor.firstOrDefault();
     }
 
     private static void checkFlightDoesNotAlreadyExist(Flight flight) throws FlightAlreadyExistsException {
