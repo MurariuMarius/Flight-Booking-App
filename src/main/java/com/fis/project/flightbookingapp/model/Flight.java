@@ -1,5 +1,7 @@
 package com.fis.project.flightbookingapp.model;
 
+import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
+import com.fis.project.flightbookingapp.services.AirportService;
 import org.dizitart.no2.objects.Id;
 import org.jetbrains.annotations.NotNull;
 
@@ -12,8 +14,8 @@ public class Flight implements Serializable {
     @Id
     private String flightNumber;
     private String airlineCode;
-    private Airport departureAirport;
-    private Airport arrivalAirport;
+    private String departureAirportCode;
+    private String arrivalAirportCode;
     private List<DayOfWeek> operatingWeekDays;
     private String departureTime;
     private String arrivalTime;
@@ -24,8 +26,8 @@ public class Flight implements Serializable {
                   List<DayOfWeek> operatingWeekDays, LocalTime localDepartureHour, LocalTime localArrivalHour) {
         this.flightNumber = flightNumber;
         this.airlineCode = airlineCode;
-        this.departureAirport = departureAirport;
-        this.arrivalAirport = arrivalAirport;
+        this.departureAirportCode = departureAirport.getAirportCode();
+        this.arrivalAirportCode = arrivalAirport.getAirportCode();
         this.operatingWeekDays = operatingWeekDays;
         this.departureTime = OffsetTime.of(localDepartureHour, departureAirport.getZoneOffset()).toString();
         this.arrivalTime = OffsetTime.of(localArrivalHour, arrivalAirport.getZoneOffset()).toString();
@@ -59,20 +61,20 @@ public class Flight implements Serializable {
         this.airlineCode = airlineCode;
     }
 
-    public Airport getDepartureAirport() {
-        return departureAirport;
+    public Airport getDepartureAirportCode() throws NotInDatabaseException {
+        return AirportService.getAirportByCode(departureAirportCode);
     }
 
-    public void setDepartureAirport(Airport departureAirport) {
-        this.departureAirport = departureAirport;
+    public void setDepartureAirportCode(Airport departureAirport) {
+        this.departureAirportCode = departureAirport.getAirportCode();
     }
 
-    public Airport getArrivalAirport() {
-        return arrivalAirport;
+    public Airport getArrivalAirportCode() throws NotInDatabaseException {
+        return AirportService.getAirportByCode(arrivalAirportCode);
     }
 
-    public void setArrivalAirport(Airport arrivalAirport) {
-        this.arrivalAirport = arrivalAirport;
+    public void setArrivalAirportCode(Airport arrivalAirportCode) {
+        this.arrivalAirportCode = arrivalAirportCode.getAirportCode();
     }
 
     public List<DayOfWeek> getOperatingWeekDays() {
@@ -104,12 +106,12 @@ public class Flight implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Flight flight = (Flight) o;
-        return Objects.equals(flightNumber, flight.flightNumber) && Objects.equals(airlineCode, flight.airlineCode) && Objects.equals(departureAirport, flight.departureAirport) && Objects.equals(arrivalAirport, flight.arrivalAirport) && Objects.equals(operatingWeekDays, flight.operatingWeekDays) && Objects.equals(departureTime, flight.departureTime) && Objects.equals(arrivalTime, flight.arrivalTime);
+        return Objects.equals(flightNumber, flight.flightNumber) && Objects.equals(airlineCode, flight.airlineCode) && Objects.equals(departureAirportCode, flight.departureAirportCode) && Objects.equals(arrivalAirportCode, flight.arrivalAirportCode) && Objects.equals(operatingWeekDays, flight.operatingWeekDays) && Objects.equals(departureTime, flight.departureTime) && Objects.equals(arrivalTime, flight.arrivalTime);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(flightNumber, airlineCode, departureAirport, arrivalAirport, operatingWeekDays, departureTime, arrivalTime);
+        return Objects.hash(flightNumber, airlineCode, departureAirportCode, arrivalAirportCode, operatingWeekDays, departureTime, arrivalTime);
     }
 
     @Override
@@ -117,8 +119,8 @@ public class Flight implements Serializable {
         return "Flight{" +
                 "flightNumber='" + flightNumber + '\'' +
                 ", airlineCode='" + airlineCode + '\'' +
-                ", departureAirport=" + departureAirport +
-                ", arrivalAirport=" + arrivalAirport +
+                ", departureAirport=" + departureAirportCode +
+                ", arrivalAirport=" + arrivalAirportCode +
                 ", operatingWeekDays=" + operatingWeekDays +
                 ", departureHour=" + departureTime +
                 ", arrivalHour=" + arrivalTime +

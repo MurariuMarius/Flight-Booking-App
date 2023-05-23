@@ -8,10 +8,6 @@ public class FlightService {
     private static ObjectRepository<Flight> flightObjectRepository =
             DatabaseService.getDatabase().getRepository(Flight.class);
 
-    public static ObjectRepository<Flight> getFlightObjectRepository() {
-        return flightObjectRepository;
-    }
-
     public static void addFlight(Flight flight) throws FlightAlreadyExistsException {
         checkFlightDoesNotAlreadyExist(flight);
         flightObjectRepository.insert(flight);
