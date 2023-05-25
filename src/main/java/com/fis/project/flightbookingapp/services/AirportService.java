@@ -18,6 +18,12 @@ public class AirportService {
         airportObjectRepository.insert(airport);
     }
 
+    public static void addAirports(List<Airport> airports) throws AirportAlreadyExistsException {
+        for (Airport a : airports) {
+            addAirport(a);
+        }
+    }
+
     private static void checkAirportDoesNotAlreadyExist(Airport airport) throws AirportAlreadyExistsException {
         for (Airport a : airportObjectRepository.find()) {
             if (a.equals(airport)) {
