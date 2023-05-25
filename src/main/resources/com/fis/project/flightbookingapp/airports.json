@@ -1,0 +1,6337 @@
+[
+    {
+        "airportCode": "HOH",
+        "airportName": "Hohenems-Dornbirn Airport",
+        "city": "Hohenems / Dornbirn",
+        "country": "AT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GRZ",
+        "airportName": "Graz Airport",
+        "city": "Graz",
+        "country": "AT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "INN",
+        "airportName": "Innsbruck Airport",
+        "city": "Innsbruck",
+        "country": "AT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KLU",
+        "airportName": "Klagenfurt Airport",
+        "city": "Klagenfurt am Worthersee",
+        "country": "AT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LNZ",
+        "airportName": "Linz Airport",
+        "city": "Linz",
+        "country": "AT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SZG",
+        "airportName": "Salzburg Airport",
+        "city": "Salzburg",
+        "country": "AT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VIE",
+        "airportName": "Vienna International Airport",
+        "city": "Vienna",
+        "country": "AT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ANR",
+        "airportName": "Antwerp International Airport (Deurne)",
+        "city": "Antwerp",
+        "country": "BE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BRU",
+        "airportName": "Brussels Airport",
+        "city": "Brussels",
+        "country": "BE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CRL",
+        "airportName": "Brussels South Charleroi Airport",
+        "city": "Brussels",
+        "country": "BE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KJK",
+        "airportName": "Wevelgem Airport",
+        "city": "Wevelgem",
+        "country": "BE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LGG",
+        "airportName": "Liege Airport",
+        "city": "Liege",
+        "country": "BE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QNM",
+        "airportName": "Suarlee Airport",
+        "city": "Namur",
+        "country": "BE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OST",
+        "airportName": "Ostend-Bruges International Airport",
+        "city": "Ostend",
+        "country": "BE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QHA",
+        "airportName": "Hasselt Airport",
+        "city": "Hasselt",
+        "country": "BE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OBL",
+        "airportName": "Oostmalle Air Base",
+        "city": "Zoersel",
+        "country": "BE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BOJ",
+        "airportName": "Burgas Airport",
+        "city": "Burgas",
+        "country": "BG",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "GOZ",
+        "airportName": "Gorna Oryahovitsa Airport",
+        "city": "Gorna Oryahovitsa",
+        "country": "BG",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JAM",
+        "airportName": "Bezmer Air Base",
+        "city": "Yambol",
+        "country": "BG",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "PDV",
+        "airportName": "Plovdiv International Airport",
+        "city": "Plovdiv",
+        "country": "BG",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "PVN",
+        "airportName": "Dolna Mitropoliya Air Base",
+        "city": "Dolna Mitropoliya",
+        "country": "BG",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SOF",
+        "airportName": "Sofia Airport",
+        "city": "Sofia",
+        "country": "BG",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SLS",
+        "airportName": "Silistra Polkovnik Lambrinovo Airfield",
+        "city": "Silistra",
+        "country": "BG",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SZR",
+        "airportName": "Stara Zagora Airport",
+        "city": "Stara Zagora",
+        "country": "BG",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "VID",
+        "airportName": "Vidin Smurdan Airfield",
+        "city": "Vidin",
+        "country": "BG",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "VAR",
+        "airportName": "Varna Airport",
+        "city": "Varna",
+        "country": "BG",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "GVA",
+        "airportName": "Geneva Cointrin International Airport",
+        "city": "Geneva",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QLS",
+        "airportName": "Lausanne-la Blecherette Airport",
+        "city": "Lausanne",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QNC",
+        "airportName": "Neuchatel Airport",
+        "city": "",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SIR",
+        "airportName": "Sion Airport",
+        "city": "Sion",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZIN",
+        "airportName": "Interlaken Air Base",
+        "city": "",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LUG",
+        "airportName": "Lugano Airport",
+        "city": "Lugano",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BRN",
+        "airportName": "Bern Belp Airport",
+        "city": "Bern",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BXO",
+        "airportName": "Buochs Airport",
+        "city": "Buochs",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZHI",
+        "airportName": "Grenchen Airport",
+        "city": "",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZRH",
+        "airportName": "Zurich Airport",
+        "city": "Zurich",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZJI",
+        "airportName": "Locarno Airport",
+        "city": "",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MLH",
+        "airportName": "EuroAirport Basel-Mulhouse-Freiburg Airport",
+        "city": "Bale/Mulhouse",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ACH",
+        "airportName": "St Gallen Altenrhein Airport",
+        "city": "Altenrhein",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SMV",
+        "airportName": "Samedan Airport",
+        "city": "",
+        "country": "CH",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GTW",
+        "airportName": "Holesov Airport",
+        "city": "Holesov",
+        "country": "CZ",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "UHE",
+        "airportName": "Kunovice Airport",
+        "city": "Uherske Hradiste",
+        "country": "CZ",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KLV",
+        "airportName": "Karlovy Vary International Airport",
+        "city": "Karlovy Vary",
+        "country": "CZ",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MKA",
+        "airportName": "Marianske Lazne Airport",
+        "city": "Marianske Lazne",
+        "country": "CZ",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OSR",
+        "airportName": "Ostrava Leos Janacek Airport",
+        "city": "Ostrava",
+        "country": "CZ",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PED",
+        "airportName": "Pardubice Airport",
+        "city": "Pardubice",
+        "country": "CZ",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PRV",
+        "airportName": "Prerov Air Base",
+        "city": "Prerov",
+        "country": "CZ",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PRG",
+        "airportName": "Ruzyne International Airport",
+        "city": "Prague",
+        "country": "CZ",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BRQ",
+        "airportName": "Brno-Turany Airport",
+        "city": "Brno",
+        "country": "CZ",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZBE",
+        "airportName": "Zabreh Ostrava Airport",
+        "city": "Zabreh",
+        "country": "CZ",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AOC",
+        "airportName": "Altenburg-Nobitz Airport",
+        "city": "Altenburg",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HDF",
+        "airportName": "Heringsdorf Airport",
+        "city": "Heringsdorf",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "REB",
+        "airportName": "Rechlin-Larz Airport",
+        "city": "Larz",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CSO",
+        "airportName": "Cochstedt Airport",
+        "city": "Magdeburg",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BBH",
+        "airportName": "Barth Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZMG",
+        "airportName": "Magdeburg Airport",
+        "city": "Magdeburg",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CBU",
+        "airportName": "Cottbus-Drewitz Airport",
+        "city": "Cottbus",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GTI",
+        "airportName": "Rugen Airport",
+        "city": "Rugen",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PEF",
+        "airportName": "Peenemunde Airport",
+        "city": "Peenemunde",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BER",
+        "airportName": "Berlin Brandenburg Airport",
+        "city": "Berlin",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DRS",
+        "airportName": "Dresden Airport",
+        "city": "Dresden",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ERF",
+        "airportName": "Erfurt Airport",
+        "city": "Erfurt",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FRA",
+        "airportName": "Frankfurt am Main International Airport",
+        "city": "Frankfurt-am-Main",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FMO",
+        "airportName": "Munster Osnabruck Airport",
+        "city": "Munster",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HAM",
+        "airportName": "Hamburg Airport",
+        "city": "Hamburg",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "THF",
+        "airportName": "Berlin Tempelhof Airport",
+        "city": "Berlin",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CGN",
+        "airportName": "Cologne Bonn Airport",
+        "city": "Cologne",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DUS",
+        "airportName": "Dusseldorf International Airport",
+        "city": "Dusseldorf",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MUC",
+        "airportName": "Munich International Airport",
+        "city": "Munich",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NUE",
+        "airportName": "Nuremberg Airport",
+        "city": "Nuremberg",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LEJ",
+        "airportName": "Leipzig Halle Airport",
+        "city": "Leipzig",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SCN",
+        "airportName": "Saarbrucken Airport",
+        "city": "Saarbrucken",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "STR",
+        "airportName": "Stuttgart Airport",
+        "city": "Stuttgart",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TXL",
+        "airportName": "Berlin-Tegel International Airport",
+        "city": "Berlin",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HAJ",
+        "airportName": "Hannover Airport",
+        "city": "Hannover",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BRE",
+        "airportName": "Bremen Airport",
+        "city": "Bremen",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QEF",
+        "airportName": "Frankfurt-Egelsbach Airport",
+        "city": "Egelsbach",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HHN",
+        "airportName": "Frankfurt-Hahn Airport",
+        "city": "Hahn",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MHG",
+        "airportName": "Mannheim-City Airport",
+        "city": "Mannheim",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QMZ",
+        "airportName": "Mainz-Finthen Airport",
+        "city": "Mainz",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SGE",
+        "airportName": "Siegerland Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XFW",
+        "airportName": "Hamburg-Finkenwerder Airport",
+        "city": "Hamburg",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KEL",
+        "airportName": "Kiel-Holtenau Airport",
+        "city": "Kiel",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LBC",
+        "airportName": "Lubeck Blankensee Airport",
+        "city": "Lubeck",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EUM",
+        "airportName": "Neumunster Airport",
+        "city": "Neumunster",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FMM",
+        "airportName": "Memmingen Allgau Airport",
+        "city": "Memmingen",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AAH",
+        "airportName": "Aachen-Merzbruck Airport",
+        "city": "Aachen",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BNJ",
+        "airportName": "Bonn-Hangelar Airport",
+        "city": "Bonn",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ESS",
+        "airportName": "Essen Mulheim Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BFE",
+        "airportName": "Bielefeld Airport",
+        "city": "Bielefeld",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZOJ",
+        "airportName": "Marl-Loemuhle Airport",
+        "city": "Marl",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MGL",
+        "airportName": "Monchengladbach Airport",
+        "city": "Monchengladbach",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PAD",
+        "airportName": "Paderborn Lippstadt Airport",
+        "city": "Paderborn",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NRN",
+        "airportName": "Niederrhein Airport",
+        "city": "Weeze",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DTM",
+        "airportName": "Dortmund Airport",
+        "city": "Dortmund",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AGB",
+        "airportName": "Augsburg Airport",
+        "city": "Augsburg",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OBF",
+        "airportName": "Oberpfaffenhofen Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RBM",
+        "airportName": "Straubing Airport",
+        "city": "Straubing",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FDH",
+        "airportName": "Friedrichshafen Airport",
+        "city": "Friedrichshafen",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FRF",
+        "airportName": "Oschersleben Airport",
+        "city": "Oschersleben",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SZW",
+        "airportName": "Schwerin Parchim Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BYU",
+        "airportName": "Bayreuth Airport",
+        "city": "Bayreuth",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QOB",
+        "airportName": "Ansbach-Petersdorf Airport",
+        "city": "Ansbach",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HOQ",
+        "airportName": "Hof-Plauen Airport",
+        "city": "Hof",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BBJ",
+        "airportName": "Bitburg Airport",
+        "city": "Bitburg",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZQW",
+        "airportName": "Zweibrucken Airport",
+        "city": "Zweibrucken",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FKB",
+        "airportName": "Karlsruhe Baden-Baden Airport",
+        "city": "Baden-Baden",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZQL",
+        "airportName": "Donaueschingen-Villingen Airport",
+        "city": "Donaueschingen",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LHA",
+        "airportName": "Lahr Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BWE",
+        "airportName": "Braunschweig Wolfsburg Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KSF",
+        "airportName": "Kassel-Calden Airport",
+        "city": "Kassel",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BRV",
+        "airportName": "Bremerhaven Airport",
+        "city": "Bremerhaven",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XLW",
+        "airportName": "Lemwerder Airport",
+        "city": "Lemwerder",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EME",
+        "airportName": "Emden Airport",
+        "city": "Emden",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AGE",
+        "airportName": "Wangerooge Airport",
+        "city": "Wangerooge",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "WVN",
+        "airportName": "Wilhelmshaven-Mariensiel Airport",
+        "city": "Wilhelmshaven",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "JUI",
+        "airportName": "Juist Airport",
+        "city": "Juist",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LGO",
+        "airportName": "Langeoog Airport",
+        "city": "Langeoog",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZOW",
+        "airportName": "Nordhorn-Lingen Airport",
+        "city": "Klausheide",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BMK",
+        "airportName": "Borkum Airport",
+        "city": "Borkum",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NOD",
+        "airportName": "Norden-Norddeich Airport",
+        "city": "Norddeich",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VAC",
+        "airportName": "Varrelbusch Airport",
+        "city": "Cloppenburg",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NRD",
+        "airportName": "Norderney Airport",
+        "city": "Norderney",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BMR",
+        "airportName": "Baltrum Airport",
+        "city": "Baltrum",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HEI",
+        "airportName": "Heide-Busum Airport",
+        "city": "Busum",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FLF",
+        "airportName": "Flensburg-Schaferhaus Airport",
+        "city": "Flensburg",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HGL",
+        "airportName": "Helgoland-Dune Airport",
+        "city": "Helgoland",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PSH",
+        "airportName": "St. Peter-Ording Airport",
+        "city": "Sankt Peter-Ording",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GWT",
+        "airportName": "Westerland Sylt Airport",
+        "city": "Westerland",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OHR",
+        "airportName": "Wyk auf Fohr Airport",
+        "city": "Wyk auf Fohr",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SPM",
+        "airportName": "Spangdahlem Air Base",
+        "city": "Trier",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RMS",
+        "airportName": "Ramstein Air Base",
+        "city": "Ramstein",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZCD",
+        "airportName": "Bamberg-Breitenau Airport",
+        "city": "Bamberg",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZCN",
+        "airportName": "Celle Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZPQ",
+        "airportName": "Rheine Bentlage Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FRZ",
+        "airportName": "Fritzlar Airport",
+        "city": "Fritzlar",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZNF",
+        "airportName": "Hanau Army Air Field",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NDZ",
+        "airportName": "Nordholz Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GKE",
+        "airportName": "Geilenkirchen Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RLG",
+        "airportName": "Rostock-Laage Airport",
+        "city": "Rostock",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QOE",
+        "airportName": "Norvenich Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "WBG",
+        "airportName": "Schleswig Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FNB",
+        "airportName": "Neubrandenburg Airport",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "WIE",
+        "airportName": "Wiesbaden Army Airfield",
+        "city": "Wiesbaden",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FEL",
+        "airportName": "Furstenfeldbruck Airport",
+        "city": "Furstenfeldbruck",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "IGS",
+        "airportName": "Ingolstadt Manching Airport",
+        "city": "Manching",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GUT",
+        "airportName": "Gutersloh Airport",
+        "city": "Gutersloh",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BGN",
+        "airportName": "Brugge Air Base",
+        "city": "",
+        "country": "DE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AAR",
+        "airportName": "Aarhus Airport",
+        "city": "Aarhus",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BLL",
+        "airportName": "Billund Airport",
+        "city": "Billund",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CPH",
+        "airportName": "Copenhagen Kastrup Airport",
+        "city": "Copenhagen",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EBJ",
+        "airportName": "Esbjerg Airport",
+        "city": "Esbjerg",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KRP",
+        "airportName": "Karup Airport",
+        "city": "Karup",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BYR",
+        "airportName": "Laeso Airport",
+        "city": "Laeso",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MRW",
+        "airportName": "Lolland Falster Maribo Airport",
+        "city": "Lolland Falster / Maribo",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ODE",
+        "airportName": "Odense Airport",
+        "city": "Odense",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RKE",
+        "airportName": "Copenhagen Roskilde Airport",
+        "city": "Copenhagen",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RNN",
+        "airportName": "Bornholm Airport",
+        "city": "Ronne",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SGD",
+        "airportName": "Sonderborg Airport",
+        "city": "Sonderborg",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CNL",
+        "airportName": "Sindal Airport",
+        "city": "Sindal",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SKS",
+        "airportName": "Vojens Skrydstrup Airport",
+        "city": "Vojens",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SQW",
+        "airportName": "Skive Airport",
+        "city": "Skive",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TED",
+        "airportName": "Thisted Airport",
+        "city": "Thisted",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "STA",
+        "airportName": "Stauning Airport",
+        "city": "Skjern / Ringkobing",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AAL",
+        "airportName": "Aalborg Airport",
+        "city": "Aalborg",
+        "country": "DK",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FUE",
+        "airportName": "Fuerteventura Airport",
+        "city": "Fuerteventura Island",
+        "country": "ES",
+        "zoneOffset": "Atlantic/Canary"
+    },
+    {
+        "airportCode": "GMZ",
+        "airportName": "La Gomera Airport",
+        "city": "Alajero",
+        "country": "ES",
+        "zoneOffset": "Atlantic/Canary"
+    },
+    {
+        "airportCode": "VDE",
+        "airportName": "Hierro Airport",
+        "city": "El Hierro Island",
+        "country": "ES",
+        "zoneOffset": "Atlantic/Canary"
+    },
+    {
+        "airportCode": "SPC",
+        "airportName": "La Palma Airport",
+        "city": "Sta Cruz de la Palma",
+        "country": "ES",
+        "zoneOffset": "Atlantic/Canary"
+    },
+    {
+        "airportCode": "LPA",
+        "airportName": "Gran Canaria Airport",
+        "city": "Gran Canaria Island",
+        "country": "ES",
+        "zoneOffset": "Atlantic/Canary"
+    },
+    {
+        "airportCode": "ACE",
+        "airportName": "Lanzarote Airport",
+        "city": "Lanzarote Island",
+        "country": "ES",
+        "zoneOffset": "Atlantic/Canary"
+    },
+    {
+        "airportCode": "TFS",
+        "airportName": "Tenerife South Airport",
+        "city": "Tenerife Island",
+        "country": "ES",
+        "zoneOffset": "Atlantic/Canary"
+    },
+    {
+        "airportCode": "TFN",
+        "airportName": "Tenerife Norte Airport",
+        "city": "Tenerife Island",
+        "country": "ES",
+        "zoneOffset": "Atlantic/Canary"
+    },
+    {
+        "airportCode": "MLN",
+        "airportName": "Melilla Airport",
+        "city": "Melilla Island",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ABC",
+        "airportName": "Albacete-Los Llanos Airport",
+        "city": "Albacete",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ALC",
+        "airportName": "Alicante International Airport",
+        "city": "Alicante",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LEI",
+        "airportName": "Almeria International Airport",
+        "city": "Almeria",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OVD",
+        "airportName": "Asturias Airport",
+        "city": "Ranon",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ODB",
+        "airportName": "Cordoba Airport",
+        "city": "Cordoba",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BIO",
+        "airportName": "Bilbao Airport",
+        "city": "Bilbao",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RGS",
+        "airportName": "Burgos Airport",
+        "city": "Burgos",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BCN",
+        "airportName": "Barcelona International Airport",
+        "city": "Barcelona",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BJZ",
+        "airportName": "Badajoz Airport",
+        "city": "Badajoz",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CDT",
+        "airportName": "Castellon De La Plana Airport",
+        "city": "Castellon de La Plana",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LCG",
+        "airportName": "A Coruna Airport",
+        "city": "Culleredo",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ECV",
+        "airportName": "Cuatro Vientos Airport",
+        "city": "Madrid",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ILD",
+        "airportName": "Lleida-Alguaire Airport",
+        "city": "Lleida",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GRO",
+        "airportName": "Girona Airport",
+        "city": "Girona",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GRX",
+        "airportName": "Federico Garcia Lorca Airport",
+        "city": "Granada",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "IBZ",
+        "airportName": "Ibiza Airport",
+        "city": "Ibiza",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XRY",
+        "airportName": "Jerez Airport",
+        "city": "Jerez de la Forntera",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MJV",
+        "airportName": "San Javier Airport",
+        "city": "San Javier",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QSA",
+        "airportName": "Sabadell Airport",
+        "city": "Sabadell",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LEN",
+        "airportName": "Leon Airport",
+        "city": "Leon",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RJL",
+        "airportName": "Logrono-Agoncillo Airport",
+        "city": "Logrono",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MAD",
+        "airportName": "Madrid Barajas International Airport",
+        "city": "Madrid",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HEV",
+        "airportName": "Mafe - Gibraleon Airport",
+        "city": "Gibraleon",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AGP",
+        "airportName": "Malaga Airport",
+        "city": "Malaga",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MAH",
+        "airportName": "Menorca Airport",
+        "city": "Menorca Island",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RMU",
+        "airportName": "Región de Murcia International Airport",
+        "city": "Corvera",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OZP",
+        "airportName": "Moron Air Base",
+        "city": "Moron",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PMI",
+        "airportName": "Palma De Mallorca Airport",
+        "city": "Palma De Mallorca",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PNA",
+        "airportName": "Pamplona Airport",
+        "city": "Pamplona",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "REU",
+        "airportName": "Reus Air Base",
+        "city": "Reus",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ROZ",
+        "airportName": "Rota Naval Station Airport",
+        "city": "Rota",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SLM",
+        "airportName": "Salamanca Airport",
+        "city": "Salamanca",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EAS",
+        "airportName": "San Sebastian Airport",
+        "city": "Hondarribia",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SCQ",
+        "airportName": "Santiago de Compostela Airport",
+        "city": "Santiago de Compostela",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LEU",
+        "airportName": "Aerodrom dels Pirineus-Alt Urgell Airport",
+        "city": "Montferrer / Castellbo",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TOJ",
+        "airportName": "Torrejon Airport",
+        "city": "Madrid",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VLC",
+        "airportName": "Valencia Airport",
+        "city": "Valencia",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VLL",
+        "airportName": "Valladolid Airport",
+        "city": "Valladolid",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VIT",
+        "airportName": "Vitoria/Foronda Airport",
+        "city": "Alava",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VGO",
+        "airportName": "Vigo Airport",
+        "city": "Vigo",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SDR",
+        "airportName": "Santander Airport",
+        "city": "Santander",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZAZ",
+        "airportName": "Zaragoza Air Base",
+        "city": "Zaragoza",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SVQ",
+        "airportName": "Sevilla Airport",
+        "city": "Sevilla",
+        "country": "ES",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ENF",
+        "airportName": "Enontekio Airport",
+        "city": "Enontekio",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "QVE",
+        "airportName": "Forssa Airport",
+        "city": "Forssa",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KEV",
+        "airportName": "Halli Airport",
+        "city": "Halli / Kuorevesi",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "HEM",
+        "airportName": "Helsinki Malmi Airport",
+        "city": "Helsinki",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "HEL",
+        "airportName": "Helsinki Vantaa Airport",
+        "city": "Helsinki",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "HYV",
+        "airportName": "Hyvinkaa Airport",
+        "city": "",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KTQ",
+        "airportName": "Kitee Airport",
+        "city": "",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "IVL",
+        "airportName": "Ivalo Airport",
+        "city": "Ivalo",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JOE",
+        "airportName": "Joensuu Airport",
+        "city": "Joensuu / Liperi",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JYV",
+        "airportName": "Jyvaskyla Airport",
+        "city": "Jyvaskylan Maalaiskunta",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KAU",
+        "airportName": "Kauhava Airport",
+        "city": "Kauhava",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KEM",
+        "airportName": "Kemi-Tornio Airport",
+        "city": "Kemi / Tornio",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KAJ",
+        "airportName": "Kajaani Airport",
+        "city": "Kajaani",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KHJ",
+        "airportName": "Kauhajoki Airport",
+        "city": "",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KOK",
+        "airportName": "Kruunupyy Airport",
+        "city": "Kokkola / Kruunupyy",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KAO",
+        "airportName": "Kuusamo Airport",
+        "city": "Kuusamo",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KTT",
+        "airportName": "Kittila Airport",
+        "city": "Kittila",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KUO",
+        "airportName": "Kuopio Airport",
+        "city": "Kuopio / Siilinjarvi",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "QLF",
+        "airportName": "Lahti Vesivehmaa Airport",
+        "city": "",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "LPP",
+        "airportName": "Lappeenranta Airport",
+        "city": "Lappeenranta",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "MIK",
+        "airportName": "Mikkeli Airport",
+        "city": "Mikkeli",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "OUL",
+        "airportName": "Oulu Airport",
+        "city": "Oulu / Oulunsalo",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "POR",
+        "airportName": "Pori Airport",
+        "city": "Pori",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "RVN",
+        "airportName": "Rovaniemi Airport",
+        "city": "Rovaniemi",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SVL",
+        "airportName": "Savonlinna Airport",
+        "city": "Savonlinna",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SJY",
+        "airportName": "Seinajoki Airport",
+        "city": "Seinajoki / Ilmajoki",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SOT",
+        "airportName": "Sodankyla Airport",
+        "city": "Sodankyla",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "TMP",
+        "airportName": "Tampere-Pirkkala Airport",
+        "city": "Tampere / Pirkkala",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "TKU",
+        "airportName": "Turku Airport",
+        "city": "Turku",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "UTI",
+        "airportName": "Utti Air Base",
+        "city": "Utti / Valkeala",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "VAA",
+        "airportName": "Vaasa Airport",
+        "city": "Vaasa",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "VRK",
+        "airportName": "Varkaus Airport",
+        "city": "Varkaus / Joroinen",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "YLI",
+        "airportName": "Ylivieska Airport",
+        "city": "",
+        "country": "FI",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "DPE",
+        "airportName": "St Aubin Airport",
+        "city": "Dieppe",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CQF",
+        "airportName": "Calais-Dunkerque Airport",
+        "city": "Marck",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XCP",
+        "airportName": "Compiegne Margny Airport",
+        "city": "Compiegne",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XLN",
+        "airportName": "Laon - Chambry Airport",
+        "city": "Laon-Chambry",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XSJ",
+        "airportName": "Peronne-Saint-Quentin Airport",
+        "city": "Peronne/Saint-Quentin",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XDK",
+        "airportName": "Dunkerque Les Moeres Airport",
+        "city": "Les Moeres",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BYF",
+        "airportName": "Albert-Bray Airport",
+        "city": "Albert/Bray",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LTQ",
+        "airportName": "Le Touquet-Cote d'Opale Airport",
+        "city": "Le Touquet-Paris-Plage",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XVS",
+        "airportName": "Valenciennes-Denain Airport",
+        "city": "Valenciennes/Denain",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QAM",
+        "airportName": "Amiens-Glisy Airport",
+        "city": "Amiens/Glisy",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AGF",
+        "airportName": "Agen-La Garenne Airport",
+        "city": "Agen/La Garenne",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BOD",
+        "airportName": "Bordeaux-Merignac (BA 106) Airport",
+        "city": "Bordeaux/Merignac",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EGC",
+        "airportName": "Bergerac-Roumaniere Airport",
+        "city": "Bergerac/Roumaniere",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CNG",
+        "airportName": "Cognac-Chateaubernard (BA 709) Air Base",
+        "city": "Cognac/Chateaubernard",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LRH",
+        "airportName": "La Rochelle-Ile de Re Airport",
+        "city": "La Rochelle/Ile de Re",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PIS",
+        "airportName": "Poitiers-Biard Airport",
+        "city": "Poitiers/Biard",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MCU",
+        "airportName": "Montlucon-Gueret Airport",
+        "city": "Montlucon/Gueret",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LIG",
+        "airportName": "Limoges Airport",
+        "city": "Limoges/Bellegarde",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XMJ",
+        "airportName": "Mont-de-Marsan (BA 118) Air Base",
+        "city": "Mont-de-Marsan",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NIT",
+        "airportName": "Niort-Souche Airport",
+        "city": "Niort/Souche",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TLS",
+        "airportName": "Toulouse-Blagnac Airport",
+        "city": "Toulouse/Blagnac",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PUF",
+        "airportName": "Pau Pyrenees Airport",
+        "city": "Pau/Pyrenees (Uzein)",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LDE",
+        "airportName": "Tarbes-Lourdes-Pyrenees Airport",
+        "city": "Tarbes/Lourdes/Pyrenees",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ANG",
+        "airportName": "Angouleme-Brie-Champniers Airport",
+        "city": "Angouleme/Brie/Champniers",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BVE",
+        "airportName": "Brive-La Roche Airport",
+        "city": "Brive-la-Gaillarde",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PGX",
+        "airportName": "Perigueux-Bassillac Airport",
+        "city": "Perigueux/Bassillac",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XDA",
+        "airportName": "Dax Seyresse Airport",
+        "city": "Perigueux",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BIQ",
+        "airportName": "Biarritz-Anglet-Bayonne Airport",
+        "city": "Biarritz/Anglet/Bayonne",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XCX",
+        "airportName": "Chatellerault Airport",
+        "city": "Biarritz",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZAO",
+        "airportName": "Cahors-Lalbenque Airport",
+        "city": "Cahors/Lalbenque",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XGT",
+        "airportName": "Gueret St Laurent Airport",
+        "city": "Cahors",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XAC",
+        "airportName": "Arcachon-La Teste-de-Buch Airport",
+        "city": "Arcachon/La Teste-de-Buch",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LBI",
+        "airportName": "Albi-Le Sequestre Airport",
+        "city": "Albi/Le Sequestre",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DCM",
+        "airportName": "Castres-Mazamet Airport",
+        "city": "Castres/Mazamet",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RDZ",
+        "airportName": "Rodez-Marcillac Airport",
+        "city": "Rodez/Marcillac",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RYN",
+        "airportName": "Royan-Medis Airport",
+        "city": "Royan/Medis",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XMW",
+        "airportName": "Montauban Airport",
+        "city": "Montauban",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XLR",
+        "airportName": "Libourne-Artigues-de-Lussac Airport",
+        "city": "Libourne/Artigues-de-Lussac",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RCO",
+        "airportName": "Rochefort-Saint-Agnant (BA 721) Airport",
+        "city": "Rochefort/Saint-Agnant",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XSL",
+        "airportName": "Sarlat Domme Airport",
+        "city": "Rochefort",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XTB",
+        "airportName": "Tarbes Laloubere Airport",
+        "city": "Rochefort",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "IDY",
+        "airportName": "Ile d'Yeu Airport",
+        "city": "Ile d'Yeu",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CMR",
+        "airportName": "Colmar-Houssen Airport",
+        "city": "Colmar/Houssen",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XBV",
+        "airportName": "Beaune-Challanges Airport",
+        "city": "Beaune/Challanges",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DLE",
+        "airportName": "Dole-Tavaux Airport",
+        "city": "Dole/Tavaux",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XVN",
+        "airportName": "Verdun-Le Rozelier Airport",
+        "city": "Verdun/Le Rozelier",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MVV",
+        "airportName": "Megeve Airport",
+        "city": "Verdun",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OBS",
+        "airportName": "Aubenas-Ardeche Meridional Airport",
+        "city": "Aubenas/Ardeche Meridional",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LPY",
+        "airportName": "Le Puy-Loudes Airport",
+        "city": "Le Puy/Loudes",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AHZ",
+        "airportName": "L'alpe D'huez Airport",
+        "city": "Bourg",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ETZ",
+        "airportName": "Metz-Nancy-Lorraine Airport",
+        "city": "Metz / Nancy",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ANE",
+        "airportName": "Angers-Loire Airport",
+        "city": "Angers/Marce",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XAV",
+        "airportName": "Albertville Airport",
+        "city": "Angers",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BIA",
+        "airportName": "Bastia-Poretta Airport",
+        "city": "Bastia/Poretta",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CLY",
+        "airportName": "Calvi-Sainte-Catherine Airport",
+        "city": "Calvi/Sainte-Catherine",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FSC",
+        "airportName": "Figari Sud-Corse Airport",
+        "city": "Figari Sud-Corse",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AJA",
+        "airportName": "Ajaccio-Napoleon Bonaparte Airport",
+        "city": "Ajaccio/Napoleon Bonaparte",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PRP",
+        "airportName": "Propriano Airport",
+        "city": "Propriano",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SOZ",
+        "airportName": "Solenzara (BA 126) Air Base",
+        "city": "Solenzara",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MFX",
+        "airportName": "Meribel Airport",
+        "city": "Ajaccio",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AUF",
+        "airportName": "Auxerre-Branches Airport",
+        "city": "Auxerre/Branches",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CMF",
+        "airportName": "Chambery-Savoie Airport",
+        "city": "Chambery/Aix-les-Bains",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CFE",
+        "airportName": "Clermont-Ferrand Auvergne Airport",
+        "city": "Clermont-Ferrand/Auvergne",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BOU",
+        "airportName": "Bourges Airport",
+        "city": "Bourges",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QNJ",
+        "airportName": "Annemasse Airport",
+        "city": "Annemasse",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CVF",
+        "airportName": "Courchevel Airport",
+        "city": "Courcheval",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LYS",
+        "airportName": "Lyon Saint-Exupery Airport",
+        "city": "Lyon",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QNX",
+        "airportName": "Macon-Charnay Airport",
+        "city": "Macon/Charnay",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SYT",
+        "airportName": "Saint-Yan Airport",
+        "city": "Saint-Yan",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RNE",
+        "airportName": "Roanne-Renaison Airport",
+        "city": "Roanne/Renaison",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NCY",
+        "airportName": "Annecy-Haute-Savoie-Mont Blanc Airport",
+        "city": "Annecy/Meythet",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XMK",
+        "airportName": "Montelimar - Ancone Airport",
+        "city": "Annecy",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GNB",
+        "airportName": "Grenoble-Isere Airport",
+        "city": "Grenoble/Saint-Geoirs",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VAF",
+        "airportName": "Valence-Chabeuil Airport",
+        "city": "Valence/Chabeuil",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VHY",
+        "airportName": "Vichy-Charmeil Airport",
+        "city": "Vichy/Charmeil",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AUR",
+        "airportName": "Aurillac Airport",
+        "city": "Aurillac",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CHR",
+        "airportName": "Chateauroux-Deols Marcel Dassault Airport",
+        "city": "Chateauroux/Deols",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LYN",
+        "airportName": "Lyon-Bron Airport",
+        "city": "Lyon/Bron",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CEQ",
+        "airportName": "Cannes-Mandelieu Airport",
+        "city": "Cannes/Mandelieu",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EBU",
+        "airportName": "Saint-Etienne-Boutheon Airport",
+        "city": "Saint-Etienne/Boutheon",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QIE",
+        "airportName": "Istres Le Tube/Istres Air Base (BA 125) Airport",
+        "city": "Istres/Le Tube",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CCF",
+        "airportName": "Carcassonne Airport",
+        "city": "Carcassonne/Salvaza",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MRS",
+        "airportName": "Marseille Provence Airport",
+        "city": "Marseille",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NCE",
+        "airportName": "Nice-Cote d'Azur Airport",
+        "city": "Nice",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XOG",
+        "airportName": "Orange-Caritat (BA 115) Air Base",
+        "city": "Orange/Caritat",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PGF",
+        "airportName": "Perpignan-Rivesaltes (Llabanere) Airport",
+        "city": "Perpignan/Rivesaltes",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CTT",
+        "airportName": "Le Castellet Airport",
+        "city": "Le Castellet",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BAE",
+        "airportName": "Barcelonnette - Saint-Pons Airport",
+        "city": "Le Castellet",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XAS",
+        "airportName": "Ales-Deaux Airport",
+        "city": "Ales/Deaux",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MPL",
+        "airportName": "Montpellier-Mediterranee Airport",
+        "city": "Montpellier/Mediterranee",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BZR",
+        "airportName": "Beziers-Vias Airport",
+        "city": "Beziers/Vias",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AVN",
+        "airportName": "Avignon-Caumont Airport",
+        "city": "Avignon/Caumont",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GAT",
+        "airportName": "Gap - Tallard Airport",
+        "city": "Avignon",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MEN",
+        "airportName": "Mende-Brenoux Airport",
+        "city": "Mende/Brenoux",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SCP",
+        "airportName": "Mont-Dauphin - St-Crepin Airport",
+        "city": "Mende",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BVA",
+        "airportName": "Paris Beauvais Tille Airport",
+        "city": "Beauvais/Tille",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XSU",
+        "airportName": "Saumur-Saint-Florent Airport",
+        "city": "Saumur/Saint-Florent",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EVX",
+        "airportName": "Evreux-Fauville (BA 105) Air Base",
+        "city": "Evreux/Fauville",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XAN",
+        "airportName": "Alencon Valframbert Airport",
+        "city": "Evreux",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LEH",
+        "airportName": "Le Havre Octeville Airport",
+        "city": "Le Havre/Octeville",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XAB",
+        "airportName": "Abbeville-Buigny-Saint-Maclou Airport",
+        "city": "Abbeville (Buigny/Saint-Maclou)",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ORE",
+        "airportName": "Orleans-Bricy (BA 123) Air Base",
+        "city": "Orleans/Bricy",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XCR",
+        "airportName": "Chalons-Vatry Air Base",
+        "city": "Chalons/Vatry",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LSO",
+        "airportName": "Les Sables-d'Olonne Talmont Airport",
+        "city": "Les Sables-d'Olonne",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "URO",
+        "airportName": "Rouen Airport",
+        "city": "Rouen/Vallee de Seine",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XBQ",
+        "airportName": "Blois-Le Breuil Airport",
+        "city": "Blois/Le Breuil",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QTJ",
+        "airportName": "Chartres Champhol Airport",
+        "city": "Blois",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TUF",
+        "airportName": "Tours-Val-de-Loire Airport",
+        "city": "Tours/Val de Loire (Loire Valley)",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CET",
+        "airportName": "Cholet Le Pontreau Airport",
+        "city": "Cholet/Le Pontreau",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LVA",
+        "airportName": "Laval-Entrammes Airport",
+        "city": "Laval/Entrammes",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LBG",
+        "airportName": "Paris-Le Bourget Airport",
+        "city": "Paris",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CSF",
+        "airportName": "Creil Air Base",
+        "city": "Creil",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CDG",
+        "airportName": "Charles de Gaulle International Airport",
+        "city": "Paris",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TNF",
+        "airportName": "Toussus-le-Noble Airport",
+        "city": "Toussus-le-Noble",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ORY",
+        "airportName": "Paris-Orly Airport",
+        "city": "Paris",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "POX",
+        "airportName": "Pontoise - Cormeilles-en-Vexin Airport",
+        "city": "Pontoise",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VIY",
+        "airportName": "Villacoublay-Velizy (BA 107) Air Base",
+        "city": "Villacoublay/Velizy",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QYR",
+        "airportName": "Troyes-Barberey Airport",
+        "city": "Troyes/Barberey",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NVS",
+        "airportName": "Nevers-Fourchambault Airport",
+        "city": "Nevers/Fourchambault",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XCB",
+        "airportName": "Cambrai-Epinoy (BA 103) Air Base",
+        "city": "Cambrai/Epinoy",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XME",
+        "airportName": "Maubeuge-Elesmes Airport",
+        "city": "Maubeuge/Elesmes",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LIL",
+        "airportName": "Lille-Lesquin Airport",
+        "city": "Lille/Lesquin",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HZB",
+        "airportName": "Merville-Calonne Airport",
+        "city": "Merville/Calonne",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XCZ",
+        "airportName": "Charleville-Mezieres Airport",
+        "city": "Charleville-Mezieres",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XVO",
+        "airportName": "Vesoul-Frotey Airport",
+        "city": "Vesoul/Frotey",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BES",
+        "airportName": "Brest Bretagne Airport",
+        "city": "Brest/Guipavas",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CER",
+        "airportName": "Cherbourg-Maupertus Airport",
+        "city": "Cherbourg/Maupertus",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DNR",
+        "airportName": "Dinard-Pleurtuit-Saint-Malo Airport",
+        "city": "Dinard/Pleurtuit/Saint-Malo",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LBY",
+        "airportName": "La Baule-Escoublac Airport",
+        "city": "La Baule-Escoublac",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GFR",
+        "airportName": "Granville Airport",
+        "city": "Granville",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DOL",
+        "airportName": "Deauville-Saint-Gatien Airport",
+        "city": "Deauville",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LRT",
+        "airportName": "Lorient South Brittany (Bretagne Sud) Airport",
+        "city": "Lorient/Lann/Bihoue",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EDM",
+        "airportName": "La Roche-sur-Yon Airport",
+        "city": "La Roche-sur-Yon/Les Ajoncs",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LDV",
+        "airportName": "Landivisiau Air Base",
+        "city": "Landivisiau",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CFR",
+        "airportName": "Caen-Carpiquet Airport",
+        "city": "Caen/Carpiquet",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LME",
+        "airportName": "Le Mans-Arnage Airport",
+        "city": "Le Mans/Arnage",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RNS",
+        "airportName": "Rennes-Saint-Jacques Airport",
+        "city": "Rennes/Saint-Jacques",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LAI",
+        "airportName": "Lannion-Cote de Granit Airport",
+        "city": "Lannion",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "UIP",
+        "airportName": "Quimper-Cornouaille Airport",
+        "city": "Quimper/Pluguffan",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NTE",
+        "airportName": "Nantes Atlantique Airport",
+        "city": "Nantes",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SBK",
+        "airportName": "Saint-Brieuc-Armor Airport",
+        "city": "Saint-Brieuc/Armor",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MXN",
+        "airportName": "Morlaix-Ploujean Airport",
+        "city": "Morlaix/Ploujean",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VNE",
+        "airportName": "Vannes-Meucon Airport",
+        "city": "Vannes/Meucon",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SNR",
+        "airportName": "Saint-Nazaire-Montoir Airport",
+        "city": "Saint-Nazaire/Montoir",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QBQ",
+        "airportName": "Besancon Thise Airport",
+        "city": "St Nazaire",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BSL",
+        "airportName": "EuroAirport Basel-Mulhouse-Freiburg Airport",
+        "city": "Bale/Mulhouse",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DIJ",
+        "airportName": "Dijon-Bourgogne Airport",
+        "city": "Dijon/Longvic",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MZM",
+        "airportName": "Metz-Frescaty (BA 128) Air Base",
+        "city": "Metz/Frescaty",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EPL",
+        "airportName": "Epinal-Mirecourt Airport",
+        "city": "Epinal/Mirecourt",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XMF",
+        "airportName": "Montbeliard-Courcelles Airport",
+        "city": "Montbeliard/Courcelles",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ENC",
+        "airportName": "Nancy-Essey Airport",
+        "city": "Nancy/Essey",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BOR",
+        "airportName": "Fontaine Airport",
+        "city": "Belfort",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RHE",
+        "airportName": "Reims-Champagne (BA 112) Airport",
+        "city": "Reims/Champagne",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SXB",
+        "airportName": "Strasbourg Airport",
+        "city": "Strasbourg",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VTL",
+        "airportName": "Vittel Champ De Course Airport",
+        "city": "Luxeuil",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XHE",
+        "airportName": "Toulon-Hyeres Airport",
+        "city": "Toulon/Hyeres/Le Palyvestre",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FNI",
+        "airportName": "Nimes-Arles-Camargue Airport",
+        "city": "Nimes/Garons",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LTT",
+        "airportName": "La Mole Airport",
+        "city": "La Mole",
+        "country": "FR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BFS",
+        "airportName": "Belfast International Airport",
+        "city": "Belfast",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "ENK",
+        "airportName": "St Angelo Airport",
+        "city": "Enniskillen",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BHD",
+        "airportName": "George Best Belfast City Airport",
+        "city": "Belfast",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LDY",
+        "airportName": "City of Derry Airport",
+        "city": "Derry",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BHX",
+        "airportName": "Birmingham International Airport",
+        "city": "Birmingham",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CVT",
+        "airportName": "Coventry Airport",
+        "city": "Coventry",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "GLO",
+        "airportName": "Gloucestershire Airport",
+        "city": "Staverton",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "ORM",
+        "airportName": "Sywell Aerodrome",
+        "city": "Northampton",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "NQT",
+        "airportName": "Nottingham Airport",
+        "city": "Nottingham",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "MAN",
+        "airportName": "Manchester Airport",
+        "city": "Manchester",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "DSA",
+        "airportName": "Robin Hood Doncaster Sheffield Airport",
+        "city": "Doncaster",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "UPV",
+        "airportName": "Upavon Aerodrome",
+        "city": "Upavon",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LYE",
+        "airportName": "RAF Lyneham",
+        "city": "Lyneham",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "DGX",
+        "airportName": "MOD St. Athan",
+        "city": "St. Athan",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "YEO",
+        "airportName": "RNAS Yeovilton",
+        "city": "Yeovil",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CAL",
+        "airportName": "Campbeltown Airport",
+        "city": "Campbeltown",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "EOI",
+        "airportName": "Eday Airport",
+        "city": "Eday",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "FIE",
+        "airportName": "Fair Isle Airport",
+        "city": "Fair Isle",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "WHS",
+        "airportName": "Whalsay Airport",
+        "city": "Whalsay",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "COL",
+        "airportName": "Coll Airport",
+        "city": "Coll Island",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "NRL",
+        "airportName": "North Ronaldsay Airport",
+        "city": "North Ronaldsay",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "OBN",
+        "airportName": "Oban Airport",
+        "city": "North Connel",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "PPW",
+        "airportName": "Papa Westray Airport",
+        "city": "Papa Westray",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SOY",
+        "airportName": "Stronsay Airport",
+        "city": "Stronsay",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "NDY",
+        "airportName": "Sanday Airport",
+        "city": "Sanday",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LWK",
+        "airportName": "Lerwick / Tingwall Airport",
+        "city": "Lerwick",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "WRY",
+        "airportName": "Westray Airport",
+        "city": "Westray",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CSA",
+        "airportName": "Colonsay Airstrip",
+        "city": "Colonsay",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "HAW",
+        "airportName": "Haverfordwest Airport",
+        "city": "Haverfordwest",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CWL",
+        "airportName": "Cardiff International Airport",
+        "city": "Cardiff",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SWS",
+        "airportName": "Swansea Airport",
+        "city": "Swansea",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BRS",
+        "airportName": "Bristol International Airport",
+        "city": "Bristol",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LPL",
+        "airportName": "Liverpool John Lennon Airport",
+        "city": "Liverpool",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LTN",
+        "airportName": "London Luton Airport",
+        "city": "London",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LEQ",
+        "airportName": "Land's End Airport",
+        "city": "Land's End",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "PLH",
+        "airportName": "Plymouth City Airport",
+        "city": "Plymouth",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "ISC",
+        "airportName": "St. Mary's Airport",
+        "city": "St. Mary's",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BOH",
+        "airportName": "Bournemouth Airport",
+        "city": "Bournemouth",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SOU",
+        "airportName": "Southampton Airport",
+        "city": "Southampton",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BBP",
+        "airportName": "Bembridge Airport",
+        "city": "Bembridge",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "QLA",
+        "airportName": "Lasham Airport",
+        "city": "Lasham",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "NQY",
+        "airportName": "Newquay Cornwall Airport",
+        "city": "Newquay",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "QUG",
+        "airportName": "Chichester/Goodwood Airport",
+        "city": "Chichester",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "ESH",
+        "airportName": "Shoreham Airport",
+        "city": "Brighton",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BQH",
+        "airportName": "London Biggin Hill Airport",
+        "city": "London",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LGW",
+        "airportName": "London Gatwick Airport",
+        "city": "London",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "KRH",
+        "airportName": "Redhill Aerodrome",
+        "city": "Redhill",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LCY",
+        "airportName": "London City Airport",
+        "city": "London",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "FAB",
+        "airportName": "Farnborough Airport",
+        "city": "Farnborough",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BBS",
+        "airportName": "Blackbushe Airport",
+        "city": "Yateley",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LHR",
+        "airportName": "London Heathrow Airport",
+        "city": "London",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SEN",
+        "airportName": "Southend Airport",
+        "city": "Southend",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LYX",
+        "airportName": "Lydd Airport",
+        "city": "Lydd",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "MSE",
+        "airportName": "Kent International Airport",
+        "city": "Manston",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CAX",
+        "airportName": "Carlisle Airport",
+        "city": "Carlisle",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BLK",
+        "airportName": "Blackpool International Airport",
+        "city": "Blackpool",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "HUY",
+        "airportName": "Humberside Airport",
+        "city": "Grimsby",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BWF",
+        "airportName": "Barrow Walney Island Airport",
+        "city": "Barrow-in-Furness",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LBA",
+        "airportName": "Leeds Bradford Airport",
+        "city": "Leeds",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CEG",
+        "airportName": "Hawarden Airport",
+        "city": "Hawarden",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "NCL",
+        "airportName": "Newcastle Airport",
+        "city": "Newcastle",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "MME",
+        "airportName": "Durham Tees Valley Airport",
+        "city": "Durham",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "EMA",
+        "airportName": "East Midlands Airport",
+        "city": "Nottingham",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "HLY",
+        "airportName": "Anglesey Airport",
+        "city": "Angelsey",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "KOI",
+        "airportName": "Kirkwall Airport",
+        "city": "Orkney Islands",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LSI",
+        "airportName": "Sumburgh Airport",
+        "city": "Lerwick",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "WIC",
+        "airportName": "Wick Airport",
+        "city": "Wick",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "ABZ",
+        "airportName": "Aberdeen Dyce Airport",
+        "city": "Aberdeen",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "INV",
+        "airportName": "Inverness Airport",
+        "city": "Inverness",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "GLA",
+        "airportName": "Glasgow International Airport",
+        "city": "Glasgow",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "EDI",
+        "airportName": "Edinburgh Airport",
+        "city": "Edinburgh",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "ILY",
+        "airportName": "Islay Airport",
+        "city": "Port Ellen",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "PIK",
+        "airportName": "Glasgow Prestwick Airport",
+        "city": "Glasgow",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BEB",
+        "airportName": "Benbecula Airport",
+        "city": "Balivanich",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SCS",
+        "airportName": "Scatsta Airport",
+        "city": "Shetland Islands",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "DND",
+        "airportName": "Dundee Airport",
+        "city": "Dundee",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SYY",
+        "airportName": "Stornoway Airport",
+        "city": "Stornoway",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BRR",
+        "airportName": "Barra Airport",
+        "city": "Eoligarry",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "PSL",
+        "airportName": "Perth/Scone Airport",
+        "city": "Perth",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "TRE",
+        "airportName": "Tiree Airport",
+        "city": "Balemartine",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "UNT",
+        "airportName": "Unst Airport",
+        "city": "Shetland Islands",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BOL",
+        "airportName": "Ballykelly Airport",
+        "city": "Ballykelly",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "FSS",
+        "airportName": "RAF Kinloss",
+        "city": "Kinloss",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "ADX",
+        "airportName": "RAF Leuchars",
+        "city": "St. Andrews",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LMO",
+        "airportName": "RAF Lossiemouth",
+        "city": "Lossiemouth",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CBG",
+        "airportName": "Cambridge Airport",
+        "city": "Cambridge",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "NWI",
+        "airportName": "Norwich International Airport",
+        "city": "Norwich",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "STN",
+        "airportName": "London Stansted Airport",
+        "city": "London",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "QFO",
+        "airportName": "Duxford Airport",
+        "city": "Duxford",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "HYC",
+        "airportName": "Wycombe Air Park",
+        "city": "High Wycombe",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "EXT",
+        "airportName": "Exeter International Airport",
+        "city": "Exeter",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "FZO",
+        "airportName": "Bristol Filton Airport",
+        "city": "Bristol",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "OXF",
+        "airportName": "Oxford (Kidlington) Airport",
+        "city": "Kidlington",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "RCS",
+        "airportName": "Rochester Airport",
+        "city": "Rochester",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BEX",
+        "airportName": "RAF Benson",
+        "city": "Benson",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LKZ",
+        "airportName": "RAF Lakenheath",
+        "city": "Lakenheath",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "MHZ",
+        "airportName": "RAF Mildenhall",
+        "city": "Mildenhall",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "QUY",
+        "airportName": "RAF Wyton",
+        "city": "St. Ives",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "FFD",
+        "airportName": "RAF Fairford",
+        "city": "Fairford",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BZZ",
+        "airportName": "RAF Brize Norton",
+        "city": "Brize Norton",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "ODH",
+        "airportName": "RAF Odiham",
+        "city": "Odiham",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "WXF",
+        "airportName": "Wethersfield Airport",
+        "city": "Wethersfield",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "NHT",
+        "airportName": "RAF Northolt",
+        "city": "London",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "QCY",
+        "airportName": "RAF Coningsby",
+        "city": "Coningsby",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BEQ",
+        "airportName": "RAF Honington",
+        "city": "Thetford",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "OKH",
+        "airportName": "RAF Cottesmore",
+        "city": "Cottesmore",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SQZ",
+        "airportName": "RAF Scampton",
+        "city": "Scampton",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "HRT",
+        "airportName": "RAF Linton-On-Ouse",
+        "city": "Linton-On-Ouse",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "WTN",
+        "airportName": "RAF Waddington",
+        "city": "Waddington",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "MRH",
+        "airportName": "RAF Marham",
+        "city": "Marham",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SKL",
+        "airportName": "Skye Bridge Ashaig Airport",
+        "city": "Broadford",
+        "country": "GB",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "PYR",
+        "airportName": "Andravida Airport",
+        "city": "Andravida",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "AGQ",
+        "airportName": "Agrinion Airport",
+        "city": "Agrinion",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "AXD",
+        "airportName": "Dimokritos Airport",
+        "city": "Alexandroupolis",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "HEW",
+        "airportName": "Athen Helenikon Airport",
+        "city": "Athens",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ATH",
+        "airportName": "Eleftherios Venizelos International Airport",
+        "city": "Athens",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "VOL",
+        "airportName": "Nea Anchialos Airport",
+        "city": "Nea Anchialos",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JKH",
+        "airportName": "Chios Island National Airport",
+        "city": "Chios Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "PKH",
+        "airportName": "Porto Cheli Airport",
+        "city": "Porto Cheli",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JIK",
+        "airportName": "Ikaria Airport",
+        "city": "Ikaria Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "IOA",
+        "airportName": "Ioannina Airport",
+        "city": "Ioannina",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "HER",
+        "airportName": "Heraklion International Nikos Kazantzakis Airport",
+        "city": "Heraklion",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KSO",
+        "airportName": "Kastoria National Airport",
+        "city": "Kastoria",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KIT",
+        "airportName": "Kithira Airport",
+        "city": "Kithira Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "EFL",
+        "airportName": "Kefallinia Airport",
+        "city": "Kefallinia Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KZS",
+        "airportName": "Kastelorizo Airport",
+        "city": "Kastelorizo Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KLX",
+        "airportName": "Kalamata Airport",
+        "city": "Kalamata",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KGS",
+        "airportName": "Kos Airport",
+        "city": "Kos Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "AOK",
+        "airportName": "Karpathos Airport",
+        "city": "Karpathos Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "CFU",
+        "airportName": "Ioannis Kapodistrias International Airport",
+        "city": "Kerkyra Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KSJ",
+        "airportName": "Kasos Airport",
+        "city": "Kasos Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KVA",
+        "airportName": "Alexander the Great International Airport",
+        "city": "Kavala",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KZI",
+        "airportName": "Filippos Airport",
+        "city": "Kozani",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "LRS",
+        "airportName": "Leros Airport",
+        "city": "Leros Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "LXS",
+        "airportName": "Limnos Airport",
+        "city": "Limnos Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "LRA",
+        "airportName": "Larisa Airport",
+        "city": "Larisa",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JMK",
+        "airportName": "Mikonos Airport",
+        "city": "Mykonos Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "MLO",
+        "airportName": "Milos Airport",
+        "city": "Milos Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "MJT",
+        "airportName": "Mytilene International Airport",
+        "city": "Mytilene",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JNX",
+        "airportName": "Naxos Airport",
+        "city": "Naxos Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "PAS",
+        "airportName": "Paros Airport",
+        "city": "Paros Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JTY",
+        "airportName": "Astypalaia Airport",
+        "city": "Astypalaia Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "PVK",
+        "airportName": "Aktion National Airport",
+        "city": "Preveza/Lefkada",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "RHO",
+        "airportName": "Diagoras Airport",
+        "city": "Rodes Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "GPA",
+        "airportName": "Araxos Airport",
+        "city": "Patras",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "CHQ",
+        "airportName": "Chania International Airport",
+        "city": "Souda",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JSI",
+        "airportName": "Skiathos Island National Airport",
+        "city": "Skiathos",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SMI",
+        "airportName": "Samos Airport",
+        "city": "Samos Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JSY",
+        "airportName": "Syros Airport",
+        "city": "Syros Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SPJ",
+        "airportName": "Sparti Airport",
+        "city": "Sparti",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JTR",
+        "airportName": "Santorini Airport",
+        "city": "Santorini Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "JSH",
+        "airportName": "Sitia Airport",
+        "city": "Crete Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SKU",
+        "airportName": "Skiros Airport",
+        "city": "Skiros Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SKG",
+        "airportName": "Thessaloniki Macedonia International Airport",
+        "city": "Thessaloniki",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ZTH",
+        "airportName": "Dionysios Solomos Airport",
+        "city": "Zakynthos Island",
+        "country": "GR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "DBV",
+        "airportName": "Dubrovnik Airport",
+        "city": "Dubrovnik",
+        "country": "HR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LSZ",
+        "airportName": "Losinj Island Airport",
+        "city": "Losinj",
+        "country": "HR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OSI",
+        "airportName": "Osijek Airport",
+        "city": "Osijek",
+        "country": "HR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PUY",
+        "airportName": "Pula Airport",
+        "city": "Pula",
+        "country": "HR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RJK",
+        "airportName": "Rijeka Airport",
+        "city": "Rijeka",
+        "country": "HR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BWK",
+        "airportName": "Brac Airport",
+        "city": "Brac Island",
+        "country": "HR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SPU",
+        "airportName": "Split Airport",
+        "city": "Split",
+        "country": "HR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZAG",
+        "airportName": "Zagreb Airport",
+        "city": "Zagreb",
+        "country": "HR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZAD",
+        "airportName": "Zemunik Airport",
+        "city": "Zadar",
+        "country": "HR",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BUD",
+        "airportName": "Budapest Liszt Ferenc International Airport",
+        "city": "Budapest",
+        "country": "HU",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DEB",
+        "airportName": "Debrecen International Airport",
+        "city": "Debrecen",
+        "country": "HU",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MCQ",
+        "airportName": "Miskolc Airport",
+        "city": "Miskolc",
+        "country": "HU",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PEV",
+        "airportName": "Pecs-Pogany Airport",
+        "city": "Pecs-Pogany",
+        "country": "HU",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QGY",
+        "airportName": "Gyor-Per International Airport",
+        "city": "Gyor",
+        "country": "HU",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SOB",
+        "airportName": "Sarmellek International Airport",
+        "city": "Sarmellek",
+        "country": "HU",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TZR",
+        "airportName": "Taszar Air Base",
+        "city": "Taszar",
+        "country": "HU",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QZD",
+        "airportName": "Szeged Glider Airport",
+        "city": "Szeged",
+        "country": "HU",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BYT",
+        "airportName": "Bantry Aerodrome",
+        "city": "Bantry",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BLY",
+        "airportName": "Belmullet Aerodrome",
+        "city": "Belmullet",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "NNR",
+        "airportName": "Connemara Regional Airport",
+        "city": "Inverin",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CLB",
+        "airportName": "Castlebar Airport",
+        "city": "Castlebar",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "WEX",
+        "airportName": "Castlebridge Airport",
+        "city": "Wexford",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "ORK",
+        "airportName": "Cork Airport",
+        "city": "Cork",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "GWY",
+        "airportName": "Galway Airport",
+        "city": "Galway",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CFN",
+        "airportName": "Donegal Airport",
+        "city": "Donegal",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "DUB",
+        "airportName": "Dublin Airport",
+        "city": "Dublin",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "IOR",
+        "airportName": "Inishmore Aerodrome",
+        "city": "Inis Mor",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "INQ",
+        "airportName": "Inisheer Aerodrome",
+        "city": "Inis Oirr",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "KKY",
+        "airportName": "Kilkenny Airport",
+        "city": "Kilkenny",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "NOC",
+        "airportName": "Ireland West Knock Airport",
+        "city": "Charleston",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "KIR",
+        "airportName": "Kerry Airport",
+        "city": "Killarney",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LTR",
+        "airportName": "Letterkenny Airport",
+        "city": "Letterkenny",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "IIA",
+        "airportName": "Inishmaan Aerodrome",
+        "city": "Inis Meain",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SNN",
+        "airportName": "Shannon Airport",
+        "city": "Shannon",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SXL",
+        "airportName": "Sligo Airport",
+        "city": "Sligo",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "WAT",
+        "airportName": "Waterford Airport",
+        "city": "Waterford",
+        "country": "IE",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CRV",
+        "airportName": "Crotone Airport",
+        "city": "Crotone",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BRI",
+        "airportName": "Bari / Palese International Airport",
+        "city": "Bari",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FOG",
+        "airportName": "Foggia / Gino Lisa Airport",
+        "city": "Foggia",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TAR",
+        "airportName": "Taranto / Grottaglie Airport",
+        "city": "Grottaglie",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LCC",
+        "airportName": "Lecce Airport",
+        "city": "",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PSR",
+        "airportName": "Pescara International Airport",
+        "city": "Pescara",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BDS",
+        "airportName": "Brindisi / Casale Airport",
+        "city": "Brindisi",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SUF",
+        "airportName": "Lamezia Terme Airport",
+        "city": "Lamezia Terme",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CIY",
+        "airportName": "Comiso Airport Vincenzo Magliocco",
+        "city": "Comiso",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CTA",
+        "airportName": "Catania / Fontanarossa Airport",
+        "city": "Catania",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LMP",
+        "airportName": "Lampedusa Airport",
+        "city": "Lampedusa",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PNL",
+        "airportName": "Pantelleria Airport",
+        "city": "Pantelleria",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PMO",
+        "airportName": "Palermo / Punta Raisi Airport",
+        "city": "Palermo",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "REG",
+        "airportName": "Reggio Calabria Airport",
+        "city": "Reggio Calabria",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TPS",
+        "airportName": "Trapani / Birgi Airport",
+        "city": "Trapani",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NSY",
+        "airportName": "Sigonella Airport",
+        "city": "",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BLX",
+        "airportName": "Belluno Airport",
+        "city": "Belluno",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RAN",
+        "airportName": "Ravenna Airport",
+        "city": "Ravenna",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZIA",
+        "airportName": "Trento / Mattarello Airport",
+        "city": "Trento",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AHO",
+        "airportName": "Alghero / Fertilia Airport",
+        "city": "Alghero",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DCI",
+        "airportName": "Decimomannu Airport",
+        "city": "Decimomannu",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CAG",
+        "airportName": "Cagliari / Elmas Airport",
+        "city": "Cagliari",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OLB",
+        "airportName": "Olbia / Costa Smeralda Airport",
+        "city": "Olbia",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FNU",
+        "airportName": "Oristano / Fenosu Airport",
+        "city": "Oristano",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TTB",
+        "airportName": "Tortoli' / Arbatax Airport",
+        "city": "Arbatax",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MXP",
+        "airportName": "Malpensa International Airport",
+        "city": "Milan",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BGY",
+        "airportName": "Bergamo / Orio Al Serio Airport",
+        "city": "Bergamo",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TRN",
+        "airportName": "Torino / Caselle International Airport",
+        "city": "Torino",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ALL",
+        "airportName": "Villanova D'Albenga International Airport",
+        "city": "Albenga",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GOA",
+        "airportName": "Genova / Sestri Cristoforo Colombo Airport",
+        "city": "Genova",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LIN",
+        "airportName": "Linate Airport",
+        "city": "Milan",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PMF",
+        "airportName": "Parma Airport",
+        "city": "Parma",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AOT",
+        "airportName": "Aosta Airport",
+        "city": "Aosta",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CUF",
+        "airportName": "Cuneo / Levaldigi Airport",
+        "city": "Cuneo",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AVB",
+        "airportName": "Aviano Air Base",
+        "city": "Aviano",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BZO",
+        "airportName": "Bolzano Airport",
+        "city": "Bolzano",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "UDN",
+        "airportName": "Udine / Campoformido Air Base",
+        "city": "Udine",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BLQ",
+        "airportName": "Bologna / Borgo Panigale Airport",
+        "city": "Bologna",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TSF",
+        "airportName": "Treviso / Sant'Angelo Airport",
+        "city": "Treviso",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FRL",
+        "airportName": "Forli Airport",
+        "city": "Forli",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VBS",
+        "airportName": "Brescia / Montichiari Airport",
+        "city": "Brescia",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TRS",
+        "airportName": "Trieste / Ronchi Dei Legionari",
+        "city": "Trieste",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RMI",
+        "airportName": "Rimini / Miramare - Federico Fellini International Airport",
+        "city": "Rimini",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VIC",
+        "airportName": "Vicenza Airport",
+        "city": "Vicenza",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VRN",
+        "airportName": "Verona / Villafranca Airport",
+        "city": "Verona",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AOI",
+        "airportName": "Ancona / Falconara Airport",
+        "city": "Ancona",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VCE",
+        "airportName": "Venezia / Tessera -  Marco Polo Airport",
+        "city": "Venezia",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LCV",
+        "airportName": "Lucca / Tassignano Airport",
+        "city": "Lucca",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SAY",
+        "airportName": "Siena / Ampugnano Airport",
+        "city": "Siena",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CIA",
+        "airportName": "Ciampino Airport",
+        "city": "Roma",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FCO",
+        "airportName": "Leonardo Da Vinci (Fiumicino) International Airport",
+        "city": "Rome",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QSR",
+        "airportName": "Salerno / Pontecagnano Airport",
+        "city": "Salerno",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EBA",
+        "airportName": "Marina Di Campo Airport",
+        "city": "Marina  Di Campo",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NAP",
+        "airportName": "Napoli / Capodichino International Airport",
+        "city": "Napoli",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PSA",
+        "airportName": "Pisa / San Giusto - Galileo Galilei International Airport",
+        "city": "Pisa",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FLR",
+        "airportName": "Firenze / Peretola Airport",
+        "city": "Firenze",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GRS",
+        "airportName": "Grosseto Airport",
+        "city": "Grosetto",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PEG",
+        "airportName": "Perugia / San Egidio Airport",
+        "city": "Perugia",
+        "country": "IT",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AMS",
+        "airportName": "Amsterdam Airport Schiphol",
+        "city": "Amsterdam",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MST",
+        "airportName": "Maastricht Aachen Airport",
+        "city": "Maastricht",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QAR",
+        "airportName": "Deelen Air Base",
+        "city": "Arnhem",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EIN",
+        "airportName": "Eindhoven Airport",
+        "city": "Eindhoven",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GRQ",
+        "airportName": "Eelde Airport",
+        "city": "Groningen",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GLZ",
+        "airportName": "Gilze Rijen Air Base",
+        "city": "Breda",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DHR",
+        "airportName": "De Kooy Airport",
+        "city": "Den Helder",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LEY",
+        "airportName": "Lelystad Airport",
+        "city": "Lelystad",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LWR",
+        "airportName": "Leeuwarden Air Base",
+        "city": "Leeuwarden",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RTM",
+        "airportName": "Rotterdam Airport",
+        "city": "Rotterdam",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ENS",
+        "airportName": "Twenthe Airport",
+        "city": "Enschede",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "UDE",
+        "airportName": "Volkel Air Base",
+        "city": "Uden",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "WOE",
+        "airportName": "Woensdrecht Air Base",
+        "city": "Bergen Op Zoom",
+        "country": "NL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AES",
+        "airportName": "Alesund Airport",
+        "city": "Alesund",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ANX",
+        "airportName": "Andoya Airport",
+        "city": "Andenes",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ALF",
+        "airportName": "Alta Airport",
+        "city": "Alta",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FDE",
+        "airportName": "Bringeland Airport",
+        "city": "Forde",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BNN",
+        "airportName": "Bronnoysund Airport",
+        "city": "Bronnoy",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BOO",
+        "airportName": "Bodo Airport",
+        "city": "Bodo",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BGO",
+        "airportName": "Bergen Airport Flesland",
+        "city": "Bergen",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BJF",
+        "airportName": "Batsfjord Airport",
+        "city": "Batsfjord",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BVG",
+        "airportName": "Berlevag Airport",
+        "city": "Berlevag",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KRS",
+        "airportName": "Kristiansand Airport",
+        "city": "Kjevik",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "DLD",
+        "airportName": "Geilo Airport Dagali",
+        "city": "Dagali",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BDU",
+        "airportName": "Bardufoss Airport",
+        "city": "Malselv",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EVE",
+        "airportName": "Harstad/Narvik Airport Evenes",
+        "city": "Evenes",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VDB",
+        "airportName": "Leirin Airport",
+        "city": "",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FRO",
+        "airportName": "Floro Airport",
+        "city": "Floro",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OSL",
+        "airportName": "Oslo Gardermoen Airport",
+        "city": "Oslo",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HMR",
+        "airportName": "Stafsberg Airport",
+        "city": "Hamar",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HAU",
+        "airportName": "Haugesund Airport",
+        "city": "Karmoy",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HFT",
+        "airportName": "Hammerfest Airport",
+        "city": "Hammerfest",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HAA",
+        "airportName": "Hasvik Airport",
+        "city": "Hasvik",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HVG",
+        "airportName": "Valan Airport",
+        "city": "Honningsvag",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QKX",
+        "airportName": "Kautokeino Air Base",
+        "city": "",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KSU",
+        "airportName": "Kristiansund Airport Kvernberget",
+        "city": "Kvernberget",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GLL",
+        "airportName": "Gol Airport",
+        "city": "Klanten",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KKN",
+        "airportName": "Kirkenes Airport Hoybuktmoen",
+        "city": "Kirkenes",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "FAN",
+        "airportName": "Lista Airport",
+        "city": "Farsund",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LKN",
+        "airportName": "Leknes Airport",
+        "city": "Leknes",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MEH",
+        "airportName": "Mehamn Airport",
+        "city": "Mehamn",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MOL",
+        "airportName": "Molde Airport",
+        "city": "Aro",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MJF",
+        "airportName": "Mosjoen Airport Kjaerstad",
+        "city": "",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LKL",
+        "airportName": "Banak Airport",
+        "city": "Lakselv",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NVK",
+        "airportName": "Narvik Framnes Airport",
+        "city": "Narvik",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OSY",
+        "airportName": "Namsos Hoknesora Airport",
+        "city": "Namsos",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NTB",
+        "airportName": "Notodden Airport",
+        "city": "",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OLA",
+        "airportName": "Orland Airport",
+        "city": "Orland",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HOV",
+        "airportName": "Orsta-Volda Airport Hovden",
+        "city": "Orsta",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MQN",
+        "airportName": "Mo i Rana Airport Rossvoll",
+        "city": "Mo i Rana",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RVK",
+        "airportName": "Rorvik Airport Ryum",
+        "city": "Rorvik",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RRS",
+        "airportName": "Roros Airport",
+        "city": "Roros",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RET",
+        "airportName": "Rost Airport",
+        "city": "",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RYG",
+        "airportName": "Moss Airport Rygge",
+        "city": "Rygge",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LYR",
+        "airportName": "Svalbard Airport Longyear",
+        "city": "Longyearbyen",
+        "country": "NO",
+        "zoneOffset": "Arctic/Longyearbyen"
+    },
+    {
+        "airportCode": "SDN",
+        "airportName": "Sandane Airport Anda",
+        "city": "Sandane",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SOG",
+        "airportName": "Sogndal Airport",
+        "city": "Sogndal",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SVJ",
+        "airportName": "Svolvaer Helle Airport",
+        "city": "Svolvaer",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SKN",
+        "airportName": "Stokmarknes Skagen Airport",
+        "city": "Hadsel",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SKE",
+        "airportName": "Skien Airport",
+        "city": "Geiteryggen",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SRP",
+        "airportName": "Stord Airport",
+        "city": "Leirvik",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SOJ",
+        "airportName": "Sorkjosen Airport",
+        "city": "Sorkjosen",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VAW",
+        "airportName": "Vardo Airport Svartnes",
+        "city": "Vardo",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SSJ",
+        "airportName": "Sandnessjoen Airport Stokka",
+        "city": "Alstahaug",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TOS",
+        "airportName": "Tromso Airport",
+        "city": "Tromso",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TRF",
+        "airportName": "Sandefjord Airport Torp",
+        "city": "Torp",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TRD",
+        "airportName": "Trondheim Airport Vaernes",
+        "city": "Trondheim",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VDS",
+        "airportName": "Vadso Airport",
+        "city": "Vadso",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SVG",
+        "airportName": "Stavanger Airport Sola",
+        "city": "Stavanger",
+        "country": "NO",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QYY",
+        "airportName": "Białystok-Krywlany Airport",
+        "city": "Białystok",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BXP",
+        "airportName": "Biala Podlaska Airport",
+        "city": "Biala Podlaska",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BZG",
+        "airportName": "Bydgoszcz Ignacy Jan Paderewski Airport",
+        "city": "Bydgoszcz",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GDN",
+        "airportName": "Gdańsk Lech Wałęsa Airport",
+        "city": "Gdańsk",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QLC",
+        "airportName": "Gliwice Glider Airport",
+        "city": "",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KRK",
+        "airportName": "John Paul II International Airport Kraków-Balice Airport",
+        "city": "Kraków",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OSZ",
+        "airportName": "Koszalin Zegrze Airport",
+        "city": "",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KTW",
+        "airportName": "Katowice International Airport",
+        "city": "Katowice",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QEO",
+        "airportName": "Bielsko-Bialo Kaniow Airfield",
+        "city": "Czechowice-Dziedzice",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LUZ",
+        "airportName": "Lublin Airport",
+        "city": "Lublin",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LCJ",
+        "airportName": "Łódź Władysław Reymont Airport",
+        "city": "Łódź",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QLU",
+        "airportName": "Lublin Radwiec Airport",
+        "city": "",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "WMI",
+        "airportName": "Warsaw Modlin Airport",
+        "city": "Warsaw",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QWS",
+        "airportName": "Nowy Targ Airport",
+        "city": "Nowy Targ",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QYD",
+        "airportName": "Oksywie Military Air Base",
+        "city": "Gdynia",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "QPM",
+        "airportName": "Opole-Polska Nowa Wies Airport",
+        "city": "Opole",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "POZ",
+        "airportName": "Poznań-Ławica Airport",
+        "city": "Poznań",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "CZW",
+        "airportName": "Częstochowa-Rudniki Airport",
+        "city": "Częstochowa",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "RZE",
+        "airportName": "Rzeszow-Jasionka Airport",
+        "city": "Rzeszow",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SZZ",
+        "airportName": "Szczecin-Goleniow Solidarność Airport",
+        "city": "Goleniow",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ZWK",
+        "airportName": "Suwałki Airport",
+        "city": "Suwałki",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "WAW",
+        "airportName": "Warsaw Chopin Airport",
+        "city": "Warsaw",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "WRO",
+        "airportName": "Copernicus Wrocław Airport",
+        "city": "Wrocław",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "IEG",
+        "airportName": "Zielona Góra-Babimost Airport",
+        "city": "Babimost",
+        "country": "PL",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SMA",
+        "airportName": "Santa Maria Airport",
+        "city": "Vila do Porto",
+        "country": "PT",
+        "zoneOffset": "Atlantic/Azores"
+    },
+    {
+        "airportCode": "BGC",
+        "airportName": "Braganca Airport",
+        "city": "",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BYJ",
+        "airportName": "Beja International Airport",
+        "city": "Beja",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "BGZ",
+        "airportName": "Braga Municipal Aerodrome",
+        "city": "Braga",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CHV",
+        "airportName": "Chaves Airport",
+        "city": "Chaves",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CBP",
+        "airportName": "Coimbra Airport",
+        "city": "",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "CVU",
+        "airportName": "Corvo Airport",
+        "city": "Corvo",
+        "country": "PT",
+        "zoneOffset": "Atlantic/Azores"
+    },
+    {
+        "airportCode": "COV",
+        "airportName": "Covilha Airport",
+        "city": "",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "FLW",
+        "airportName": "Flores Airport",
+        "city": "Santa Cruz das Flores",
+        "country": "PT",
+        "zoneOffset": "Atlantic/Azores"
+    },
+    {
+        "airportCode": "FAO",
+        "airportName": "Faro Airport",
+        "city": "Faro",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "GRW",
+        "airportName": "Graciosa Airport",
+        "city": "Santa Cruz da Graciosa",
+        "country": "PT",
+        "zoneOffset": "Atlantic/Azores"
+    },
+    {
+        "airportCode": "HOR",
+        "airportName": "Horta Airport",
+        "city": "Horta",
+        "country": "PT",
+        "zoneOffset": "Atlantic/Azores"
+    },
+    {
+        "airportCode": "TER",
+        "airportName": "Lajes Field",
+        "city": "Lajes",
+        "country": "PT",
+        "zoneOffset": "Atlantic/Azores"
+    },
+    {
+        "airportCode": "FNC",
+        "airportName": "Madeira Airport",
+        "city": "Funchal",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "PDL",
+        "airportName": "Joao Paulo II Airport",
+        "city": "Ponta Delgada",
+        "country": "PT",
+        "zoneOffset": "Atlantic/Azores"
+    },
+    {
+        "airportCode": "PIX",
+        "airportName": "Pico Airport",
+        "city": "Pico Island",
+        "country": "PT",
+        "zoneOffset": "Atlantic/Azores"
+    },
+    {
+        "airportCode": "PRM",
+        "airportName": "Portimao Airport",
+        "city": "",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "OPO",
+        "airportName": "Francisco de Sa Carneiro Airport",
+        "city": "Porto",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "PXO",
+        "airportName": "Porto Santo Airport",
+        "city": "Vila Baleira",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "LIS",
+        "airportName": "Lisbon Portela Airport",
+        "city": "Lisbon",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SIE",
+        "airportName": "Sines Airport",
+        "city": "",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "SJZ",
+        "airportName": "Sao Jorge Airport",
+        "city": "Velas",
+        "country": "PT",
+        "zoneOffset": "Atlantic/Azores"
+    },
+    {
+        "airportCode": "VRL",
+        "airportName": "Vila Real Airport",
+        "city": "",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "VSE",
+        "airportName": "Viseu Airport",
+        "city": "",
+        "country": "PT",
+        "zoneOffset": "+00"
+    },
+    {
+        "airportCode": "ARW",
+        "airportName": "Arad International Airport",
+        "city": "Arad",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "BCM",
+        "airportName": "Bacau Airport",
+        "city": "Bacau",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "BAY",
+        "airportName": "Tautii Magheraus Airport",
+        "city": "Baia Mare",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "BBU",
+        "airportName": "Baneasa International Airport",
+        "city": "Bucharest",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "CND",
+        "airportName": "Mihail Kogalniceanu International Airport",
+        "city": "Constanta",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "CLJ",
+        "airportName": "Cluj-Napoca International Airport",
+        "city": "Cluj-Napoca",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "CSB",
+        "airportName": "Caransebes Airport",
+        "city": "Caransebes",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "CRA",
+        "airportName": "Craiova Airport",
+        "city": "Craiova",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "IAS",
+        "airportName": "Iasi Airport",
+        "city": "Iasi",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "OMR",
+        "airportName": "Oradea International Airport",
+        "city": "Oradea",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "OTP",
+        "airportName": "Henri Coanda International Airport",
+        "city": "Bucharest",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SBZ",
+        "airportName": "Sibiu International Airport",
+        "city": "Sibiu",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SUJ",
+        "airportName": "Satu Mare Airport",
+        "city": "Satu Mare",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SCV",
+        "airportName": "Suceava Stefan cel Mare Airport",
+        "city": "Suceava",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "TCE",
+        "airportName": "Tulcea Airport",
+        "city": "Tulcea",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "TGM",
+        "airportName": "Transilvania Targu Mures International Airport",
+        "city": "Targu Mures",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "TSR",
+        "airportName": "Timisoara Traian Vuia Airport",
+        "city": "Timisoara",
+        "country": "RO",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "RNB",
+        "airportName": "Ronneby Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "XWP",
+        "airportName": "Hassleholm Bokeberg Airport",
+        "city": "Hassleholm",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GOT",
+        "airportName": "Gothenburg-Landvetter Airport",
+        "city": "Gothenburg",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "JKG",
+        "airportName": "Jonkoping Airport",
+        "city": "Jonkoping",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LDK",
+        "airportName": "Lidkoping-Hovby Airport",
+        "city": "Lidkoping",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GSE",
+        "airportName": "Gothenburg City Airport",
+        "city": "Gothenburg",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KVB",
+        "airportName": "Skovde Airport",
+        "city": "Skovde",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "THN",
+        "airportName": "Trollhattan-Vanersborg Airport",
+        "city": "Trollhattan",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KSK",
+        "airportName": "Karlskoga Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MXX",
+        "airportName": "Mora Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NYO",
+        "airportName": "Stockholm Skavsta Airport",
+        "city": "Stockholm / Nykoping",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KID",
+        "airportName": "Kristianstad Airport",
+        "city": "Kristianstad",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OSK",
+        "airportName": "Oskarshamn Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KLR",
+        "airportName": "Kalmar Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "MMX",
+        "airportName": "Malmo Sturup Airport",
+        "city": "Malmo",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HAD",
+        "airportName": "Halmstad Airport",
+        "city": "Halmstad",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VXO",
+        "airportName": "Vaxjo Kronoberg Airport",
+        "city": "Vaxjo",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EVG",
+        "airportName": "Sveg Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GEV",
+        "airportName": "Gallivare Airport",
+        "city": "Gallivare",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KRF",
+        "airportName": "Kramfors Solleftea Airport",
+        "city": "Kramfors / Solleftea",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LYC",
+        "airportName": "Lycksele Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SDL",
+        "airportName": "Sundsvall-Harnosand Airport",
+        "city": "Sundsvall/ Harnosand",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OER",
+        "airportName": "Ornskoldsvik Airport",
+        "city": "Ornskoldsvik",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KRN",
+        "airportName": "Kiruna Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SFT",
+        "airportName": "Skelleftea Airport",
+        "city": "Skelleftea",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "UME",
+        "airportName": "Umea Airport",
+        "city": "Umea",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VHM",
+        "airportName": "Vilhelmina Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AJR",
+        "airportName": "Arvidsjaur Airport",
+        "city": "Arvidsjaur",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SOO",
+        "airportName": "Soderhamn Airport",
+        "city": "Soderhamn",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "OSD",
+        "airportName": "Ostersund Airport",
+        "city": "Ostersund",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ORB",
+        "airportName": "Orebro Airport",
+        "city": "Orebro",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HFS",
+        "airportName": "Hagfors Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "KSD",
+        "airportName": "Karlstad Airport",
+        "city": "Karlstad",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VST",
+        "airportName": "Stockholm Vasteras Airport",
+        "city": "Stockholm / Vasteras",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LLA",
+        "airportName": "Lulea Airport",
+        "city": "Lulea",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ARN",
+        "airportName": "Stockholm-Arlanda Airport",
+        "city": "Stockholm",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BMA",
+        "airportName": "Stockholm-Bromma Airport",
+        "city": "Stockholm",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "BLE",
+        "airportName": "Borlange Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HLF",
+        "airportName": "Hultsfred Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "GVX",
+        "airportName": "Gavle Sandviken Airport",
+        "city": "Gavle / Sandviken",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "LPI",
+        "airportName": "Linkoping SAAB Airport",
+        "city": "Linkoping",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "NRK",
+        "airportName": "Norrkoping Airport",
+        "city": "Norrkoping",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "TYF",
+        "airportName": "Torsby Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "EKT",
+        "airportName": "Eskilstuna Airport",
+        "city": "Eskilstuna",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VBY",
+        "airportName": "Visby Airport",
+        "city": "Visby",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "VVK",
+        "airportName": "Vastervik Airport",
+        "city": "Vastervik",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "AGH",
+        "airportName": "Angelholm-Helsingborg Airport",
+        "city": "Angelholm",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "SQO",
+        "airportName": "Storuman Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "IDB",
+        "airportName": "Idre Airport",
+        "city": "Idre",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "PJA",
+        "airportName": "Pajala Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "HMV",
+        "airportName": "Hemavan Airport",
+        "city": "",
+        "country": "SE",
+        "zoneOffset": "+01"
+    },
+    {
+        "airportCode": "ESB",
+        "airportName": "Esenboga International Airport",
+        "city": "Ankara",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ANK",
+        "airportName": "Etimesgut Air Base",
+        "city": "Ankara",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ADA",
+        "airportName": "Adana Airport",
+        "city": "Adana",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "UAB",
+        "airportName": "Incirlik Air Base",
+        "city": "Adana",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "AFY",
+        "airportName": "Afyon Airport",
+        "city": "Afyonkarahisar",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "AYT",
+        "airportName": "Antalya International Airport",
+        "city": "Antalya",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "GZT",
+        "airportName": "Gaziantep International Airport",
+        "city": "Gaziantep",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KFS",
+        "airportName": "Kastamonu Airport",
+        "city": "Kastamonu",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KYA",
+        "airportName": "Konya Airport",
+        "city": "Konya",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "MZH",
+        "airportName": "Amasya Merzifon Airport",
+        "city": "Amasya",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SSX",
+        "airportName": "Samsun Samair Airport",
+        "city": "Samsun",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "VAS",
+        "airportName": "Sivas Airport",
+        "city": "Sivas",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ONQ",
+        "airportName": "Zonguldak Airport",
+        "city": "Zonguldak",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "MLX",
+        "airportName": "Malatya Erhac Airport",
+        "city": "Malatya",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ASR",
+        "airportName": "Kayseri Erkilet Airport",
+        "city": "Kayseri",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "TJK",
+        "airportName": "Tokat Airport",
+        "city": "Tokat",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "DNZ",
+        "airportName": "Cardak Airport",
+        "city": "Denizli",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "NAV",
+        "airportName": "Nevsehir Kapadokya International Airport",
+        "city": "Nevsehir",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ISL",
+        "airportName": "Ataturk International Airport",
+        "city": "Istanbul",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "CII",
+        "airportName": "Cildir Airport",
+        "city": "Aydin",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "BTZ",
+        "airportName": "Bursa Airport",
+        "city": "Bursa",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "BZI",
+        "airportName": "Balikesir Merkez Airport",
+        "city": "Balikesir",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "BDM",
+        "airportName": "Bandirma Airport",
+        "city": "Bandirma",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "CKZ",
+        "airportName": "Canakkale Airport",
+        "city": "Canakkale",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ESK",
+        "airportName": "Eskisehir Air Base",
+        "city": "Eskisehir",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ADB",
+        "airportName": "Adnan Menderes International Airport",
+        "city": "Izmir",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "IGL",
+        "airportName": "Cigli Airport",
+        "city": "Izmir",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "USQ",
+        "airportName": "Usak Airport",
+        "city": "Usak",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KCO",
+        "airportName": "Cengiz Topel Airport",
+        "city": "",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "YEI",
+        "airportName": "Bursa Yenisehir Airport",
+        "city": "Bursa",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "DLM",
+        "airportName": "Dalaman International Airport",
+        "city": "Dalaman",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "TEQ",
+        "airportName": "Tekirdag Corlu Airport",
+        "city": "Corlu",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "BXN",
+        "airportName": "Imsik Airport",
+        "city": "Bodrum",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "AOE",
+        "airportName": "Anadolu University Airport",
+        "city": "Eskisehir",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KZR",
+        "airportName": "Zafer Airport",
+        "city": "Altintas",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "EZS",
+        "airportName": "Elazig Airport",
+        "city": "Elazig",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "OGU",
+        "airportName": "Ordu–Giresun Airport",
+        "city": "Ordu",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "DIY",
+        "airportName": "Diyarbakir Airport",
+        "city": "Diyarbakir",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ERC",
+        "airportName": "Erzincan Airport",
+        "city": "Erzincan",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ERZ",
+        "airportName": "Erzurum International Airport",
+        "city": "Erzurum",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KSY",
+        "airportName": "Kars Airport",
+        "city": "Kars",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "TZX",
+        "airportName": "Trabzon International Airport",
+        "city": "Trabzon",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SFQ",
+        "airportName": "Sanliurfa Airport",
+        "city": "Sanliurfa",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "VAN",
+        "airportName": "Van Ferit Melen Airport",
+        "city": "Van",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "BAL",
+        "airportName": "Batman Airport",
+        "city": "Batman",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "MSR",
+        "airportName": "Mus Airport",
+        "city": "Mus",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SXZ",
+        "airportName": "Siirt Airport",
+        "city": "Siirt",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "NOP",
+        "airportName": "Sinop Airport",
+        "city": "Sinop",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "KCM",
+        "airportName": "Kahramanmaras Airport",
+        "city": "Kahramanmaras",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "AJI",
+        "airportName": "Agri Airport",
+        "city": "Agri",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ADF",
+        "airportName": "Adiyaman Airport",
+        "city": "Adiyaman",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "MQM",
+        "airportName": "Mardin Airport",
+        "city": "Mardin",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "GNY",
+        "airportName": "Sanliurfa GAP Airport",
+        "city": "Sanliurfa",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "IGD",
+        "airportName": "Igdir Airport",
+        "city": "Igdir",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "HTY",
+        "airportName": "Hatay Airport",
+        "city": "Hatay",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "ISE",
+        "airportName": "Suleyman Demirel International Airport",
+        "city": "Isparta",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "EDO",
+        "airportName": "Balikesir Korfez Airport",
+        "city": "Edremit",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "BJV",
+        "airportName": "Milas Bodrum International Airport",
+        "city": "Bodrum",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "GZP",
+        "airportName": "Gazipasa Airport",
+        "city": "Gazipasa",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SZF",
+        "airportName": "Samsun Carsamba Airport",
+        "city": "Samsun",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "SAW",
+        "airportName": "Sabiha Gokcen International Airport",
+        "city": "Istanbul",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "GKD",
+        "airportName": "Imroz Airport",
+        "city": "Gokceada",
+        "country": "TR",
+        "zoneOffset": "+02"
+    },
+    {
+        "airportCode": "IST",
+        "airportName": "Istanbul Airport",
+        "city": "Istanbul",
+        "country": "TR",
+        "zoneOffset": "+02"
+    }
+]
