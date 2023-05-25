@@ -11,14 +11,16 @@ public class Airport implements Serializable {
     private String airportCode;
     private String airportName;
     private String city;
+    private String country;
     private String zoneOffset;
 
 
     public Airport() {}
-    public Airport(String airportCode, String airportName, String city, ZoneOffset zoneOffset) {
+    public Airport(String airportCode, String airportName, String city, String country, ZoneOffset zoneOffset) {
         this.airportCode = airportCode;
         this.airportName = airportName;
         this.city = city;
+        this.country = country;
         this.zoneOffset = zoneOffset.toString();
     }
 
@@ -52,6 +54,14 @@ public class Airport implements Serializable {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     @Override

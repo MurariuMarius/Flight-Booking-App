@@ -7,6 +7,7 @@ module com.fis.project.flightbookingapp {
     requires org.kordamp.bootstrapfx.core;
     requires nitrite;
     requires annotations;
+    requires com.google.gson;
 
     exports com.fis.project.flightbookingapp;
     opens com.fis.project.flightbookingapp.services;
