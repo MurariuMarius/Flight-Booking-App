@@ -22,6 +22,7 @@ public class Booking implements Serializable {
     private Flight flight;
     private String date;
     private Set<String> travellers;
+    private BookingStatus bookingStatus;
 
     public Booking() {}
 
@@ -30,6 +31,7 @@ public class Booking implements Serializable {
         this.flight = flight;
         this.date = date;
         this.travellers = travellers;
+        this.bookingStatus = BookingStatus.UNDER_REVIEW;
     }
 
     public NitriteId getBookingId() {
@@ -72,6 +74,14 @@ public class Booking implements Serializable {
         this.travellers = travellers;
     }
 
+    public BookingStatus getBookingStatus() {
+        return bookingStatus;
+    }
+
+    public void setBookingStatus(BookingStatus bookingStatus) {
+        this.bookingStatus = bookingStatus;
+    }
+
     public void addTraveller(String name) throws TravellerAlreadyExistsException {
         if (!travellers.add(name)) {
             throw new TravellerAlreadyExistsException(name);
@@ -96,9 +106,10 @@ public class Booking implements Serializable {
         return "Booking{" +
                 "bookingId=" + bookingId +
                 ", username='" + username + '\'' +
-                ", flight='" + flight + '\'' +
+                ", flight=" + flight +
                 ", date='" + date + '\'' +
                 ", travellers=" + travellers +
+                ", bookingStatus=" + bookingStatus +
                 '}';
     }
 }
