@@ -6,6 +6,7 @@ import com.fis.project.flightbookingapp.services.AirportService;
 import com.fis.project.flightbookingapp.services.FlightService;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DateCell;
 import javafx.scene.control.DatePicker;
@@ -23,18 +24,25 @@ public class SearchFlightsController implements Initializable {
     private ComboBox<String> arrivalAirportComboBox;
 
     @FXML
-    private DatePicker datePicker;
+    private DatePicker departureDatePicker;
+
+    @FXML
+    private DatePicker arrivalDatePicker;
+
+    @FXML
+    private CheckBox oneWayCheckBox;
 
     private static final int searchResultLimit = 5;
     private Airport departureAirport = null;
     private Airport arrivalAirport = null;
 
-    private LocalDate date = null;
+    private LocalDate departureDate = null;
+    private LocalDate arrivalDate = null;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        datePicker.setShowWeekNumbers(false);
-        datePicker.setDayCellFactory(picker -> new DateCell() {
+        departureDatePicker.setShowWeekNumbers(false);
+        departureDatePicker.setDayCellFactory(picker -> new DateCell() {
             public void updateItem(LocalDate date, boolean empty) {
                 super.updateItem(date, empty);
                 LocalDate today = LocalDate.now();
@@ -96,8 +104,17 @@ public class SearchFlightsController implements Initializable {
         }
     }
 
-    public void selectedDate() {
-        date = datePicker.getValue();
-        System.out.println(date);
+    public void selectedDepartureDate() {
+        departureDate = departureDatePicker.getValue();
+        System.out.println(departureDate);
+    }
+
+    public void selectedArrivalDate() {
+        arrivalDate = arrivalDatePicker.getValue();
+        System.out.println(arrivalDate);
+    }
+
+    public void oneWayFlightSelected() {
+        arrivalDatePicker.setVisible(!oneWayCheckBox.isSelected());
     }
 }
