@@ -1,5 +1,6 @@
 package com.fis.project.flightbookingapp.controllers;
 
+import com.fis.project.flightbookingapp.model.Airline;
 import com.fis.project.flightbookingapp.model.Booking;
 import com.fis.project.flightbookingapp.model.BookingStatus;
 import com.fis.project.flightbookingapp.services.BookingService;
@@ -38,8 +39,10 @@ public class BookingRequestsManagementController {
     @FXML
     private TableColumn<Booking, Set<String>> travellers;
 
-    public void initialize() {
-        List<Booking> bookings = BookingService.getBookingsByStatus(BookingStatus.UNDER_REVIEW);
+
+    public void initData(Airline airline) {
+
+        List<Booking> bookings = BookingService.getBookingsByStatus(BookingStatus.UNDER_REVIEW, airline);
 
         bookingId.setCellValueFactory(new PropertyValueFactory<Booking, String>("bookingId"));
         clientUsername.setCellValueFactory(new PropertyValueFactory<Booking, String >("username"));
@@ -61,7 +64,7 @@ public class BookingRequestsManagementController {
                     booking.setBookingStatus(BookingStatus.REJECTED);
                 }
                 System.out.println(booking);
-                // TODO Update database
+                BookingService.updateBooking(booking);
             });
             tableCell.graphicProperty().bind(Bindings.when(tableCell.emptyProperty()).then((Node)null).otherwise(c));
             return tableCell;

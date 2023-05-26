@@ -42,6 +42,19 @@ public class BookingService {
         return cursor.toList();
     }
 
+    public static List<Booking> getBookingsByStatus(BookingStatus bookingStatus, Airline airline) {
+        return getBookingsByStatus(bookingStatus).stream().filter(
+                b -> {
+                    try {
+                        return FlightService.getFlightByNumber(b.getFlight()).getAirlineCode().equals(airline.getIcaoCode());
+                    } catch (NotInDatabaseException e) {
+                        System.out.println(e);
+                    }
+                    return false;
+                }
+        ).toList();
+    }
+
     public static List<Booking> getBookingsForFlight(String flightNumber) {
         Cursor<Booking> cursor = bookingRepository.find(
                 ObjectFilters.eq("flightNumber", flightNumber)
