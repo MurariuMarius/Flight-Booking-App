@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.SeeBookingsController">
+   <children>
+      <TableView layoutX="10.0" layoutY="28.0" prefHeight="344.0" prefWidth="580.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="70.0" text="bookingID" />
+          <TableColumn fx:id="c2" prefWidth="140.0" text="username" />
+            <TableColumn fx:id="c3" prefWidth="131.0" text="flightNumber" />
+            <TableColumn fx:id="c4" prefWidth="105.0" text="date" />
+            <TableColumn fx:id="c5" prefWidth="148.0" text="bookingStatus" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

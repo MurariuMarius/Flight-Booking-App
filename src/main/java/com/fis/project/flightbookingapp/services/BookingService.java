@@ -62,6 +62,7 @@ public class BookingService {
         return cursor.toList();
     }
 
+
     public static List<Booking> getBookingsForFlight(Flight flight) {
         return getBookingsForFlight(flight.getFlightNumber());
     }
