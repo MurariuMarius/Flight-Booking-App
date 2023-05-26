@@ -24,7 +24,9 @@ public class DeleteFlightController implements Initializable {
     void removeFlight(MouseEvent event) {
 
         String selectedFlight = listOfFlights.getSelectionModel().getSelectedItem().getFlightNumber();
+        int selectedID = listOfFlights.getSelectionModel().getSelectedIndex();
         FlightService.removeFlight(selectedFlight);
+        listOfFlights.getItems().remove(selectedID);
     }
 
 }

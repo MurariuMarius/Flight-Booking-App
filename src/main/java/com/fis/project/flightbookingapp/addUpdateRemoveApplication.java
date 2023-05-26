@@ -1,11 +1,15 @@
 package com.fis.project.flightbookingapp;
 
+import com.fis.project.flightbookingapp.exceptions.AirportAlreadyExistsException;
+import com.fis.project.flightbookingapp.services.AirportGetterService;
+import com.fis.project.flightbookingapp.services.AirportService;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class addUpdateRemoveApplication extends Application {
@@ -28,7 +32,9 @@ public class addUpdateRemoveApplication extends Application {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, AirportAlreadyExistsException {
+
+        //AirportService.addAirports(AirportGetterService.getAirportsFromJSON());launch();
         launch(args);
     }
 }
