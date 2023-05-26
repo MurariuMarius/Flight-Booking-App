@@ -36,8 +36,12 @@ public class Flight implements Serializable {
         this.price = price;
     }
 
-    public Duration getFlightDuration() {
-        return Duration.between(OffsetTime.parse(departureTime), OffsetTime.parse(arrivalTime));
+    public String getFlightDuration() {
+        Duration duration = Duration.between(OffsetTime.parse(departureTime), OffsetTime.parse(arrivalTime));
+        return String.format("%02d:%02d",
+                duration.toHours(),
+                duration.toMinutesPart()
+        );
     }
 
     public LocalTime getLocalDepartureHour() {

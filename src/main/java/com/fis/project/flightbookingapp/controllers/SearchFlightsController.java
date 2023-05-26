@@ -5,6 +5,7 @@ import com.fis.project.flightbookingapp.model.Airport;
 import com.fis.project.flightbookingapp.model.Flight;
 import com.fis.project.flightbookingapp.services.AirportService;
 import com.fis.project.flightbookingapp.services.FlightService;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -12,12 +13,14 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
 import java.net.URL;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.*;
 
 public class SearchFlightsController implements Initializable {
@@ -53,7 +56,7 @@ public class SearchFlightsController implements Initializable {
     private TableView<Flight> inboundFlightTableView;
 
     @FXML
-    private Button outboudFlightSearchPreviousDayButton;
+    private Button outboundFlightSearchPreviousDayButton;
 
     @FXML
     private Text outboundFlightSearchDate;
@@ -65,34 +68,40 @@ public class SearchFlightsController implements Initializable {
     private TableView<Flight> outboundFlightTableView;
 
     @FXML
-    private TableColumn<Flight, String> outboundFlightNumber;
+    private TableColumn<Flight, String> outboundFlightNumberColumn;
 
     @FXML
-    private TableColumn<Flight, String> outboundAirlineCode;
+    private TableColumn<Flight, String> outboundAirlineCodeColumn;
 
     @FXML
-    private TableColumn<Flight, String> outboundDepartureTime; // TODO Translate to local airport time
+    private TableColumn<Flight, String> outboundDepartureTimeColumn;
 
     @FXML
-    private TableColumn<Flight, String> outboundArrivalTime; // TODO Translate to local airport time
+    private TableColumn<Flight, String> outboundArrivalTimeColumn;
 
     @FXML
-    private TableColumn<Flight, Double> outboundFlightPrice; // TODO Create field in model
+    private TableColumn<String, String> outboundFlightDurationColumn;
 
     @FXML
-    private TableColumn<Flight, String> inBoundFlightNumber;
+    private TableColumn<Flight, Double> outboundFlightPriceColumn;
 
     @FXML
-    private TableColumn<Flight, String> inBoundAirlineCode;
+    private TableColumn<Flight, String> inboundFlightNumberColumn;
 
     @FXML
-    private TableColumn<Flight, String> inBoundDepartureTime; // TODO Translate to local airport time
+    private TableColumn<Flight, String> inboundAirlineCodeColumn;
 
     @FXML
-    private TableColumn<Flight, String> inBoundArrivalTime; // TODO Translate to local airport time
+    private TableColumn<Flight, String> inboundDepartureTimeColumn;
 
     @FXML
-    private TableColumn<Flight, Double> inBoundFlightPrice; // TODO Create field in model
+    private TableColumn<Flight, String> inboundArrivalTimeColumn;
+
+    @FXML
+    private TableColumn<Flight, Double> inboundFlightPriceColumn;
+
+    @FXML
+    private TableColumn<Flight, Text> inboundFlightDurationColumn;
 
     private static final int searchResultLimit = 5;
     private Airport departureAirport = null;
@@ -146,6 +155,17 @@ public class SearchFlightsController implements Initializable {
                 );
             }
         });
+
+        outboundAirlineCodeColumn.setCellValueFactory(new PropertyValueFactory<>("airlineCode"));
+        outboundFlightNumberColumn.setCellValueFactory(new PropertyValueFactory<>("flightNumber"));
+        outboundFlightPriceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
+
+        inboundAirlineCodeColumn.setCellValueFactory(new PropertyValueFactory<>("airlineCode"));
+        inboundDepartureTimeColumn.setCellValueFactory(new PropertyValueFactory<>("departureTime"));
+        inboundArrivalTimeColumn.setCellValueFactory(new PropertyValueFactory<>("arrivalTime"));
+        inboundFlightNumberColumn.setCellValueFactory(new PropertyValueFactory<>("flightNumber"));
+        inboundFlightPriceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
+
     }
 
     @FXML
@@ -194,6 +214,19 @@ public class SearchFlightsController implements Initializable {
                 departureDate.getDayOfWeek()
         );
         System.out.println(flights);
+        outboundFlightTableView.getItems().addAll(flights);
+
+        for (Flight f : outboundFlightTableView.getItems()) {
+            outboundFlightDurationColumn.setCellValueFactory(
+                    c -> new SimpleStringProperty(f.getFlightDuration())
+            );
+            outboundDepartureTimeColumn.setCellValueFactory(
+                    c -> new SimpleStringProperty(LocalTime.from(f.getDepartureTime()).toString())
+            );
+            outboundArrivalTimeColumn.setCellValueFactory(
+                    c -> new SimpleStringProperty(LocalTime.from(f.getArrivalTime()).toString())
+            );
+        }
     }
 
     @FXML

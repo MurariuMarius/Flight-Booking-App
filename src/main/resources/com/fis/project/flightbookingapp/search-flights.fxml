@@ -44,7 +44,7 @@
             </Text>
             <HBox alignment="CENTER" prefHeight="44.0" prefWidth="1050.0">
                <children>
-                  <Button fx:id="outboudFlightSearchPreviousDayButton" mnemonicParsing="false" onAction="#outboundFlightSearchPreviousDay" text="Previous day" />
+                  <Button fx:id="outboundFlightSearchPreviousDayButton" mnemonicParsing="false" onAction="#outboundFlightSearchPreviousDay" text="Previous day" />
                   <Text fx:id="outboundFlightSearchDate" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
                      <HBox.margin>
                         <Insets left="350.0" right="350.0" />
@@ -55,11 +55,12 @@
             </HBox>
             <TableView fx:id="outboundFlightTableView" prefHeight="149.0" prefWidth="950.0">
               <columns>
-                <TableColumn prefWidth="75.0" text="Select" />
-                <TableColumn prefWidth="75.0" text="DEP" />
-                  <TableColumn prefWidth="75.0" text="ARR" />
-                  <TableColumn prefWidth="75.0" text="Duration" />
-                  <TableColumn prefWidth="75.0" text="Price" />
+                 <TableColumn fx:id="outboundAirlineCodeColumn" prefWidth="75.0" text="Airline"/>
+                 <TableColumn fx:id="outboundFlightNumberColumn" prefWidth="75.0" text="Flight" />
+                <TableColumn fx:id="outboundDepartureTimeColumn" prefWidth="75.0" text="DEP" />
+                  <TableColumn fx:id="outboundArrivalTimeColumn" prefWidth="75.0" text="ARR" />
+                  <TableColumn fx:id="outboundFlightDurationColumn" prefWidth="75.0" text="Duration" />
+                  <TableColumn fx:id="outboundFlightPriceColumn" prefWidth="75.0" text="Price" />
               </columns>
                <columnResizePolicy>
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -86,11 +87,12 @@
             </HBox>
             <TableView fx:id="inboundFlightTableView" layoutX="60.0" layoutY="244.0" prefHeight="149.0" prefWidth="950.0">
                <columns>
-                  <TableColumn prefWidth="75.0" text="Select" />
-                  <TableColumn prefWidth="75.0" text="DEP" />
-                  <TableColumn prefWidth="75.0" text="ARR" />
-                  <TableColumn prefWidth="75.0" text="Duration" />
-                  <TableColumn prefWidth="75.0" text="Price" />
+                  <TableColumn fx:id="inboundAirlineCodeColumn" prefWidth="75.0" text="Airline"/>
+                  <TableColumn fx:id="inboundFlightNumberColumn" prefWidth="75.0" text="Flight" />
+                  <TableColumn fx:id="inboundDepartureTimeColumn" prefWidth="75.0" text="DEP" />
+                  <TableColumn fx:id="inboundArrivalTimeColumn" prefWidth="75.0" text="ARR" />
+                  <TableColumn fx:id="inboundFlightDurationColumn" prefWidth="75.0" text="Duration" />
+                  <TableColumn fx:id="inboundFlightPriceColumn" prefWidth="75.0" text="Price" />
                </columns>
                <columnResizePolicy>
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
