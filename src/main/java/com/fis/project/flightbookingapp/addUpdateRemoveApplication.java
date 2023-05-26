@@ -15,10 +15,10 @@ public class addUpdateRemoveApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         stg = primaryStage;
-        primaryStage.setResizable(false);
+        primaryStage.setResizable(true);
         Parent root = FXMLLoader.load(getClass().getResource("add_update_remove.fxml"));
         primaryStage.setTitle("add/update/delete");
-        primaryStage.setScene(new Scene(root, 600, 400));
+        primaryStage.setScene(new Scene(root, 650, 500));
         primaryStage.show();
     }
 

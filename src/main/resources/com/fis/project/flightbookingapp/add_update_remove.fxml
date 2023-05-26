@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.addUpdateRemoveController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.addUpdateRemoveController">
    <children>
       <Button layoutX="391.0" layoutY="169.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="78.0" text="Delete" />
       <Button layoutX="247.0" layoutY="169.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="78.0" text="Update" />
