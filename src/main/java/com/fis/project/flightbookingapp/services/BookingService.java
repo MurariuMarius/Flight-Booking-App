@@ -3,10 +3,7 @@ package com.fis.project.flightbookingapp.services;
 import com.fis.project.flightbookingapp.exceptions.BookingAlreadyExistsException;
 import com.fis.project.flightbookingapp.exceptions.FlightAlreadyExistsException;
 import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
-import com.fis.project.flightbookingapp.model.Booking;
-import com.fis.project.flightbookingapp.model.BookingStatus;
-import com.fis.project.flightbookingapp.model.Client;
-import com.fis.project.flightbookingapp.model.Flight;
+import com.fis.project.flightbookingapp.model.*;
 import org.dizitart.no2.objects.Cursor;
 import org.dizitart.no2.objects.ObjectRepository;
 import org.dizitart.no2.objects.filters.ObjectFilters;
@@ -21,9 +18,12 @@ public class BookingService {
     private static ObjectRepository<Booking> bookingRepository = DatabaseService.getDatabase().getRepository(Booking.class);
 
     public static void addBooking(Booking booking)
-            throws BookingAlreadyExistsException, FlightAlreadyExistsException, NotInDatabaseException {
+            throws BookingAlreadyExistsException, NotInDatabaseException {
         checkBookingDoesNotAlreadyExist(booking);
-        checkFlightDoesNotAlreadyExist(FlightService.getFlightByNumber(booking.getFlight()));
+        try {
+            checkFlightDoesNotAlreadyExist(FlightService.getFlightByNumber(booking.getFlight()));
+            throw new NotInDatabaseException(String.format("Flight % is not in the database"));
+        } catch (FlightAlreadyExistsException e) {}
         bookingRepository.insert(booking);
     }
 

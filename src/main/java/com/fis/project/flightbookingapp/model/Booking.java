@@ -114,7 +114,7 @@ public class Booking implements Serializable {
         return "Booking{" +
                 "bookingId=" + bookingId +
                 ", username='" + username + '\'' +
-                ", flight=" + flightNumber +
+                ", flightNumber='" + flightNumber + '\'' +
                 ", date='" + date + '\'' +
                 ", travellers=" + travellers +
                 ", bookingStatus=" + bookingStatus +
