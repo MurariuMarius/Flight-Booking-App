@@ -39,7 +39,7 @@ public class addFlightsController {
     @FXML
     public void add_f() throws IOException, NotInDatabaseException, FlightAlreadyExistsException{
     //save the flight data
-      /*Airport departureAirport, arrivalAirport;
+      Airport departureAirport, arrivalAirport;
         List<DayOfWeek> operatingWeekDays = new ArrayList<>();
         String f1 = field1.getText().toString();
         String f2 = field2.getText().toString();
@@ -60,7 +60,7 @@ public class addFlightsController {
 
         Flight flight = new Flight(f1,f2,departureAirport,arrivalAirport,operatingWeekDays, LocalTime.parse(f5),LocalTime.parse(f6));
 
-        FlightService.addFlight(flight);*/
+        FlightService.addFlight(flight);
         addUpdateRemoveApplication m = new addUpdateRemoveApplication();
         m.changeScene("add_update_remove.fxml");
 

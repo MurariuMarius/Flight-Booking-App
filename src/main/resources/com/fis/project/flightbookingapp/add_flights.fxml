@@ -50,7 +50,7 @@
             <TextField fx:id="field4" layoutX="160.0" layoutY="8.0" prefHeight="25.0" prefWidth="237.0" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="field6" layoutX="107.0" layoutY="176.0" prefHeight="32.0" prefWidth="469.0">
+      <AnchorPane  layoutX="107.0" layoutY="176.0" prefHeight="32.0" prefWidth="469.0">
          <children>
             <AnchorPane layoutX="87.0" layoutY="-8.0" prefHeight="125.0" prefWidth="374.0">
                <children>
