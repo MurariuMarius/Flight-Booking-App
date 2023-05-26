@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="702.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.SearchFlightsController">
+<AnchorPane prefHeight="702.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.SearchFlightsController">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="702.0" prefWidth="1050.0">
          <children>
@@ -34,7 +34,7 @@
             <HBox alignment="CENTER" prefHeight="26.0" prefWidth="600.0" spacing="30.0">
                <children>
                   <CheckBox fx:id="oneWayCheckBox" mnemonicParsing="false" onAction="#oneWayFlightSelected" text="One-way" />
-                  <Button mnemonicParsing="false" text="Search" />
+                  <Button fx:id="flightSearchButton" mnemonicParsing="false" onAction="#searchFlights" text="Search" />
                </children>
             </HBox>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select outbound flight">
@@ -84,7 +84,7 @@
                   <Button fx:id="inboudFlightSearchNextDayButton" layoutX="483.0" layoutY="48.0" mnemonicParsing="false" onAction="#inboundFlightSearchNextDay" prefHeight="26.0" prefWidth="86.0" text="Next day" />
                </children>
             </HBox>
-            <TableView fx:id="outboundFlightTableView1" layoutX="60.0" layoutY="244.0" prefHeight="149.0" prefWidth="950.0">
+            <TableView fx:id="inboundFlightTableView" layoutX="60.0" layoutY="244.0" prefHeight="149.0" prefWidth="950.0">
                <columns>
                   <TableColumn prefWidth="75.0" text="Select" />
                   <TableColumn prefWidth="75.0" text="DEP" />

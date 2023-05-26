@@ -2,14 +2,19 @@ package com.fis.project.flightbookingapp.controllers;
 
 import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
 import com.fis.project.flightbookingapp.model.Airport;
+import com.fis.project.flightbookingapp.model.Flight;
 import com.fis.project.flightbookingapp.services.AirportService;
 import com.fis.project.flightbookingapp.services.FlightService;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.DateCell;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TableView;
+import javafx.scene.text.Text;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 
 import java.net.URL;
 import java.time.LocalDate;
@@ -31,6 +36,63 @@ public class SearchFlightsController implements Initializable {
 
     @FXML
     private CheckBox oneWayCheckBox;
+
+    @FXML
+    private Button flightSearchButton;
+
+    @FXML
+    private Button inboudFlightSearchNextDayButton;
+
+    @FXML
+    private Button inboudFlightSearchPreviousDayButton;
+
+    @FXML
+    private Text inboundFlightSearchDate;
+
+    @FXML
+    private TableView<Flight> inboundFlightTableView;
+
+    @FXML
+    private Button outboudFlightSearchPreviousDayButton;
+
+    @FXML
+    private Text outboundFlightSearchDate;
+
+    @FXML
+    private Button outboundFlightSearchNextDayButton;
+
+    @FXML
+    private TableView<Flight> outboundFlightTableView;
+
+    @FXML
+    private TableColumn<Flight, String> outboundFlightNumber;
+
+    @FXML
+    private TableColumn<Flight, String> outboundAirlineCode;
+
+    @FXML
+    private TableColumn<Flight, String> outboundDepartureTime; // TODO Translate to local airport time
+
+    @FXML
+    private TableColumn<Flight, String> outboundArrivalTime; // TODO Translate to local airport time
+
+    @FXML
+    private TableColumn<Flight, Double> outboundFlightPrice; // TODO Create field in model
+
+    @FXML
+    private TableColumn<Flight, String> inBoundFlightNumber;
+
+    @FXML
+    private TableColumn<Flight, String> inBoundAirlineCode;
+
+    @FXML
+    private TableColumn<Flight, String> inBoundDepartureTime; // TODO Translate to local airport time
+
+    @FXML
+    private TableColumn<Flight, String> inBoundArrivalTime; // TODO Translate to local airport time
+
+    @FXML
+    private TableColumn<Flight, Double> inBoundFlightPrice; // TODO Create field in model
 
     private static final int searchResultLimit = 5;
     private Airport departureAirport = null;
@@ -86,6 +148,7 @@ public class SearchFlightsController implements Initializable {
         });
     }
 
+    @FXML
     public void selectedDepartureAirport() {
         try {
             departureAirport = AirportService.getAirportByName(departureAirportComboBox.getValue());
@@ -95,6 +158,7 @@ public class SearchFlightsController implements Initializable {
         }
     }
 
+    @FXML
     public void selectedArrivalAirport() {
         try {
             arrivalAirport = AirportService.getAirportByName(arrivalAirportComboBox.getValue());
@@ -104,17 +168,46 @@ public class SearchFlightsController implements Initializable {
         }
     }
 
+    @FXML
     public void selectedDepartureDate() {
         departureDate = departureDatePicker.getValue();
         System.out.println(departureDate);
     }
 
+    @FXML
     public void selectedArrivalDate() {
         arrivalDate = arrivalDatePicker.getValue();
         System.out.println(arrivalDate);
     }
 
+    @FXML
     public void oneWayFlightSelected() {
         arrivalDatePicker.setVisible(!oneWayCheckBox.isSelected());
     }
+
+    @FXML
+    void searchFlights(ActionEvent event) {
+
+    }
+
+    @FXML
+    void inboundFlightSearchNextDay(ActionEvent event) {
+
+    }
+
+    @FXML
+    void inboundFlightSearchPreviousDay(ActionEvent event) {
+
+    }
+
+    @FXML
+    void outboundFlightSearchNextDay(ActionEvent event) {
+
+    }
+
+    @FXML
+    void outboundFlightSearchPreviousDay(ActionEvent event) {
+
+    }
+
 }
