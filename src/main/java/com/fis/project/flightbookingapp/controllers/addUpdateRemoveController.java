@@ -17,6 +17,8 @@ public class addUpdateRemoveController {
     @FXML
     private Button buttonDelete;
     @FXML
+    private Button buttonUpdate;
+    @FXML
     public void goAdd(ActionEvent actionEvent) throws IOException {
         addUpdateRemoveApplication m = new addUpdateRemoveApplication();
         m.changeScene("add_flights.fxml");
@@ -25,6 +27,11 @@ public class addUpdateRemoveController {
     public void goDelete(ActionEvent actionEvent) throws  IOException{
           addUpdateRemoveApplication m = new addUpdateRemoveApplication();
           m.changeScene("delete_flight.fxml");
+    }
+    @FXML
+    public void goUpdate(ActionEvent actionEvent) throws IOException{
+        addUpdateRemoveApplication m = new addUpdateRemoveApplication();
+        m.changeScene("update_flights.fxml");
     }
 
 }
