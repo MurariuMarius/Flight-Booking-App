@@ -101,7 +101,7 @@ public class SearchFlightsController implements Initializable {
     private TableColumn<Flight, Double> inboundFlightPriceColumn;
 
     @FXML
-    private TableColumn<Flight, Text> inboundFlightDurationColumn;
+    private TableColumn<String, String> inboundFlightDurationColumn;
 
     private static final int searchResultLimit = 5;
     private Airport departureAirport = null;
@@ -166,6 +166,8 @@ public class SearchFlightsController implements Initializable {
         inboundFlightNumberColumn.setCellValueFactory(new PropertyValueFactory<>("flightNumber"));
         inboundFlightPriceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
 
+        // TODO Hide table fields
+
     }
 
     @FXML
@@ -208,13 +210,14 @@ public class SearchFlightsController implements Initializable {
     @FXML
     void searchFlights(ActionEvent event) {
         System.out.println(departureDate.getDayOfWeek());
-        List<Flight> flights = FlightService.getFlightsOnRoute(
+        List<Flight> outboundFlights = FlightService.getFlightsOnRoute(
                 departureAirport,
                 arrivalAirport,
                 departureDate.getDayOfWeek()
         );
-        System.out.println(flights);
-        outboundFlightTableView.getItems().addAll(flights);
+        System.out.println(outboundFlights);
+        outboundFlightTableView.getItems().clear();
+        outboundFlightTableView.getItems().addAll(outboundFlights);
 
         for (Flight f : outboundFlightTableView.getItems()) {
             outboundFlightDurationColumn.setCellValueFactory(
@@ -227,6 +230,33 @@ public class SearchFlightsController implements Initializable {
                     c -> new SimpleStringProperty(LocalTime.from(f.getArrivalTime()).toString())
             );
         }
+
+        if (!oneWayCheckBox.isSelected()) {
+            // TODO Unhide fields
+
+            List<Flight> inboundFlights = FlightService.getFlightsOnRoute(
+                    arrivalAirport,
+                    departureAirport,
+                    arrivalDate.getDayOfWeek()
+            );
+            System.out.println(inboundFlights);
+            inboundFlightTableView.getItems().clear();
+            inboundFlightTableView.getItems().addAll(inboundFlights);
+
+            for (Flight f : inboundFlightTableView.getItems()) {
+                inboundFlightDurationColumn.setCellValueFactory(
+                        c -> new SimpleStringProperty(f.getFlightDuration())
+                );
+                inboundDepartureTimeColumn.setCellValueFactory(
+                        c -> new SimpleStringProperty(LocalTime.from(f.getDepartureTime()).toString())
+                );
+                inboundArrivalTimeColumn.setCellValueFactory(
+                        c -> new SimpleStringProperty(LocalTime.from(f.getArrivalTime()).toString())
+                );
+            }
+        }
+
+
     }
 
     @FXML
