@@ -74,8 +74,12 @@ public class Flight implements Serializable {
         this.departureAirportCode = departureAirportCode;
     }
 
-    public Airport getArrivalAirportCode() throws NotInDatabaseException {
+    public Airport getArrivalAirport() throws NotInDatabaseException {
         return AirportService.getAirportByCode(arrivalAirportCode);
+    }
+
+    public String getArrivalAirportCode() {
+        return arrivalAirportCode;
     }
 
     public void setArrivalAirport(Airport arrivalAirport) throws NotInDatabaseException {
