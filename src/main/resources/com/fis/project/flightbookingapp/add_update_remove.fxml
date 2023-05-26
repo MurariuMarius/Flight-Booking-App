@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.addUpdateRemoveController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.addUpdateRemoveController">
    <children>
-      <Button layoutX="391.0" layoutY="169.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="78.0" text="Delete" />
+      <Button fx:id="buttonDelete" layoutX="391.0" layoutY="169.0" mnemonicParsing="false" onAction="#goDelete" prefHeight="48.0" prefWidth="78.0" text="Delete" />
       <Button layoutX="247.0" layoutY="169.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="78.0" text="Update" />
       <Button fx:id="buttonAdd" layoutX="107.0" layoutY="169.0" mnemonicParsing="false" onAction="#goAdd" prefHeight="48.0" prefWidth="78.0" text="Add" />
       <Label layoutX="226.0" layoutY="72.0" prefHeight="62.0" prefWidth="106.0" text="Manage flights">
