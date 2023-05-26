@@ -63,7 +63,7 @@ public class FlightService {
         return getFlightsByDepartureAirport(airport.getAirportCode());
     }
 
-    private static void checkFlightDoesNotAlreadyExist(Flight flight) throws FlightAlreadyExistsException {
+    static void checkFlightDoesNotAlreadyExist(Flight flight) throws FlightAlreadyExistsException {
         for (Flight f : flightObjectRepository.find()) {
             if (f.getFlightNumber().equals(flight.getFlightNumber())) {
                 throw new FlightAlreadyExistsException(flight.getFlightNumber());
