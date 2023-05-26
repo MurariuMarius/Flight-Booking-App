@@ -20,10 +20,12 @@ public class Flight implements Serializable {
     private String departureTime;
     private String arrivalTime;
 
+    private double price;
+
     public Flight() {}
 
     public Flight(String flightNumber, String airlineCode, @NotNull Airport departureAirport, @NotNull Airport arrivalAirport,
-                  List<DayOfWeek> operatingWeekDays, LocalTime localDepartureHour, LocalTime localArrivalHour) {
+                  List<DayOfWeek> operatingWeekDays, LocalTime localDepartureHour, LocalTime localArrivalHour, double price) {
         this.flightNumber = flightNumber;
         this.airlineCode = airlineCode;
         this.departureAirportCode = departureAirport.getAirportCode();
@@ -31,6 +33,7 @@ public class Flight implements Serializable {
         this.operatingWeekDays = operatingWeekDays;
         this.departureTime = OffsetTime.of(localDepartureHour, departureAirport.getZoneOffset()).toString();
         this.arrivalTime = OffsetTime.of(localArrivalHour, arrivalAirport.getZoneOffset()).toString();
+        this.price = price;
     }
 
     public Duration getFlightDuration() {
@@ -137,6 +140,14 @@ public class Flight implements Serializable {
         }
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -147,7 +158,7 @@ public class Flight implements Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(flightNumber, airlineCode, departureAirportCode, arrivalAirportCode, operatingWeekDays, departureTime, arrivalTime);
+        return Objects.hash(flightNumber, airlineCode, departureAirportCode, arrivalAirportCode, operatingWeekDays, departureTime, arrivalTime, price);
     }
 
     @Override
@@ -155,11 +166,12 @@ public class Flight implements Serializable {
         return "Flight{" +
                 "flightNumber='" + flightNumber + '\'' +
                 ", airlineCode='" + airlineCode + '\'' +
-                ", departureAirport=" + departureAirportCode +
-                ", arrivalAirport=" + arrivalAirportCode +
+                ", departureAirportCode='" + departureAirportCode + '\'' +
+                ", arrivalAirportCode='" + arrivalAirportCode + '\'' +
                 ", operatingWeekDays=" + operatingWeekDays +
-                ", departureHour=" + departureTime +
-                ", arrivalHour=" + arrivalTime +
+                ", departureTime='" + departureTime + '\'' +
+                ", arrivalTime='" + arrivalTime + '\'' +
+                ", price=" + price +
                 '}';
     }
 }
