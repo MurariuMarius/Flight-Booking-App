@@ -19,7 +19,7 @@ public class Booking implements Serializable {
     @Id
     private NitriteId bookingId;
     private String username;
-    private Flight flight;
+    private String flightNumber;
     private String date;
     private Set<String> travellers;
     private BookingStatus bookingStatus;
@@ -28,7 +28,7 @@ public class Booking implements Serializable {
 
     public Booking(String username, Flight flight, String date, Set<String> travellers) {
         this.username = username;
-        this.flight = flight;
+        this.flightNumber = flight.getFlightNumber();
         this.date = date;
         this.travellers = travellers;
         this.bookingStatus = BookingStatus.UNDER_REVIEW;
@@ -50,13 +50,15 @@ public class Booking implements Serializable {
         this.username = username;
     }
 
-    public Flight getFlight() {
-        return flight;
+    public String getFlight() {
+        return flightNumber;
     }
 
     public void setFlight(Flight flight) {
-        this.flight = flight;
+        this.flightNumber = flight.getFlightNumber();
     }
+
+    public void setFlight(String flightNumber) { this.flightNumber = flightNumber; }
 
     public String getDate() {
         return date;
@@ -93,12 +95,12 @@ public class Booking implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Booking booking = (Booking) o;
-        return Objects.equals(username, booking.username) && Objects.equals(flight, booking.flight) && Objects.equals(date, booking.date);
+        return Objects.equals(username, booking.username) && Objects.equals(flightNumber, booking.flightNumber) && Objects.equals(date, booking.date);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(bookingId, username, flight, date);
+        return Objects.hash(bookingId, username, flightNumber, date);
     }
 
     @Override
@@ -106,7 +108,7 @@ public class Booking implements Serializable {
         return "Booking{" +
                 "bookingId=" + bookingId +
                 ", username='" + username + '\'' +
-                ", flight=" + flight +
+                ", flight=" + flightNumber +
                 ", date='" + date + '\'' +
                 ", travellers=" + travellers +
                 ", bookingStatus=" + bookingStatus +
