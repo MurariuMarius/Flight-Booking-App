@@ -8,6 +8,7 @@ import org.dizitart.no2.objects.Index;
 import org.dizitart.no2.objects.Indices;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Objects;
 import java.util.Set;
 
@@ -26,10 +27,10 @@ public class Booking implements Serializable {
 
     public Booking() {}
 
-    public Booking(String username, Flight flight, String date, Set<String> travellers) {
+    public Booking(String username, Flight flight, LocalDate date, Set<String> travellers) {
         this.username = username;
         this.flightNumber = flight.getFlightNumber();
-        this.date = date;
+        this.date = date.toString();
         this.travellers = travellers;
         this.bookingStatus = BookingStatus.UNDER_REVIEW;
     }
@@ -64,7 +65,12 @@ public class Booking implements Serializable {
         return date;
     }
 
+    public void setDate(LocalDate date) {
+        this.date = date.toString();
+    }
+
     public void setDate(String date) {
+        LocalDate.parse(date);
         this.date = date;
     }
 

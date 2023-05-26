@@ -4,8 +4,14 @@ import com.fis.project.flightbookingapp.exceptions.BookingAlreadyExistsException
 import com.fis.project.flightbookingapp.exceptions.FlightAlreadyExistsException;
 import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
 import com.fis.project.flightbookingapp.model.Booking;
+import com.fis.project.flightbookingapp.model.BookingStatus;
+import com.fis.project.flightbookingapp.model.Client;
+import com.fis.project.flightbookingapp.model.Flight;
+import org.dizitart.no2.objects.Cursor;
 import org.dizitart.no2.objects.ObjectRepository;
+import org.dizitart.no2.objects.filters.ObjectFilters;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
 
@@ -27,6 +33,55 @@ public class BookingService {
 
     public static void removeBooking(Booking booking) {
         bookingRepository.remove(booking);
+    }
+
+    public static List<Booking> getBookingsByStatus(BookingStatus bookingStatus) {
+        Cursor<Booking> cursor = bookingRepository.find(
+                ObjectFilters.eq("bookingStatus", bookingStatus)
+        );
+        return cursor.toList();
+    }
+
+    public static List<Booking> getBookingsForFlight(String flightNumber) {
+        Cursor<Booking> cursor = bookingRepository.find(
+                ObjectFilters.eq("flightNumber", flightNumber)
+        );
+        return cursor.toList();
+    }
+
+    public static List<Booking> getBookingsForFlight(Flight flight) {
+        return getBookingsForFlight(flight.getFlightNumber());
+    }
+
+    public static List<Booking> getBookingsForFlight(String flightNumber, LocalDate date) {
+        Cursor<Booking> cursor = bookingRepository.find(
+                ObjectFilters.and(
+                        ObjectFilters.eq("flightNumber", flightNumber),
+                        ObjectFilters.eq("date", date.toString())
+                )
+        );
+        return cursor.toList();
+    }
+
+    public static List<Booking> getBookingForFlight(Flight flight, LocalDate date) {
+        return getBookingsForFlight(flight.getFlightNumber(), date);
+    }
+
+    public static List<Booking> getBookingsForClient(Client client) {
+        Cursor<Booking> cursor = bookingRepository.find(
+                ObjectFilters.eq("username", client.getUsername())
+        );
+        return cursor.toList();
+    }
+
+    public static List<Booking> getBookingsForClient(Client client, BookingStatus bookingStatus) {
+        Cursor<Booking> cursor = bookingRepository.find(
+                ObjectFilters.and(
+                        ObjectFilters.eq("username", client.getUsername()),
+                        ObjectFilters.eq("bookingStatus", bookingStatus)
+                )
+        );
+        return cursor.toList();
     }
 
     private static void checkBookingDoesNotAlreadyExist(Booking booking) throws BookingAlreadyExistsException {
