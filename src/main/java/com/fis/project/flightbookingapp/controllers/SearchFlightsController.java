@@ -187,7 +187,13 @@ public class SearchFlightsController implements Initializable {
 
     @FXML
     void searchFlights(ActionEvent event) {
-
+        System.out.println(departureDate.getDayOfWeek());
+        List<Flight> flights = FlightService.getFlightsOnRoute(
+                departureAirport,
+                arrivalAirport,
+                departureDate.getDayOfWeek()
+        );
+        System.out.println(flights);
     }
 
     @FXML
