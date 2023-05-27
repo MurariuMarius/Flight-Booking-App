@@ -257,62 +257,65 @@ public class SearchFlightsController implements Initializable {
     @FXML
     public void oneWayFlightSelected() {
         arrivalDatePicker.setVisible(!oneWayCheckBox.isSelected());
+        arrivalDate = null;
     }
 
     @FXML
     void searchFlights(ActionEvent event) {
 
-        setOutboundFlightFieldsVisibility(true);
+        if (departureAirport != null && arrivalAirport != null && departureDate != null &&
+                (arrivalDate != null || oneWayCheckBox.isSelected())) {
 
-        List<Flight> outboundFlights = FlightService.getFlightsOnRoute(
-                departureAirport,
-                arrivalAirport,
-                departureDate.getDayOfWeek()
-        );
-        System.out.println(outboundFlights);
-        outboundFlightTableView.getItems().clear();
-        outboundFlightTableView.getItems().addAll(outboundFlights);
+            setOutboundFlightFieldsVisibility(true);
 
-        for (Flight f : outboundFlightTableView.getItems()) {
-            outboundFlightDurationColumn.setCellValueFactory(
-                    c -> new SimpleStringProperty(f.getFlightDuration())
-            );
-            outboundDepartureTimeColumn.setCellValueFactory(
-                    c -> new SimpleStringProperty(LocalTime.from(f.getDepartureTime()).toString())
-            );
-            outboundArrivalTimeColumn.setCellValueFactory(
-                    c -> new SimpleStringProperty(LocalTime.from(f.getArrivalTime()).toString())
-            );
-        }
-
-        if (!oneWayCheckBox.isSelected()) {
-            setInboundFlightFieldsVisibility(true);
-
-            List<Flight> inboundFlights = FlightService.getFlightsOnRoute(
-                    arrivalAirport,
+            List<Flight> outboundFlights = FlightService.getFlightsOnRoute(
                     departureAirport,
-                    arrivalDate.getDayOfWeek()
+                    arrivalAirport,
+                    departureDate.getDayOfWeek()
             );
-            System.out.println(inboundFlights);
-            inboundFlightTableView.getItems().clear();
-            inboundFlightTableView.getItems().addAll(inboundFlights);
+            System.out.println(outboundFlights);
+            outboundFlightTableView.getItems().clear();
+            outboundFlightTableView.getItems().addAll(outboundFlights);
 
-            for (Flight f : inboundFlightTableView.getItems()) {
-                inboundFlightDurationColumn.setCellValueFactory(
+            for (Flight f : outboundFlightTableView.getItems()) {
+                outboundFlightDurationColumn.setCellValueFactory(
                         c -> new SimpleStringProperty(f.getFlightDuration())
                 );
-                inboundDepartureTimeColumn.setCellValueFactory(
+                outboundDepartureTimeColumn.setCellValueFactory(
                         c -> new SimpleStringProperty(LocalTime.from(f.getDepartureTime()).toString())
                 );
-                inboundArrivalTimeColumn.setCellValueFactory(
+                outboundArrivalTimeColumn.setCellValueFactory(
                         c -> new SimpleStringProperty(LocalTime.from(f.getArrivalTime()).toString())
                 );
             }
-        } else {
-            setInboundFlightFieldsVisibility(false);
+
+            if (!oneWayCheckBox.isSelected()) {
+                setInboundFlightFieldsVisibility(true);
+
+                List<Flight> inboundFlights = FlightService.getFlightsOnRoute(
+                        arrivalAirport,
+                        departureAirport,
+                        arrivalDate.getDayOfWeek()
+                );
+                System.out.println(inboundFlights);
+                inboundFlightTableView.getItems().clear();
+                inboundFlightTableView.getItems().addAll(inboundFlights);
+
+                for (Flight f : inboundFlightTableView.getItems()) {
+                    inboundFlightDurationColumn.setCellValueFactory(
+                            c -> new SimpleStringProperty(f.getFlightDuration())
+                    );
+                    inboundDepartureTimeColumn.setCellValueFactory(
+                            c -> new SimpleStringProperty(LocalTime.from(f.getDepartureTime()).toString())
+                    );
+                    inboundArrivalTimeColumn.setCellValueFactory(
+                            c -> new SimpleStringProperty(LocalTime.from(f.getArrivalTime()).toString())
+                    );
+                }
+            } else {
+                setInboundFlightFieldsVisibility(false);
+            }
         }
-
-
     }
 
     @FXML
@@ -334,5 +337,4 @@ public class SearchFlightsController implements Initializable {
     void outboundFlightSearchPreviousDay(ActionEvent event) {
 
     }
-
 }
