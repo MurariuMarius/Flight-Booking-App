@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.fis.project.flightbookingapp.controllers.ClientMenuController"
+            prefHeight="400.0" prefWidth="600.0">
+    <Label layoutX="244.0" layoutY="38.0" prefHeight="62.0" prefWidth="106.0" text="Manage flights">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Label>
+    <VBox alignment="CENTER" layoutX="162.0" layoutY="117.0" prefHeight="254.0" prefWidth="271.0" spacing="10.0">
+        <children>
+            <Button fx:id="buttonSearchFlights" mnemonicParsing="false" onAction="#goSearchFlights" prefHeight="41.0" prefWidth="198.0" text="Search flights" />
+            <Button fx:id="buttonManageBookings" mnemonicParsing="false" onAction="#goManageBookings" prefHeight="42.0" prefWidth="199.0" text="Manage bookings" />
+            <Button fx:id="buttonViewBookings" mnemonicParsing="false" onAction="#goViewBookings" prefHeight="42.0" prefWidth="198.0" text="View bookings" />
+        </children>
+    </VBox>
+</AnchorPane>
