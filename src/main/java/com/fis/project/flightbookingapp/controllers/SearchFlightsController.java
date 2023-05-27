@@ -2,6 +2,7 @@ package com.fis.project.flightbookingapp.controllers;
 
 import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
 import com.fis.project.flightbookingapp.model.Airport;
+import com.fis.project.flightbookingapp.model.Booking;
 import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.model.Flight;
 import com.fis.project.flightbookingapp.services.AirportService;
@@ -422,6 +423,28 @@ public class SearchFlightsController implements Initializable {
         }
 
         System.out.println("Bookable flight");
+
+        List<Booking> bookings = new ArrayList<>();
+
+        Booking outboundFlightBooking = new Booking(
+                client.getUsername(),
+                outboundFlight,
+                outboundFlightDate,
+                Set.of(client.getUsername())
+        );
+
+        bookings.add(outboundFlightBooking);
+
+        if (!oneWayCheckBox.isSelected()) {
+            Booking inboundFlightBooking = new Booking(
+                    client.getUsername(),
+                    inboundFlight,
+                    inboundFlightDate,
+                    Set.of(client.getUsername())
+            );
+            bookings.add(inboundFlightBooking);
+        }
+
         // TODO Redirect to booking page
     }
 }
