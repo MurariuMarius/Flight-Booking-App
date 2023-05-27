@@ -6,6 +6,7 @@ import com.fis.project.flightbookingapp.model.Airline;
 import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.services.AirlineUserService;
 import com.fis.project.flightbookingapp.services.ClientUserService;
+import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -66,37 +67,35 @@ public class LoginController {
         String username = usernameField.getText().trim();
         String password = passwordField.getText().trim();
 
-        FXMLLoader fxmlLoader;
-        Parent root;
         Stage stage = (Stage) signupButton.getScene().getWindow();
-        Scene scene;
 
         try {
             if (logInAsAirline) {
                 Airline airline = AirlineUserService.checkCredentials(username, password);
 
-                fxmlLoader = new FXMLLoader(Main.class.getResource("airline-menu.fxml"));
-                root = fxmlLoader.load();
+                FXMLLoader fxmlLoader = StageChangeService.changeScene(
+                        stage,
+                        "airline-menu.fxml",
+                        "Airline Menu"
+                );
+
                 AirlineMenuController airlineMenuController = fxmlLoader.getController();
                 airlineMenuController.initData(airline);
-                scene = new Scene(root);
-                stage.setTitle("Airline Menu");
 
             } else {
                 Client client = ClientUserService.checkCredentials(username, password);
 
-                fxmlLoader = new FXMLLoader(Main.class.getResource("client-menu.fxml"));
-                root = fxmlLoader.load();
+                FXMLLoader fxmlLoader = StageChangeService.changeScene(
+                        (Stage) signupButton.getScene().getWindow(),
+                        "client-menu.fxml",
+                        "Welcome, " + client.getUsername()
+                );
+
                 ClientMenuController clientMenuController = fxmlLoader.getController();
                 clientMenuController.initData(client);
-                scene = new Scene(root);
-                stage.setTitle("Airline Menu");
             }
 
             System.out.println("Logged in successfully as " + username);
-
-            stage.setScene(scene);
-            stage.show();
 
         } catch (InvalidCredentialsException e) {
             System.out.println(e);
