@@ -26,7 +26,7 @@ public class BookFlightController implements Initializable {
     private List<Booking> bookings;
     private double price;
     public void initialize(URL arg0, ResourceBundle arg1){
-        food.getItems().addAll("Pasta","Mexican food","Vegan","Vegetarian");
+        food.getItems().addAll("None","Pasta","Mexican food","Vegan","Vegetarian");
     }
 
     @FXML
@@ -42,15 +42,22 @@ public class BookFlightController implements Initializable {
     void goPay(MouseEvent event) {
         for (Booking booking : bookings) {
             booking.setSeatNumber(field1.getText().toString());
-            if (priority.isSelected())
+            if (priority.isSelected()) {
+                price *= 1.05;
                 booking.setHasPriorityBoarding(true);
+            }
             else
                 booking.setHasPriorityBoarding(false);
 
             Set<String> traveller = new HashSet<>();
             traveller.add(field2.getText().toString());
             booking.setTravellers(traveller);
-            booking.setFoodOption(food.getValue());
+            if (food.getValue().equals("None")) {
+                booking.setFoodOption("");
+            } else {
+                booking.setFoodOption(food.getValue());
+                price *= 1.05;
+            }
         }
         System.out.println(bookings);
     }

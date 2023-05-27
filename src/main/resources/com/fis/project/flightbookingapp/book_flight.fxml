@@ -16,12 +16,12 @@
          </font>
       </Label>
       <TextField fx:id="field1" layoutX="235.0" layoutY="106.0" prefHeight="25.0" prefWidth="198.0" />
-      <Label layoutX="121.0" layoutY="137.0" text="Select food:">
+      <Label layoutX="121.0" layoutY="137.0" text="Select food (+5%):">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <CheckBox fx:id="priority" layoutX="236.0" layoutY="186.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="144.0" text="Priority">
+      <CheckBox fx:id="priority" layoutX="236.0" layoutY="186.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="144.0" text="Priority (+10%)">
          <font>
             <Font size="18.0" />
          </font>
