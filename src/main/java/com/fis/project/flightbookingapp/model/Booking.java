@@ -51,7 +51,7 @@ public class Booking implements Serializable {
         this.username = username;
     }
 
-    public String getFlight() {
+    public String getFlightNumber() {
         return flightNumber;
     }
 

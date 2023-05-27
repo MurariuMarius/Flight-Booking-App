@@ -21,7 +21,7 @@ public class BookingService {
             throws BookingAlreadyExistsException, NotInDatabaseException {
         checkBookingDoesNotAlreadyExist(booking);
         try {
-            checkFlightDoesNotAlreadyExist(FlightService.getFlightByNumber(booking.getFlight()));
+            checkFlightDoesNotAlreadyExist(FlightService.getFlightByNumber(booking.getFlightNumber()));
             throw new NotInDatabaseException(String.format("Flight % is not in the database"));
         } catch (FlightAlreadyExistsException e) {}
         bookingRepository.insert(booking);
@@ -46,7 +46,7 @@ public class BookingService {
         return getBookingsByStatus(bookingStatus).stream().filter(
                 b -> {
                     try {
-                        return FlightService.getFlightByNumber(b.getFlight()).getAirlineCode().equals(airline.getIcaoCode());
+                        return FlightService.getFlightByNumber(b.getFlightNumber()).getAirlineCode().equals(airline.getIcaoCode());
                     } catch (NotInDatabaseException e) {
                         System.out.println(e);
                     }
@@ -61,6 +61,7 @@ public class BookingService {
         );
         return cursor.toList();
     }
+
 
     public static List<Booking> getBookingsForFlight(Flight flight) {
         return getBookingsForFlight(flight.getFlightNumber());
