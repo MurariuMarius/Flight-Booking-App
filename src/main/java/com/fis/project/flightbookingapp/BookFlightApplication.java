@@ -28,7 +28,7 @@ public class BookFlightApplication extends Application {
     private Parent root;
     @Override
     public void start(Stage stage) throws IOException, NotInDatabaseException {
-        Flight flight = new Flight("W63453", "WZZ",
+        /*Flight flight = new Flight("W63453", "WZZ",
                 AirportService.getAirportByCode("TSR"),
                 AirportService.getAirportByCode("BGY"),
                 new ArrayList<>(Arrays.asList(DayOfWeek.MONDAY, DayOfWeek.FRIDAY)),
@@ -44,7 +44,7 @@ public class BookFlightApplication extends Application {
         Scene scene = new Scene(root);
         stage.setTitle("Flight Booking App");
         stage.setScene(scene);
-        stage.show();
+        stage.show();*/
     }
 
     public static void main(String args[]) throws NotInDatabaseException, FileNotFoundException, AirportAlreadyExistsException, BookingAlreadyExistsException, FlightAlreadyExistsException {

@@ -1,10 +1,7 @@
 package com.fis.project.flightbookingapp;
 
 import com.fis.project.flightbookingapp.controllers.SeeBookingsController;
-import com.fis.project.flightbookingapp.exceptions.AirportAlreadyExistsException;
-import com.fis.project.flightbookingapp.exceptions.BookingAlreadyExistsException;
-import com.fis.project.flightbookingapp.exceptions.FlightAlreadyExistsException;
-import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
+import com.fis.project.flightbookingapp.exceptions.*;
 import com.fis.project.flightbookingapp.model.Booking;
 import com.fis.project.flightbookingapp.model.BookingStatus;
 import com.fis.project.flightbookingapp.model.Client;
@@ -40,15 +37,16 @@ public class seeBookingsAplication extends Application {
         stage.show();
     }
 
-        public static void main(String args[]) throws NotInDatabaseException, FileNotFoundException, AirportAlreadyExistsException, BookingAlreadyExistsException, FlightAlreadyExistsException {
-            /*AirportService.addAirports(AirportGetterService.getAirportsFromJSON());
+        public static void main(String args[]) throws NotInDatabaseException, FileNotFoundException, AirportAlreadyExistsException, BookingAlreadyExistsException, FlightAlreadyExistsException, UserAlreadyExistsException {
+            AirportService.addAirports(AirportGetterService.getAirportsFromJSON());
 
             Flight flight = new Flight("W63453", "WZZ",
                     AirportService.getAirportByCode("TSR"),
                     AirportService.getAirportByCode("BGY"),
                     new ArrayList<>(Arrays.asList(DayOfWeek.MONDAY, DayOfWeek.FRIDAY)),
                     LocalTime.of(10, 50),
-                    LocalTime.of(11,45)
+                    LocalTime.of(11,45),
+                    50
             );
 
             FlightService.addFlight(flight);
@@ -70,7 +68,8 @@ public class seeBookingsAplication extends Application {
                     AirportService.getAirportByCode("BGY"),
                     new ArrayList<>(Arrays.asList(DayOfWeek.MONDAY, DayOfWeek.FRIDAY)),
                     LocalTime.of(16, 00),
-                    LocalTime.of(17,15)
+                    LocalTime.of(17,15),
+                    60
             );
 
             Flight flight2 = new Flight("W63444", "WZZ",
@@ -78,7 +77,8 @@ public class seeBookingsAplication extends Application {
                     AirportService.getAirportByCode("TSR"),
                     new ArrayList<>(Arrays.asList(DayOfWeek.MONDAY, DayOfWeek.FRIDAY)),
                     LocalTime.of(17, 55),
-                    LocalTime.of(20,30)
+                    LocalTime.of(20,30),
+                    70
             );
 
             FlightService.addFlight(flight1);
@@ -91,10 +91,12 @@ public class seeBookingsAplication extends Application {
             Client client = new Client("Titi Titulescu", "parolaputernica", "+40256111222", "Vasile Parvan 2, Timisoara", "Romania", "titi@titulescu.ro");
             Client client2 = new Client("Barbu Titulescu", "parolaputernica", "+40256111222", "Vasile Parvan 2, Timisoara", "Romania", "titi@titulescu.ro");
             Client client3 = new Client("Andrei Titulescu", "parolaputernica", "+40256111222", "Vasile Parvan 2, Timisoara", "Romania", "titi@titulescu.ro");
-
+            ClientUserService.addUser(client);
+            ClientUserService.addUser(client2);
+            ClientUserService.addUser(client3);
             System.out.println(BookingService.getBookingsForClient(client, BookingStatus.ACCEPTED));
             System.out.println(BookingService.getBookingsByStatus(BookingStatus.UNDER_REVIEW));
-            System.out.println("main");*/
+            System.out.println("main");
 
 
 

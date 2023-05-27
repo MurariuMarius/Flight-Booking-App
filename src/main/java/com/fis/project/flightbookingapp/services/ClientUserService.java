@@ -40,6 +40,10 @@ public class ClientUserService {
         }
         return cursor.firstOrDefault();
     }
+    public static Client getUserByUsername(String username)  {
+        Cursor<Client> cursor = clientUserRepository.find(ObjectFilters.eq("username", username));
+        return cursor.firstOrDefault();
+    }
 
     public static List<Client> getClientUsers() {
         return clientUserRepository.find().toList();
