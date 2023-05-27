@@ -1,13 +1,19 @@
 package com.fis.project.flightbookingapp.controllers;
 
 import com.fis.project.flightbookingapp.model.Booking;
+import com.fis.project.flightbookingapp.model.Client;
+import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.*;
 
@@ -25,16 +31,25 @@ public class BookFlightController implements Initializable {
     private CheckBox priority;
     private List<Booking> bookings;
     private double price;
+    private Client client;
     public void initialize(URL arg0, ResourceBundle arg1){
         food.getItems().addAll("None","Pasta","Mexican food","Vegan","Vegetarian");
     }
 
     @FXML
-    void goBack(MouseEvent event) {
-
+    void goBack(MouseEvent event) throws IOException {
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader fxmlLoader = StageChangeService.changeScene(
+                stage,
+                "search-flights.fxml",
+                "Search flights"
+        );
+        SearchFlightsController searchFlightsController = fxmlLoader.getController();
+        searchFlightsController.setClient(client);
     }
-    public void setBooking(List<Booking> bookings, double price){
-        this.bookings =bookings;
+    public void setData(Client client, List<Booking> bookings, double price){
+        this.client = client;
+        this.bookings = bookings;
         this.price = price;
     }
 
