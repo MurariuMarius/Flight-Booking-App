@@ -31,6 +31,7 @@ public class SeeBookingsController implements Initializable {
 
     @FXML
     private TableColumn<Booking, BookingStatus> c5;
+    private Client client;
     @Override
     public void initialize(URL arg0, ResourceBundle arg1){
         c1.setCellValueFactory(new PropertyValueFactory<Booking,NitriteId>("bookingId"));
@@ -38,11 +39,16 @@ public class SeeBookingsController implements Initializable {
         c3.setCellValueFactory(new PropertyValueFactory<Booking,String>("flightNumber"));
         c4.setCellValueFactory(new PropertyValueFactory<Booking,String>("date"));
         c5.setCellValueFactory(new PropertyValueFactory<Booking,BookingStatus>("bookingStatus"));
-        setupTable();
+
     }
     private void setupTable(){
-        Client client;
-        bookingTableView.getItems().addAll(BookingService.getBookingsForClient(client));
+
+       bookingTableView.getItems().addAll(BookingService.getBookingsForClient(client));
+        System.out.println(BookingService.getBookingsForClient(client));
+    }
+    public void setClient(Client client){
+        this.client = client;
+        setupTable();
     }
 
 }

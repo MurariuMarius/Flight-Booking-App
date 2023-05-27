@@ -4,10 +4,9 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.SeeBookingsController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.SeeBookingsController">
    <children>
-      <TableView layoutX="10.0" layoutY="28.0" prefHeight="344.0" prefWidth="580.0">
+      <TableView fx:id="bookingTableView" layoutX="10.0" layoutY="28.0" prefHeight="344.0" prefWidth="580.0">
         <columns>
           <TableColumn fx:id="c1" prefWidth="70.0" text="bookingID" />
           <TableColumn fx:id="c2" prefWidth="140.0" text="username" />
