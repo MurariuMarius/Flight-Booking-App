@@ -2,6 +2,7 @@ package com.fis.project.flightbookingapp.controllers;
 
 import com.fis.project.flightbookingapp.model.Booking;
 import com.fis.project.flightbookingapp.model.BookingStatus;
+import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.services.BookingService;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -40,7 +41,8 @@ public class SeeBookingsController implements Initializable {
         setupTable();
     }
     private void setupTable(){
-        bookingTableView.getItems().addAll(BookingService.getBookin)
+        Client client;
+        bookingTableView.getItems().addAll(BookingService.getBookingsForClient(client));
     }
 
 }
