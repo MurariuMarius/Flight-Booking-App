@@ -55,7 +55,7 @@
             </HBox>
             <TableView fx:id="outboundFlightTableView" prefHeight="149.0" prefWidth="950.0">
               <columns>
-                 <TableColumn fx:id="outboundAirlineCodeColumn" prefWidth="75.0" text="Airline"/>
+                 <TableColumn fx:id="outboundAirlineCodeColumn" prefWidth="75.0" text="Airline" />
                  <TableColumn fx:id="outboundFlightNumberColumn" prefWidth="75.0" text="Flight" />
                 <TableColumn fx:id="outboundDepartureTimeColumn" prefWidth="75.0" text="DEP" />
                   <TableColumn fx:id="outboundArrivalTimeColumn" prefWidth="75.0" text="ARR" />
@@ -87,7 +87,7 @@
             </HBox>
             <TableView fx:id="inboundFlightTableView" layoutX="60.0" layoutY="244.0" prefHeight="149.0" prefWidth="950.0">
                <columns>
-                  <TableColumn fx:id="inboundAirlineCodeColumn" prefWidth="75.0" text="Airline"/>
+                  <TableColumn fx:id="inboundAirlineCodeColumn" prefWidth="75.0" text="Airline" />
                   <TableColumn fx:id="inboundFlightNumberColumn" prefWidth="75.0" text="Flight" />
                   <TableColumn fx:id="inboundDepartureTimeColumn" prefWidth="75.0" text="DEP" />
                   <TableColumn fx:id="inboundArrivalTimeColumn" prefWidth="75.0" text="ARR" />
@@ -101,6 +101,11 @@
                   <Insets left="50.0" right="50.0" />
                </VBox.margin>
             </TableView>
+            <Button fx:id="bookFlightsButton" mnemonicParsing="false" onAction="#bookFlights" text="Book now">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
          </children>
          <opaqueInsets>
             <Insets />

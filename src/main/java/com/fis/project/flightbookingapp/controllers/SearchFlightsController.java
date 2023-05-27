@@ -2,6 +2,7 @@ package com.fis.project.flightbookingapp.controllers;
 
 import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
 import com.fis.project.flightbookingapp.model.Airport;
+import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.model.Flight;
 import com.fis.project.flightbookingapp.services.AirportService;
 import com.fis.project.flightbookingapp.services.FlightService;
@@ -109,12 +110,17 @@ public class SearchFlightsController implements Initializable {
     @FXML
     private TableColumn<String, String> inboundFlightDurationColumn;
 
+    @FXML
+    private Button bookFlightsButton;
+
     private static final int searchResultLimit = 5;
     private Airport departureAirport = null;
     private Airport arrivalAirport = null;
-
     private LocalDate departureDate = null;
     private LocalDate arrivalDate = null;
+    private Client client = null;
+    private Flight outboundFlight = null;
+    private Flight inboundFlight = null;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -138,6 +144,7 @@ public class SearchFlightsController implements Initializable {
 
         setOutboundFlightFieldsVisibility(false);
         setInboundFlightFieldsVisibility(false);
+        bookFlightsButton.setVisible(false);
 
         departureAirportComboBox.setEditable(true);
         departureAirportComboBox.getEditor().textProperty().addListener((observable, oldValue, newValue) -> {
@@ -182,6 +189,10 @@ public class SearchFlightsController implements Initializable {
         inboundFlightNumberColumn.setCellValueFactory(new PropertyValueFactory<>("flightNumber"));
         inboundFlightPriceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
 
+    }
+
+    public void setCilent(Client client) {
+        this.client = client;
     }
 
     private void setOutboundFlightFieldsVisibility(boolean visible) {
@@ -258,6 +269,7 @@ public class SearchFlightsController implements Initializable {
     public void oneWayFlightSelected() {
         arrivalDatePicker.setVisible(!oneWayCheckBox.isSelected());
         arrivalDate = null;
+        inboundFlight = null;
     }
 
     @FXML
@@ -265,6 +277,10 @@ public class SearchFlightsController implements Initializable {
 
         if (departureAirport != null && arrivalAirport != null && departureDate != null &&
                 (arrivalDate != null || oneWayCheckBox.isSelected())) {
+
+            if (client != null) {
+                bookFlightsButton.setVisible(true);
+            }
 
             setOutboundFlightFieldsVisibility(true);
 
@@ -336,5 +352,33 @@ public class SearchFlightsController implements Initializable {
     @FXML
     void outboundFlightSearchPreviousDay(ActionEvent event) {
 
+    }
+
+    @FXML
+    public void bookFlights(ActionEvent event) {
+        if (departureDate.compareTo(arrivalDate) > 0) {
+            System.out.println("Invalid trip dates");
+            return;
+        }
+
+        if (outboundFlightTableView.getItems().stream().count() != 1 ||
+                (inboundFlightTableView.getItems().stream().count() != 1 && !oneWayCheckBox.isSelected())) {
+            System.out.println("Select only one flight per leg");
+            return;
+        }
+
+        outboundFlight = outboundFlightTableView.getItems().get(0);
+        if (!oneWayCheckBox.isSelected()) {
+            inboundFlight = inboundFlightTableView.getItems().get(0);
+        }
+
+        if (inboundFlight != null && departureDate.equals(departureDate) &&
+                inboundFlight.getDepartureTime().compareTo(outboundFlight.getArrivalTime()) < 0) {
+            System.out.println("Return flight before outbound flight");
+            return;
+        }
+
+        System.out.println("Bookable flight");
+        // TODO Redirect to booking page
     }
 }
