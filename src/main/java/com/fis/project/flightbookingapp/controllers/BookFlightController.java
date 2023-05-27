@@ -10,12 +10,14 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
-import java.util.ResourceBundle;
+import java.util.*;
 
-public class BookFlightController extends Initializable {
+public class BookFlightController implements Initializable {
 
     @FXML
     private TextField field1;
+    @FXML
+    private TextField field2;
 
     @FXML
     private ComboBox<String> food;
@@ -31,13 +33,23 @@ public class BookFlightController extends Initializable {
     void goBack(MouseEvent event) {
 
     }
-    void setBooking(Booking booking){
+    public void setBooking(Booking booking){
         this.booking=booking;
     }
 
     @FXML
     void goPay(MouseEvent event) {
-        booking.setfield1.getText().toString()
+        booking.setSeatNumber(field1.getText().toString());
+        if(priority.isSelected())
+            booking.setHasPriorityBoarding(true);
+        else
+            booking.setHasPriorityBoarding(false);
+
+        Set<String> traveller = new HashSet<String>();
+        traveller.add(field2.getText().toString());
+        booking.setTravellers(traveller);
+        booking.setFoodOption(food.getValue());
+        System.out.println(booking);
     }
 
 
