@@ -62,7 +62,7 @@ public class addFlightsController {
 
         FlightService.addFlight(flight);
         addUpdateRemoveApplication m = new addUpdateRemoveApplication();
-        m.changeScene("add_update_remove.fxml");
+        m.changeScene("airline-menu.fxml");
 
     }
 

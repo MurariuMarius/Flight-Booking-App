@@ -1,16 +1,14 @@
 package com.fis.project.flightbookingapp.controllers;
-import com.fis.project.flightbookingapp.Main;
 import com.fis.project.flightbookingapp.addUpdateRemoveApplication;
+import com.fis.project.flightbookingapp.model.Airline;
 import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
 
 import java.io.IOException;
-public class addUpdateRemoveController {
-    public addUpdateRemoveController() {
+public class AirlineMenuController {
+
+    public AirlineMenuController() {
     }
     @FXML
     private Button buttonAdd;
@@ -18,6 +16,16 @@ public class addUpdateRemoveController {
     private Button buttonDelete;
     @FXML
     private Button buttonUpdate;
+    @FXML
+    private Button buttonManageFlights;
+    @FXML
+    private Button buttonViewPassengersPerFlight;
+    private Airline airline;
+
+    public void initData(Airline airline) {
+        this.airline = airline;
+    }
+
     @FXML
     public void goAdd(ActionEvent actionEvent) throws IOException {
         addUpdateRemoveApplication m = new addUpdateRemoveApplication();
@@ -34,4 +42,16 @@ public class addUpdateRemoveController {
         m.changeScene("update_flights.fxml");
     }
 
+    @FXML
+    public void goManageFlights(ActionEvent actionEvent) throws IOException{
+        addUpdateRemoveApplication m = new addUpdateRemoveApplication();
+        m.changeScene("manage-booking-requests.fxml");
+    }
+
+    @FXML
+    public void goViewPassengersPerFlight(ActionEvent actionEvent) throws IOException{
+//        addUpdateRemoveApplication m = new addUpdateRemoveApplication();
+//        m.changeScene("update_flights.fxml");
+        // TODO
+    }
 }

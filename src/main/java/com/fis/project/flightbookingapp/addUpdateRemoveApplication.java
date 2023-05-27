@@ -1,5 +1,6 @@
 package com.fis.project.flightbookingapp;
 
+import com.fis.project.flightbookingapp.controllers.AirlineMenuController;
 import com.fis.project.flightbookingapp.exceptions.AirportAlreadyExistsException;
 import com.fis.project.flightbookingapp.services.AirportGetterService;
 import com.fis.project.flightbookingapp.services.AirportService;
@@ -20,7 +21,10 @@ public class addUpdateRemoveApplication extends Application {
     public void start(Stage primaryStage) throws Exception{
         stg = primaryStage;
         primaryStage.setResizable(true);
-        Parent root = FXMLLoader.load(getClass().getResource("add_update_remove.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("airline-menu.fxml"));
+        Parent root = fxmlLoader.load();
+        AirlineMenuController airlineMenuController = fxmlLoader.getController();
+        airlineMenuController.initData(null);
         primaryStage.setTitle("add/update/delete");
         primaryStage.setScene(new Scene(root, 650, 500));
         primaryStage.show();
