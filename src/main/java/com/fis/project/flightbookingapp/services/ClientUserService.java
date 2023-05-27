@@ -41,8 +41,7 @@ public class ClientUserService {
         return cursor.firstOrDefault();
     }
     public static Client getUserByUsername(String username)  {
-        Cursor<Client> cursor = clientUserRepository.find(ObjectFilters.and(
-                ObjectFilters.eq("username", username)));
+        Cursor<Client> cursor = clientUserRepository.find(ObjectFilters.eq("username", username));
         return cursor.firstOrDefault();
     }
 

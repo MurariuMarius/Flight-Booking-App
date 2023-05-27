@@ -45,8 +45,8 @@ public class ViewPassengersController implements Initializable {
     @Override
     public void initialize(URL arg0, ResourceBundle arg1){
         c1.setCellValueFactory(new PropertyValueFactory<Client, String>("username"));
-        c2.setCellValueFactory(new PropertyValueFactory<Client, String>("phuneNumber"));
-        c3.setCellValueFactory(new PropertyValueFactory<Client, String>("addresss"));
+        c2.setCellValueFactory(new PropertyValueFactory<Client, String>("phoneNumber"));
+        c3.setCellValueFactory(new PropertyValueFactory<Client, String>("address"));
         c4.setCellValueFactory(new PropertyValueFactory<Client, String>("country"));
         c5.setCellValueFactory(new PropertyValueFactory<Client, String>("email"));
 
@@ -57,9 +57,11 @@ public class ViewPassengersController implements Initializable {
         String flight = searchBar.getText().toString();
         List<Client> clients = new ArrayList<>();
         List<Booking> bookings = BookingService.getBookingsForFlight(flight);
+        System.out.println(bookings);
         for(Booking b: bookings){
             clients.add(ClientUserService.getUserByUsername(b.getUsername()));
         }
+        System.out.println(clients);
         clientTableView.getItems().addAll(clients);
 
     }
