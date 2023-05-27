@@ -43,6 +43,28 @@ public class AirportService {
         }
     }
 
+    public static Airport getAirportByName(String airportName) throws NotInDatabaseException {
+        Cursor<Airport> cursor = airportObjectRepository.find(ObjectFilters.eq("airportName", airportName));
+        if (cursor.totalCount() != 1) {
+            throw new NotInDatabaseException(
+                    String.format("There is no airport under the name %s in the database", airportName)
+            );
+        } else {
+            return cursor.firstOrDefault();
+        }
+    }
+
+    public static List<Airport> getAirportSuggestions(String airport) {
+
+        Cursor<Airport> cursor = airportObjectRepository.find(
+                ObjectFilters.or(
+                    ObjectFilters.regex("airportCode", "(?i)^" + airport),
+                    ObjectFilters.regex("city", "(?i)"+ airport)
+                )
+        );
+        return cursor.toList();
+    }
+
     public static List<Airport> getAirports() {
         return airportObjectRepository.find().toList();
     }
