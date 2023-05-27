@@ -60,6 +60,8 @@ public class UpdatePageController {
 
     @FXML
     private TextField field6;
+    @FXML
+    private TextField field7;
     private Flight flight;
 
     @FXML
@@ -88,6 +90,10 @@ public class UpdatePageController {
         if(!field6.getText().isEmpty()) {
             String f6 = field6.getText().toString();
             flight.setArrivalTime(LocalTime.parse(f6));
+        }
+        if(!field7.getText().isEmpty()) {
+            String f7 = field7.getText().toString();
+            flight.setPrice(Double.parseDouble(f7));
         }
 
         if(c1.isSelected())  operatingWeekDays.add(DayOfWeek.MONDAY);

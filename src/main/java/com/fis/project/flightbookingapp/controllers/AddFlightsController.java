@@ -29,7 +29,7 @@ public class AddFlightsController {
     @FXML
     private Button button;
     @FXML
-    private TextField field1,field2,field3,field4,field5,field6;
+    private TextField field1,field2,field3,field4,field5,field6,field7;
     @FXML
     private CheckBox c1,c2,c3,c4,c5,c6,c7;
 
@@ -50,6 +50,7 @@ public class AddFlightsController {
         arrivalAirport = AirportService.getAirportByCode(f4);
         String f5 = field5.getText().toString();
         String f6 = field6.getText().toString();
+        String  f7 = field7.getText().toString();
 
         if(c1.isSelected())  operatingWeekDays.add(DayOfWeek.MONDAY);
         if(c2.isSelected())  operatingWeekDays.add(DayOfWeek.TUESDAY);
@@ -59,7 +60,7 @@ public class AddFlightsController {
         if(c6.isSelected())  operatingWeekDays.add(DayOfWeek.SATURDAY);
         if(c7.isSelected())  operatingWeekDays.add(DayOfWeek.SUNDAY);
 
-        Flight flight = new Flight(f1,f2,departureAirport,arrivalAirport,operatingWeekDays, LocalTime.parse(f5),LocalTime.parse(f6),0);
+        Flight flight = new Flight(f1,f2,departureAirport,arrivalAirport,operatingWeekDays, LocalTime.parse(f5),LocalTime.parse(f6),Double.parseDouble(f7));
 
         FlightService.addFlight(flight);
 
