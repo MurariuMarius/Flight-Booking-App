@@ -1,8 +1,11 @@
 package com.fis.project.flightbookingapp.controllers;
 
+import com.fis.project.flightbookingapp.exceptions.BookingAlreadyExistsException;
+import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
 import com.fis.project.flightbookingapp.model.Booking;
 import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.model.CreditCard;
+import com.fis.project.flightbookingapp.services.BookingService;
 import com.fis.project.flightbookingapp.services.ClientUserService;
 import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.event.ActionEvent;
@@ -62,7 +65,7 @@ public class FinalizeBookingController {
     private Button payButton;
 
     @FXML
-    private ComboBox<?> paymentOptions;
+    private ComboBox<String> paymentOptions;
 
     @FXML
     private Text totalPrice;
@@ -80,6 +83,7 @@ public class FinalizeBookingController {
     @FXML
     void initialize() {
         makeCardAdderFiledsVisible(false);
+        paymentOptions.getItems().addAll(client.getCreditCards().stream().map(CreditCard::getCardNumber).toList());
     }
 
     @FXML
@@ -120,8 +124,10 @@ public class FinalizeBookingController {
     }
 
     @FXML
-    void pay(ActionEvent event) {
-
+    void pay(ActionEvent event) throws BookingAlreadyExistsException, NotInDatabaseException {
+        for (Booking b : bookings) {
+            BookingService.addBooking(b);
+        }
     }
 
     @FXML
