@@ -26,7 +26,7 @@ public class ClientUserService {
         }
     }
 
-    public static void checkCredentials(String username, String password) throws InvalidCredentialsException {
+    public static Client checkCredentials(String username, String password) throws InvalidCredentialsException {
         Cursor<Client> cursor = clientUserRepository.find(ObjectFilters.and(
                 ObjectFilters.eq("username", username),
                 ObjectFilters.eq("password", PasswordEncodingService.encodePassword(username, password)))
@@ -34,6 +34,7 @@ public class ClientUserService {
         if (cursor.totalCount() != 1) {
             throw new InvalidCredentialsException();
         }
+        return cursor.firstOrDefault();
     }
 
     public static List<Client> getClientUsers() {

@@ -26,7 +26,7 @@ public class AirlineUserService {
         }
     }
 
-    public static void checkCredentials(String username, String password) throws InvalidCredentialsException {
+    public static Airline checkCredentials(String username, String password) throws InvalidCredentialsException {
         Cursor<Airline> cursor = airlineUserRepository.find(ObjectFilters.and(
                 ObjectFilters.eq("username", username),
                 ObjectFilters.eq("password", PasswordEncodingService.encodePassword(username, password)))
@@ -34,6 +34,7 @@ public class AirlineUserService {
         if (cursor.totalCount() != 1) {
             throw new InvalidCredentialsException();
         }
+        return cursor.firstOrDefault();
     }
 
     public static List<Airline> getAirlineUsers() {

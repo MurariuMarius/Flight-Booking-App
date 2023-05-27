@@ -17,12 +17,12 @@
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Booking App" />
                   <Region prefHeight="100.0" prefWidth="331.0" />
-                  <Button fx:id="loginButton" mnemonicParsing="false" text="Log In" textAlignment="CENTER">
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#goToLoginPage" text="Log In" textAlignment="CENTER">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="signupButton" layoutX="430.0" layoutY="48.0" mnemonicParsing="false" text="Sign Up" textAlignment="CENTER" />
+                  <Button fx:id="signupButton" layoutX="430.0" layoutY="48.0" mnemonicParsing="false" onAction="#goToSignupPage" text="Sign Up" textAlignment="CENTER" />
                </children>
             </HBox>
          </children>
