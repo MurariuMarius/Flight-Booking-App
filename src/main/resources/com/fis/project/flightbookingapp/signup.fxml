@@ -43,7 +43,7 @@
                   <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password again" GridPane.rowIndex="2" />
                   <PasswordField fx:id="repeatedPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="3" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up as" GridPane.rowIndex="3" />
                   <ComboBox fx:id="userRole" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
                </children>
             </GridPane>
