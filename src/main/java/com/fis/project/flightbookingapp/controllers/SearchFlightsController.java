@@ -121,6 +121,16 @@ public class SearchFlightsController implements Initializable {
             }
         });
 
+        arrivalDatePicker.setShowWeekNumbers(false);
+        arrivalDatePicker.setDayCellFactory(picker -> new DateCell() {
+            public void updateItem(LocalDate date, boolean empty) {
+                super.updateItem(date, empty);
+                LocalDate today = LocalDate.now();
+                setDisable(empty || date.compareTo(today) < 0 );
+            }
+        });
+
+
         departureAirportComboBox.setEditable(true);
         departureAirportComboBox.getEditor().textProperty().addListener((observable, oldValue, newValue) -> {
             if (departureAirportComboBox.getValue() == null || oldValue.equals("")) {
@@ -193,13 +203,35 @@ public class SearchFlightsController implements Initializable {
     @FXML
     public void selectedDepartureDate() {
         departureDate = departureDatePicker.getValue();
-        System.out.println(departureDate);
+
+        arrivalDatePicker.setDayCellFactory(picker -> new DateCell() {
+            public void updateItem(LocalDate date, boolean empty) {
+                super.updateItem(date, empty);
+                setDisable(empty || date.compareTo(departureDate) < 0);
+            }
+        });
+
+        if (arrivalDate != null && departureDate.compareTo(arrivalDate) > 0) {
+            arrivalDate = departureDate;
+            arrivalDatePicker.setValue(departureDate);
+        }
     }
 
     @FXML
     public void selectedArrivalDate() {
         arrivalDate = arrivalDatePicker.getValue();
-        System.out.println(arrivalDate);
+        departureDatePicker.setDayCellFactory(picker -> new DateCell() {
+            public void updateItem(LocalDate date, boolean empty) {
+                super.updateItem(date, empty);
+                LocalDate today = LocalDate.now();
+                setDisable(empty || date.compareTo(arrivalDate) > 0 || date.compareTo(today) < 0);
+            }
+        });
+
+        if (departureDate != null && departureDate.compareTo(arrivalDate) > 0) {
+            departureDate = arrivalDate;
+            departureDatePicker.setValue(arrivalDate);
+        }
     }
 
     @FXML
