@@ -1,11 +1,15 @@
 package com.fis.project.flightbookingapp.controllers;
 
 import com.fis.project.flightbookingapp.model.Client;
+import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class ClientMenuController {
 
@@ -30,8 +34,15 @@ public class ClientMenuController {
     }
 
     @FXML
-    void goSearchFlights(ActionEvent event) {
-        // TODO
+    void goSearchFlights(ActionEvent event) throws IOException {
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader fxmlLoader = StageChangeService.changeScene(
+                stage,
+                "search-flights.fxml",
+                "Search flights"
+        );
+        SearchFlightsController searchFlightsController = fxmlLoader.getController();
+        searchFlightsController.setClient(client);
     }
 
     @FXML

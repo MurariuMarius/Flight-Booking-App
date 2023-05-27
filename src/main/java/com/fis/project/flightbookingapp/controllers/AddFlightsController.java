@@ -59,7 +59,7 @@ public class AddFlightsController {
         if(c6.isSelected())  operatingWeekDays.add(DayOfWeek.SATURDAY);
         if(c7.isSelected())  operatingWeekDays.add(DayOfWeek.SUNDAY);
 
-        Flight flight = new Flight(f1,f2,departureAirport,arrivalAirport,operatingWeekDays, LocalTime.parse(f5),LocalTime.parse(f6));
+        Flight flight = new Flight(f1,f2,departureAirport,arrivalAirport,operatingWeekDays, LocalTime.parse(f5),LocalTime.parse(f6),0);
 
         FlightService.addFlight(flight);
 
