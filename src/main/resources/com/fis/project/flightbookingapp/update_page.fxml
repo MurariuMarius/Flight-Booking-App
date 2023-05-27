@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.UpdatePageController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.UpdatePageController">
     <children>
         <AnchorPane layoutX="125.0" layoutY="43.0" prefHeight="25.0" prefWidth="308.0" />
         <AnchorPane layoutX="107.0" layoutY="68.0" prefHeight="32.0" prefWidth="469.0">
@@ -75,8 +75,14 @@
                 </Label>
             </children>
         </AnchorPane>
-        <Button fx:id="button" layoutX="231.0" layoutY="374.0" mnemonicParsing="false" onAction="#goUpdate" prefHeight="46.0" prefWidth="111.0" text="Update flight" />
+        <Button fx:id="button" layoutX="224.0" layoutY="421.0" mnemonicParsing="false" onAction="#goUpdate" prefHeight="46.0" prefWidth="111.0" text="Update flight" />
         <TextField fx:id="field6" layoutX="260.0" layoutY="324.0" prefHeight="25.0" prefWidth="237.0" />
         <TextField fx:id="field5" layoutX="260.0" layoutY="288.0" prefHeight="25.0" prefWidth="237.0" />
+      <TextField fx:id="field7" layoutX="260.0" layoutY="362.0" prefHeight="25.0" prefWidth="237.0" />
+      <Label layoutX="205.0" layoutY="362.0" text="Price:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
     </children>
 </Pane>
