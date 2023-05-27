@@ -101,7 +101,7 @@ public class UpdatePageController {
 
         FlightService.updateFlight(flight);
         addUpdateRemoveApplication m = new addUpdateRemoveApplication();
-        m.changeScene("add_update_remove.fxml");
+        m.changeScene("airline-menu.fxml");
     }
     void updateFlight(Flight flight){
         this.flight = flight;
