@@ -44,10 +44,10 @@ public class SearchFlightsController implements Initializable {
     private Button flightSearchButton;
 
     @FXML
-    private Button inboudFlightSearchNextDayButton;
+    private Button inboundFlightSearchNextDayButton;
 
     @FXML
-    private Button inboudFlightSearchPreviousDayButton;
+    private Button inboundFlightSearchPreviousDayButton;
 
     @FXML
     private Text inboundFlightSearchDate;
@@ -63,6 +63,12 @@ public class SearchFlightsController implements Initializable {
 
     @FXML
     private Button outboundFlightSearchNextDayButton;
+    
+    @FXML
+    private Text outboundFlightText;
+    
+    @FXML
+    private Text inboundFlightText;
 
     @FXML
     private TableView<Flight> outboundFlightTableView;
@@ -130,6 +136,8 @@ public class SearchFlightsController implements Initializable {
             }
         });
 
+        setOutboundFlightFieldsVisibility(false);
+        setInboundFlightFieldsVisibility(false);
 
         departureAirportComboBox.setEditable(true);
         departureAirportComboBox.getEditor().textProperty().addListener((observable, oldValue, newValue) -> {
@@ -171,13 +179,25 @@ public class SearchFlightsController implements Initializable {
         outboundFlightPriceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
 
         inboundAirlineCodeColumn.setCellValueFactory(new PropertyValueFactory<>("airlineCode"));
-        inboundDepartureTimeColumn.setCellValueFactory(new PropertyValueFactory<>("departureTime"));
-        inboundArrivalTimeColumn.setCellValueFactory(new PropertyValueFactory<>("arrivalTime"));
         inboundFlightNumberColumn.setCellValueFactory(new PropertyValueFactory<>("flightNumber"));
         inboundFlightPriceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
 
-        // TODO Hide table fields
+    }
 
+    private void setOutboundFlightFieldsVisibility(boolean visible) {
+        outboundFlightTableView.setVisible(visible);
+        outboundFlightSearchNextDayButton.setVisible(visible);
+        outboundFlightSearchDate.setVisible(visible);
+        outboundFlightSearchPreviousDayButton.setVisible(visible);
+        outboundFlightText.setVisible(visible);
+    }
+
+    private void setInboundFlightFieldsVisibility(boolean visibile) {
+        inboundFlightTableView.setVisible(visibile);
+        inboundFlightSearchNextDayButton.setVisible(visibile);
+        inboundFlightSearchPreviousDayButton.setVisible(visibile);
+        inboundFlightSearchDate.setVisible(visibile);
+        inboundFlightText.setVisible(visibile);
     }
 
     @FXML
@@ -241,7 +261,9 @@ public class SearchFlightsController implements Initializable {
 
     @FXML
     void searchFlights(ActionEvent event) {
-        System.out.println(departureDate.getDayOfWeek());
+
+        setOutboundFlightFieldsVisibility(true);
+
         List<Flight> outboundFlights = FlightService.getFlightsOnRoute(
                 departureAirport,
                 arrivalAirport,
@@ -264,7 +286,7 @@ public class SearchFlightsController implements Initializable {
         }
 
         if (!oneWayCheckBox.isSelected()) {
-            // TODO Unhide fields
+            setInboundFlightFieldsVisibility(true);
 
             List<Flight> inboundFlights = FlightService.getFlightsOnRoute(
                     arrivalAirport,
@@ -286,6 +308,8 @@ public class SearchFlightsController implements Initializable {
                         c -> new SimpleStringProperty(LocalTime.from(f.getArrivalTime()).toString())
                 );
             }
+        } else {
+            setInboundFlightFieldsVisibility(false);
         }
 
 

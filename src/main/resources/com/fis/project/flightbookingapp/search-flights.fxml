@@ -37,7 +37,7 @@
                   <Button fx:id="flightSearchButton" mnemonicParsing="false" onAction="#searchFlights" text="Search" />
                </children>
             </HBox>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select outbound flight">
+            <Text fx:id="outboundFlightText" strokeType="OUTSIDE" strokeWidth="0.0" text="Select outbound flight">
                <VBox.margin>
                   <Insets bottom="20.0" top="20.0" />
                </VBox.margin>
@@ -69,20 +69,20 @@
                   <Insets left="50.0" right="50.0" />
                </VBox.margin>
             </TableView>
-            <Text layoutX="476.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select outbound flight">
+            <Text fx:id="inboundFlightText" layoutX="476.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select outbound flight">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
             </Text>
             <HBox alignment="CENTER" layoutX="10.0" layoutY="200.0" prefHeight="44.0" prefWidth="1050.0">
                <children>
-                  <Button fx:id="inboudFlightSearchPreviousDayButton" mnemonicParsing="false" onAction="#inboundFlightSearchPreviousDay" text="Previous day" />
+                  <Button fx:id="inboundFlightSearchPreviousDayButton" mnemonicParsing="false" onAction="#inboundFlightSearchPreviousDay" text="Previous day" />
                   <Text fx:id="inboundFlightSearchDate" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
                      <HBox.margin>
                         <Insets left="350.0" right="350.0" />
                      </HBox.margin>
                   </Text>
-                  <Button fx:id="inboudFlightSearchNextDayButton" layoutX="483.0" layoutY="48.0" mnemonicParsing="false" onAction="#inboundFlightSearchNextDay" prefHeight="26.0" prefWidth="86.0" text="Next day" />
+                  <Button fx:id="inboundFlightSearchNextDayButton" layoutX="483.0" layoutY="48.0" mnemonicParsing="false" onAction="#inboundFlightSearchNextDay" prefHeight="26.0" prefWidth="86.0" text="Next day" />
                </children>
             </HBox>
             <TableView fx:id="inboundFlightTableView" layoutX="60.0" layoutY="244.0" prefHeight="149.0" prefWidth="950.0">
