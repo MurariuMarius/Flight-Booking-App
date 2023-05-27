@@ -74,7 +74,7 @@ public class FlightService {
         return cursor.toList().stream().filter(f -> f.getOperatingWeekDays().contains(dayOfWeek)).toList();
     }
 
-    private static void checkFlightDoesNotAlreadyExist(Flight flight) throws FlightAlreadyExistsException {
+    static void checkFlightDoesNotAlreadyExist(Flight flight) throws FlightAlreadyExistsException {
         for (Flight f : flightObjectRepository.find()) {
             if (f.getFlightNumber().equals(flight.getFlightNumber())) {
                 throw new FlightAlreadyExistsException(flight.getFlightNumber());

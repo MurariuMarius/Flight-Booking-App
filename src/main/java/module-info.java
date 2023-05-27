@@ -9,10 +9,10 @@ module com.fis.project.flightbookingapp {
     requires annotations;
     requires com.google.gson;
 
-    opens com.fis.project.flightbookingapp to javafx.fxml;
     exports com.fis.project.flightbookingapp;
     opens com.fis.project.flightbookingapp.services;
     opens com.fis.project.flightbookingapp.model;
     exports com.fis.project.flightbookingapp.controllers;
     opens com.fis.project.flightbookingapp.controllers;
+    opens com.fis.project.flightbookingapp;
 }
