@@ -30,15 +30,12 @@ public class Booking implements Serializable {
 
     public Booking() {}
 
-    public Booking(String username, Flight flight, LocalDate date, Set<String> travellers, String seatNumber, String foodOption, boolean hasPriorityBoarding) {
+    public Booking(String username, Flight flight, LocalDate date, Set<String> travellers) {
         this.username = username;
         this.flightNumber = flight.getFlightNumber();
         this.date = date.toString();
         this.travellers = travellers;
         this.bookingStatus = BookingStatus.UNDER_REVIEW;
-        this.seatNumber = seatNumber;
-        this.foodOption = foodOption;
-        this.hasPriorityBoarding = hasPriorityBoarding;
     }
 
     public NitriteId getBookingId() {
