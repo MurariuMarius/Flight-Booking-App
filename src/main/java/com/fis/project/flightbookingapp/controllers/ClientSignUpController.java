@@ -5,13 +5,17 @@ import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.services.ClientUserService;
 import com.fis.project.flightbookingapp.services.EmailValidationService;
 import com.fis.project.flightbookingapp.services.PhoneValidationService;
+import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.Arrays;
 
-public class CustomerSignUpController {
+public class ClientSignUpController {
 
     @FXML
     private TextField emailField;
@@ -56,7 +60,21 @@ public class CustomerSignUpController {
         try {
             ClientUserService.addUser(client);
             System.out.println("User successfully added");
+
+            Stage stage = (Stage) emailField.getScene().getWindow();
+
+            FXMLLoader fxmlLoader = StageChangeService.changeScene(
+                    stage,
+                    "client-menu.fxml",
+                    "Welcome " + client.getUsername()
+            );
+
+            ClientMenuController clientMenuController = fxmlLoader.getController();
+            clientMenuController.initData(client);
+
         } catch (UserAlreadyExistsException e) {
+            System.out.println(e);
+        } catch (IOException e) {
             System.out.println(e);
         }
     }

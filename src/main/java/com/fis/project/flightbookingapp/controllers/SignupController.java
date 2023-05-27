@@ -88,7 +88,7 @@ public class SignupController {
 
         if (userRole.getSelectionModel().getSelectedItem().equals("Customer")) {
             user = new Client();
-            CustomerSignUpController controller = fxmlLoader.getController();
+            ClientSignUpController controller = fxmlLoader.getController();
             controller.initData((Client) user);
         } else {
             user = new Airline();

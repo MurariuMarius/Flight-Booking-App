@@ -1,9 +1,9 @@
 package com.fis.project.flightbookingapp.controllers;
 
-import com.fis.project.flightbookingapp.addUpdateRemoveApplication;
 import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
 import com.fis.project.flightbookingapp.model.Flight;
 import com.fis.project.flightbookingapp.services.FlightService;
+import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -43,16 +43,15 @@ public class UpdateFlightController implements Initializable {
     void goUpdate(MouseEvent event) throws NotInDatabaseException , IOException {
         String flightNo = searchBar.getText().toString();
         Flight flight = FlightService.getFlightByNumber(flightNo);
-        FXMLLoader loader = new FXMLLoader(addUpdateRemoveApplication.class.getResource("update_page.fxml"));
-        root = loader.load();
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "update_page.fxml",
+                "Update flights"
+        );
         UpdatePageController updatePageController = loader.getController();
         updatePageController.updateFlight(flight);
-
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-
     }
 
 

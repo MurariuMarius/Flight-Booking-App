@@ -1,17 +1,18 @@
 package com.fis.project.flightbookingapp.controllers;
 
-import com.fis.project.flightbookingapp.addUpdateRemoveApplication;
 import com.fis.project.flightbookingapp.exceptions.FlightAlreadyExistsException;
 import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
 import com.fis.project.flightbookingapp.model.Airport;
 import com.fis.project.flightbookingapp.model.Flight;
 import com.fis.project.flightbookingapp.services.AirportService;
 import com.fis.project.flightbookingapp.services.FlightService;
+import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.time.DayOfWeek;
@@ -100,8 +101,14 @@ public class UpdatePageController {
         if(!operatingWeekDays.isEmpty()) flight.setOperatingWeekDays(operatingWeekDays);
 
         FlightService.updateFlight(flight);
-        addUpdateRemoveApplication m = new addUpdateRemoveApplication();
-        m.changeScene("add_update_remove.fxml");
+
+        Stage stage = (Stage) field2.getScene().getWindow();
+
+        StageChangeService.changeScene(
+                stage,
+                "airline-menu.fxml",
+                "Airline Menu"
+        );
     }
     void updateFlight(Flight flight){
         this.flight = flight;

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.AirlineMenuController">
+   <children>
+      <Label layoutX="244.0" layoutY="38.0" prefHeight="62.0" prefWidth="106.0" text="Manage flights">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="162.0" layoutY="117.0" prefHeight="254.0" prefWidth="271.0" spacing="10.0">
+         <children>
+            <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#goAdd" prefHeight="41.0" prefWidth="198.0" text="Add" />
+            <Button fx:id="buttonUpdate" mnemonicParsing="false" onAction="#goUpdate" prefHeight="42.0" prefWidth="199.0" text="Update" />
+            <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#goDelete" prefHeight="42.0" prefWidth="198.0" text="Delete" />
+            <Button fx:id="buttonManageFlights" mnemonicParsing="false" onAction="#goManageBookingRequests" prefHeight="46.0" prefWidth="199.0" text="Manage booking requests" />
+            <Button fx:id="buttonViewPassengersPerFlight" mnemonicParsing="false" onAction="#goViewPassengersPerFlight" prefHeight="44.0" prefWidth="198.0" text="View passengers per flight" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
