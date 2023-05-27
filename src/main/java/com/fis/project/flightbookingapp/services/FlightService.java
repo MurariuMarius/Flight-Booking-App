@@ -8,6 +8,7 @@ import org.dizitart.no2.objects.Cursor;
 import org.dizitart.no2.objects.ObjectRepository;
 import org.dizitart.no2.objects.filters.ObjectFilters;
 
+import java.time.DayOfWeek;
 import java.util.List;
 
 public class FlightService {
@@ -61,6 +62,16 @@ public class FlightService {
 
     public static List<Flight> getFlightsByDepartureAirport(Airport airport) {
         return getFlightsByDepartureAirport(airport.getAirportCode());
+    }
+
+    public static List<Flight> getFlightsOnRoute(Airport departureAirport, Airport arrivalAirport, DayOfWeek dayOfWeek) {
+        Cursor<Flight> cursor = flightObjectRepository.find(
+                ObjectFilters.and(
+                        ObjectFilters.eq("departureAirportCode", departureAirport.getAirportCode()),
+                        ObjectFilters.eq("arrivalAirportCode", arrivalAirport.getAirportCode())
+                )
+        );
+        return cursor.toList().stream().filter(f -> f.getOperatingWeekDays().contains(dayOfWeek)).toList();
     }
 
     static void checkFlightDoesNotAlreadyExist(Flight flight) throws FlightAlreadyExistsException {
