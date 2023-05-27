@@ -24,6 +24,9 @@ public class Booking implements Serializable {
     private String date;
     private Set<String> travellers;
     private BookingStatus bookingStatus;
+    private String seatNumber;
+    private String foodOption;
+    private boolean hasPriorityBoarding;
 
     public Booking() {}
 
@@ -90,6 +93,34 @@ public class Booking implements Serializable {
         this.bookingStatus = bookingStatus;
     }
 
+    public void setFlightNumber(String flightNumber) {
+        this.flightNumber = flightNumber;
+    }
+
+    public String getSeatNumber() {
+        return seatNumber;
+    }
+
+    public void setSeatNumber(String seatNumber) {
+        this.seatNumber = seatNumber;
+    }
+
+    public String getFoodOption() {
+        return foodOption;
+    }
+
+    public void setFoodOption(String foodOption) {
+        this.foodOption = foodOption;
+    }
+
+    public boolean isHasPriorityBoarding() {
+        return hasPriorityBoarding;
+    }
+
+    public void setHasPriorityBoarding(boolean hasPriorityBoarding) {
+        this.hasPriorityBoarding = hasPriorityBoarding;
+    }
+
     public void addTraveller(String name) throws TravellerAlreadyExistsException {
         if (!travellers.add(name)) {
             throw new TravellerAlreadyExistsException(name);
@@ -118,6 +149,9 @@ public class Booking implements Serializable {
                 ", date='" + date + '\'' +
                 ", travellers=" + travellers +
                 ", bookingStatus=" + bookingStatus +
+                ", seatNumber='" + seatNumber + '\'' +
+                ", foodOption='" + foodOption + '\'' +
+                ", hasPriorityBoarding=" + hasPriorityBoarding +
                 '}';
     }
 }

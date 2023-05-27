@@ -2,14 +2,17 @@ package com.fis.project.flightbookingapp.controllers;
 
 import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
 import com.fis.project.flightbookingapp.model.Airport;
+import com.fis.project.flightbookingapp.model.Booking;
 import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.model.Flight;
 import com.fis.project.flightbookingapp.services.AirportService;
 import com.fis.project.flightbookingapp.services.FlightService;
+import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableValueBase;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
@@ -19,7 +22,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -409,7 +414,7 @@ public class SearchFlightsController implements Initializable {
     }
 
     @FXML
-    public void bookFlights(ActionEvent event) {
+    public void bookFlights(ActionEvent event) throws IOException {
         if (outboundFlightDate.compareTo(inboundFlightDate) > 0) {
             System.out.println("Invalid trip dates");
             return;
@@ -422,6 +427,35 @@ public class SearchFlightsController implements Initializable {
         }
 
         System.out.println("Bookable flight");
-        // TODO Redirect to booking page
+
+        List<Booking> bookings = new ArrayList<>();
+
+        Booking outboundFlightBooking = new Booking(
+                client.getUsername(),
+                outboundFlight,
+                outboundFlightDate,
+                Set.of(client.getUsername())
+        );
+
+        bookings.add(outboundFlightBooking);
+
+        if (!oneWayCheckBox.isSelected()) {
+            Booking inboundFlightBooking = new Booking(
+                    client.getUsername(),
+                    inboundFlight,
+                    inboundFlightDate,
+                    Set.of(client.getUsername())
+            );
+            bookings.add(inboundFlightBooking);
+        }
+
+        Stage stage = (Stage) bookFlightsButton.getScene().getWindow();
+        FXMLLoader fxmlLoader = StageChangeService.changeScene(
+                stage,
+                "book_flight.fxml",
+                "Book flight"
+        );
+        BookFlightController bookFlightController = fxmlLoader.getController();
+        bookFlightController.setData(client, bookings, inboundFlight.getPrice() + outboundFlight.getPrice());
     }
 }

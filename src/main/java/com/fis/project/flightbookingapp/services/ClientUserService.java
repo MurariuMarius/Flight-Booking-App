@@ -18,6 +18,10 @@ public class ClientUserService {
         clientUserRepository.insert(user);
     }
 
+    public static void updateUser(Client user) {
+        clientUserRepository.update(user);
+    }
+
     private static void checkUserDoesNotAlreadyExist(Client user) throws UserAlreadyExistsException {
         for (Client u : clientUserRepository.find()) {
             if (Objects.equals(user.getUsername(), u.getUsername())) {

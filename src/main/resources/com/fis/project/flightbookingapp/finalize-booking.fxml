@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.FinalizeBookingController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="394.0" prefWidth="600.0">
+         <children>
+            <Text fx:id="pageTittle" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <VBox prefHeight="330.0" prefWidth="499.0">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Here are your booking details:">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="fligthDetails" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Text>
+                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="paymentOptions" onAction="#selectCard" prefWidth="150.0" promptText="Pay with">
+                           <opaqueInsets>
+                              <Insets bottom="20.0" />
+                           </opaqueInsets>
+                        </ComboBox>
+                        <Button fx:id="newCard" mnemonicParsing="false" onAction="#openNewCardWindow" text="Add new card">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <VBox prefHeight="100.0" prefWidth="134.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your total:" />
+                              <Text fx:id="totalPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane fx:id="cardGridPane" prefHeight="91.0" prefWidth="358.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="cardNumberField" GridPane.columnIndex="1" />
+                        <Text fx:id="cardNumber" strokeType="OUTSIDE" strokeWidth="0.0" text="Card number" />
+                        <TextField fx:id="cardExpirationDateField" layoutX="260.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Text fx:id="cardExpirationDate" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expiration date" GridPane.rowIndex="1" />
+                        <Text fx:id="cardhoderName" strokeType="OUTSIDE" strokeWidth="0.0" text="Cardholder name" GridPane.rowIndex="2" />
+                        <TextField fx:id="cardholderNameField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Button fx:id="addCardButton" mnemonicParsing="false" onAction="#addNewCard" text="Add card" />
+                  <HBox prefHeight="22.0" prefWidth="499.0">
+                     <children>
+                        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelBooking" prefHeight="26.0" prefWidth="66.0" text="Cancel" />
+                        <Button fx:id="payButton" mnemonicParsing="false" onAction="#pay" prefHeight="26.0" prefWidth="63.0" text="PAY">
+                           <HBox.margin>
+                              <Insets left="375.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
