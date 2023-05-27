@@ -34,10 +34,10 @@ public class SearchFlightsController implements Initializable {
     private ComboBox<String> arrivalAirportComboBox;
 
     @FXML
-    private DatePicker departureDatePicker;
+    private DatePicker outboundFlightDatePicker;
 
     @FXML
-    private DatePicker arrivalDatePicker;
+    private DatePicker inboundFlightDatePicker;
 
     @FXML
     private CheckBox oneWayCheckBox;
@@ -116,16 +116,16 @@ public class SearchFlightsController implements Initializable {
     private static final int searchResultLimit = 5;
     private Airport departureAirport = null;
     private Airport arrivalAirport = null;
-    private LocalDate departureDate = null;
-    private LocalDate arrivalDate = null;
+    private LocalDate outboundFlightDate = null;
+    private LocalDate inboundFlightDate = null;
     private Client client = null;
     private Flight outboundFlight = null;
     private Flight inboundFlight = null;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        departureDatePicker.setShowWeekNumbers(false);
-        departureDatePicker.setDayCellFactory(picker -> new DateCell() {
+        outboundFlightDatePicker.setShowWeekNumbers(false);
+        outboundFlightDatePicker.setDayCellFactory(picker -> new DateCell() {
             public void updateItem(LocalDate date, boolean empty) {
                 super.updateItem(date, empty);
                 LocalDate today = LocalDate.now();
@@ -133,8 +133,8 @@ public class SearchFlightsController implements Initializable {
             }
         });
 
-        arrivalDatePicker.setShowWeekNumbers(false);
-        arrivalDatePicker.setDayCellFactory(picker -> new DateCell() {
+        inboundFlightDatePicker.setShowWeekNumbers(false);
+        inboundFlightDatePicker.setDayCellFactory(picker -> new DateCell() {
             public void updateItem(LocalDate date, boolean empty) {
                 super.updateItem(date, empty);
                 LocalDate today = LocalDate.now();
@@ -188,6 +188,13 @@ public class SearchFlightsController implements Initializable {
         inboundAirlineCodeColumn.setCellValueFactory(new PropertyValueFactory<>("airlineCode"));
         inboundFlightNumberColumn.setCellValueFactory(new PropertyValueFactory<>("flightNumber"));
 
+        outboundFlightTableView.getSelectionModel().selectedItemProperty().addListener(((observableValue, oldValue, newValue) ->
+                outboundFlight = newValue
+        ));
+
+        inboundFlightTableView.getSelectionModel().selectedItemProperty().addListener(((observableValue, oldValue, newValue) ->
+                inboundFlight = newValue
+        ));
     }
 
     public void setClient(Client client) {
@@ -232,61 +239,63 @@ public class SearchFlightsController implements Initializable {
 
     @FXML
     public void selectedDepartureDate() {
-        departureDate = departureDatePicker.getValue();
+        outboundFlightDate = outboundFlightDatePicker.getValue();
 
-        arrivalDatePicker.setDayCellFactory(picker -> new DateCell() {
+        inboundFlightDatePicker.setDayCellFactory(picker -> new DateCell() {
             public void updateItem(LocalDate date, boolean empty) {
                 super.updateItem(date, empty);
-                setDisable(empty || date.compareTo(departureDate) < 0);
+                setDisable(empty || date.compareTo(outboundFlightDate) < 0);
             }
         });
 
-        if (arrivalDate != null && departureDate.compareTo(arrivalDate) > 0) {
-            arrivalDate = departureDate;
-            arrivalDatePicker.setValue(departureDate);
+        if (inboundFlightDate != null && outboundFlightDate.compareTo(inboundFlightDate) > 0) {
+            inboundFlightDate = outboundFlightDate;
+            inboundFlightDatePicker.setValue(outboundFlightDate);
         }
     }
 
     @FXML
     public void selectedArrivalDate() {
-        arrivalDate = arrivalDatePicker.getValue();
-        departureDatePicker.setDayCellFactory(picker -> new DateCell() {
+        inboundFlightDate = inboundFlightDatePicker.getValue();
+        outboundFlightDatePicker.setDayCellFactory(picker -> new DateCell() {
             public void updateItem(LocalDate date, boolean empty) {
                 super.updateItem(date, empty);
                 LocalDate today = LocalDate.now();
-                setDisable(empty || date.compareTo(arrivalDate) > 0 || date.compareTo(today) < 0);
+                setDisable(empty || date.compareTo(inboundFlightDate) > 0 || date.compareTo(today) < 0);
             }
         });
 
-        if (departureDate != null && departureDate.compareTo(arrivalDate) > 0) {
-            departureDate = arrivalDate;
-            departureDatePicker.setValue(arrivalDate);
+        if (outboundFlightDate != null && outboundFlightDate.compareTo(inboundFlightDate) > 0) {
+            outboundFlightDate = inboundFlightDate;
+            outboundFlightDatePicker.setValue(inboundFlightDate);
         }
     }
 
     @FXML
     public void oneWayFlightSelected() {
-        arrivalDatePicker.setVisible(!oneWayCheckBox.isSelected());
-        arrivalDate = null;
+        inboundFlightDatePicker.setVisible(!oneWayCheckBox.isSelected());
+        inboundFlightDate = null;
         inboundFlight = null;
     }
 
     @FXML
-    void searchFlights(ActionEvent event) {
+    void searchFlights() {
 
-        if (departureAirport != null && arrivalAirport != null && departureDate != null &&
-                (arrivalDate != null || oneWayCheckBox.isSelected())) {
+        if (departureAirport != null && arrivalAirport != null && outboundFlightDate != null &&
+                (inboundFlightDate != null || oneWayCheckBox.isSelected())) {
 
             if (client != null) {
                 bookFlightsButton.setVisible(true);
             }
+
+            outboundFlightSearchDate.setText(outboundFlightDate.toString());
 
             setOutboundFlightFieldsVisibility(true);
 
             List<Flight> outboundFlights = FlightService.getFlightsOnRoute(
                     departureAirport,
                     arrivalAirport,
-                    departureDate.getDayOfWeek()
+                    outboundFlightDate.getDayOfWeek()
             );
             System.out.println(outboundFlights);
             outboundFlightTableView.getColumns().removeAll(
@@ -324,10 +333,12 @@ public class SearchFlightsController implements Initializable {
             if (!oneWayCheckBox.isSelected()) {
                 setInboundFlightFieldsVisibility(true);
 
+                inboundFlightSearchDate.setText(inboundFlightDate.toString());
+
                 List<Flight> inboundFlights = FlightService.getFlightsOnRoute(
                         arrivalAirport,
                         departureAirport,
-                        arrivalDate.getDayOfWeek()
+                        inboundFlightDate.getDayOfWeek()
                 );
                 System.out.println(inboundFlights);
                 inboundFlightTableView.getColumns().removeAll(
@@ -369,43 +380,42 @@ public class SearchFlightsController implements Initializable {
 
     @FXML
     void inboundFlightSearchNextDay(ActionEvent event) {
-
+        inboundFlightDate = inboundFlightDate.plusDays(1);
+        searchFlights();
     }
 
     @FXML
     void inboundFlightSearchPreviousDay(ActionEvent event) {
-
+        if (inboundFlightDate.compareTo(outboundFlightDate) > 0 && inboundFlightDate.compareTo(LocalDate.now()) > 0) {
+            inboundFlightDate = inboundFlightDate.minusDays(1);
+            searchFlights();
+        }
     }
 
     @FXML
     void outboundFlightSearchNextDay(ActionEvent event) {
-
+        if (outboundFlightDate.compareTo(inboundFlightDate) < 0) {
+            outboundFlightDate = outboundFlightDate.plusDays(1);
+            searchFlights();
+        }
     }
 
     @FXML
     void outboundFlightSearchPreviousDay(ActionEvent event) {
-
+        if (outboundFlightDate.compareTo(LocalDate.now()) > 0) {
+            outboundFlightDate = outboundFlightDate.minusDays(1);
+            searchFlights();
+        }
     }
 
     @FXML
     public void bookFlights(ActionEvent event) {
-        if (departureDate.compareTo(arrivalDate) > 0) {
+        if (outboundFlightDate.compareTo(inboundFlightDate) > 0) {
             System.out.println("Invalid trip dates");
             return;
         }
 
-        if (outboundFlightTableView.getItems().stream().count() != 1 ||
-                (inboundFlightTableView.getItems().stream().count() != 1 && !oneWayCheckBox.isSelected())) {
-            System.out.println("Select only one flight per leg");
-            return;
-        }
-
-        outboundFlight = outboundFlightTableView.getItems().get(0);
-        if (!oneWayCheckBox.isSelected()) {
-            inboundFlight = inboundFlightTableView.getItems().get(0);
-        }
-
-        if (inboundFlight != null && departureDate.equals(departureDate) &&
+        if (inboundFlight != null && outboundFlightDate.equals(outboundFlightDate) &&
                 inboundFlight.getDepartureTime().compareTo(outboundFlight.getArrivalTime()) < 0) {
             System.out.println("Return flight before outbound flight");
             return;

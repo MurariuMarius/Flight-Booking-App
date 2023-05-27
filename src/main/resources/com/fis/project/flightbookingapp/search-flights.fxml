@@ -21,8 +21,8 @@
                <children>
                   <ComboBox fx:id="departureAirportComboBox" onAction="#selectedDepartureAirport" prefWidth="150.0" promptText="From" />
                   <ComboBox fx:id="arrivalAirportComboBox" onAction="#selectedArrivalAirport" prefWidth="150.0" promptText="To" />
-                  <DatePicker fx:id="departureDatePicker" onAction="#selectedDepartureDate" promptText="Date" />
-                  <DatePicker fx:id="arrivalDatePicker" layoutX="390.0" layoutY="32.0" onAction="#selectedArrivalDate" promptText="Date" />
+                  <DatePicker fx:id="outboundFlightDatePicker" onAction="#selectedDepartureDate" promptText="Date" />
+                  <DatePicker fx:id="inboundFlightDatePicker" layoutX="390.0" layoutY="32.0" onAction="#selectedArrivalDate" promptText="Date" />
                </children>
                <VBox.margin>
                   <Insets />
