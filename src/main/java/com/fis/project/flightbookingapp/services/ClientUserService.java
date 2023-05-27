@@ -35,6 +35,11 @@ public class ClientUserService {
             throw new InvalidCredentialsException();
         }
     }
+    public static Client getUserByUsername(String username)  {
+        Cursor<Client> cursor = clientUserRepository.find(ObjectFilters.and(
+                ObjectFilters.eq("username", username)));
+        return cursor.firstOrDefault();
+    }
 
     public static List<Client> getClientUsers() {
         return clientUserRepository.find().toList();
