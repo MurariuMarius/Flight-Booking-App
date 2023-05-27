@@ -1,9 +1,11 @@
 package com.fis.project.flightbookingapp.controllers;
-import com.fis.project.flightbookingapp.addUpdateRemoveApplication;
 import com.fis.project.flightbookingapp.model.Airline;
+import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 public class AirlineMenuController {
@@ -28,30 +30,44 @@ public class AirlineMenuController {
 
     @FXML
     public void goAdd(ActionEvent actionEvent) throws IOException {
-        addUpdateRemoveApplication m = new addUpdateRemoveApplication();
-        m.changeScene("add_flights.fxml");
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        StageChangeService.changeScene(
+                stage,
+                "add_flights.fxml",
+                "Add flights"
+        );
       }
       @FXML
     public void goDelete(ActionEvent actionEvent) throws  IOException{
-          addUpdateRemoveApplication m = new addUpdateRemoveApplication();
-          m.changeScene("delete_flight.fxml");
+          Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+          StageChangeService.changeScene(
+                  stage,
+                  "delete_flight.fxml",
+                  "Delete flight"
+          );
     }
     @FXML
     public void goUpdate(ActionEvent actionEvent) throws IOException{
-        addUpdateRemoveApplication m = new addUpdateRemoveApplication();
-        m.changeScene("update_flights.fxml");
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        StageChangeService.changeScene(
+                stage,
+                "update_flights.fxml",
+                "Update flights"
+        );
     }
 
     @FXML
-    public void goManageFlights(ActionEvent actionEvent) throws IOException{
-        addUpdateRemoveApplication m = new addUpdateRemoveApplication();
-        m.changeScene("manage-booking-requests.fxml");
+    public void goManageBookingRequests(ActionEvent actionEvent) throws IOException{
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        StageChangeService.changeScene(
+                stage,
+                "manage-booking-requests.fxml",
+                "Manage booking requests"
+        );
     }
 
     @FXML
     public void goViewPassengersPerFlight(ActionEvent actionEvent) throws IOException{
-//        addUpdateRemoveApplication m = new addUpdateRemoveApplication();
-//        m.changeScene("update_flights.fxml");
         // TODO
     }
 }

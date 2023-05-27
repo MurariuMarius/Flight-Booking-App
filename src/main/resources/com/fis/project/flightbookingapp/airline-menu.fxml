@@ -16,8 +16,8 @@
             <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#goAdd" prefHeight="41.0" prefWidth="198.0" text="Add" />
             <Button fx:id="buttonUpdate" mnemonicParsing="false" onAction="#goUpdate" prefHeight="42.0" prefWidth="199.0" text="Update" />
             <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#goDelete" prefHeight="42.0" prefWidth="198.0" text="Delete" />
-            <Button fx:id="buttonManageFlights" mnemonicParsing="false" onAction="#goAdd" prefHeight="46.0" prefWidth="199.0" text="Manage booking requests" />
-            <Button fx:id="buttonViewPassengersPerFlight" mnemonicParsing="false" onAction="#goAdd" prefHeight="44.0" prefWidth="198.0" text="View passengers per flight" />
+            <Button fx:id="buttonManageFlights" mnemonicParsing="false" onAction="#goManageBookingRequests" prefHeight="46.0" prefWidth="199.0" text="Manage booking requests" />
+            <Button fx:id="buttonViewPassengersPerFlight" mnemonicParsing="false" onAction="#goViewPassengersPerFlight" prefHeight="44.0" prefWidth="198.0" text="View passengers per flight" />
          </children>
       </VBox>
    </children>
