@@ -1,8 +1,11 @@
 package com.fis.project.flightbookingapp.model;
 
+import org.dizitart.no2.objects.InheritIndices;
+
 import java.util.List;
 import java.util.Objects;
 
+@InheritIndices
 public class Client extends User {
     private List<CreditCard> creditCards;
 

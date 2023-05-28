@@ -1,5 +1,8 @@
 package com.fis.project.flightbookingapp.model;
 
+import org.dizitart.no2.objects.InheritIndices;
+
+@InheritIndices
 public class Airline extends User {
     private String icaoCode;
     private String airOperatorCertificate;
