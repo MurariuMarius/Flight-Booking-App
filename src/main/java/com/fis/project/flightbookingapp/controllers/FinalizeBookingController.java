@@ -15,6 +15,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
@@ -51,7 +52,7 @@ public class FinalizeBookingController {
     private TextField cardholderNameField;
 
     @FXML
-    private Text fligthDetails;
+    private ListView<Booking> bookingListView;
 
     @FXML
     private GridPane cardGridPane;
@@ -88,8 +89,10 @@ public class FinalizeBookingController {
         } catch (NotInDatabaseException e) {
             System.out.println(e);
         }
-        fligthDetails.setText(bookings.toString());
-        totalPrice.setText(String.format("€ %s", price));
+
+        bookingListView.getItems().addAll(bookings);
+
+        totalPrice.setText(String.format("€ %.2f", price));
     }
 
     @FXML
