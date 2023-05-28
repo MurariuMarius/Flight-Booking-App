@@ -20,7 +20,6 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.lang.ref.Cleaner;
 import java.util.List;
 
 public class FinalizeBookingController {
@@ -78,12 +77,12 @@ public class FinalizeBookingController {
         this.client = client;
         this.bookings = bookings;
         this.price = price;
+        paymentOptions.getItems().addAll(client.getCreditCards().stream().map(CreditCard::getCardNumber).toList());
     }
 
     @FXML
     void initialize() {
-        makeCardAdderFiledsVisible(false);
-        paymentOptions.getItems().addAll(client.getCreditCards().stream().map(CreditCard::getCardNumber).toList());
+        makeCardAdderFieldsVisible(false);
     }
 
     @FXML
@@ -120,7 +119,7 @@ public class FinalizeBookingController {
 
     @FXML
     void openNewCardWindow(ActionEvent event) {
-        makeCardAdderFiledsVisible(true);
+        makeCardAdderFieldsVisible(true);
     }
 
     @FXML
@@ -135,7 +134,7 @@ public class FinalizeBookingController {
 
     }
 
-    private void makeCardAdderFiledsVisible(boolean option) {
+    private void makeCardAdderFieldsVisible(boolean option) {
         cardGridPane.setVisible(option);
         addCardButton.setVisible(option);
     }

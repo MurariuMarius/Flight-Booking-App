@@ -26,12 +26,12 @@
             <Font size="18.0" />
          </font>
       </CheckBox>
-      <Button layoutX="351.0" layoutY="259.0" mnemonicParsing="false" onMouseClicked="#goPay" prefHeight="51.0" prefWidth="150.0" text="Pay">
+      <Button layoutX="351.0" layoutY="259.0" mnemonicParsing="false" onAction="#goPay" prefHeight="51.0" prefWidth="150.0" text="Pay">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="136.0" layoutY="259.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="51.0" prefWidth="150.0" text="Back">
+      <Button layoutX="136.0" layoutY="259.0" mnemonicParsing="false" onAction="#goBack" prefHeight="51.0" prefWidth="150.0" text="Back">
          <font>
             <Font size="24.0" />
          </font>

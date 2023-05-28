@@ -3,6 +3,7 @@ package com.fis.project.flightbookingapp.controllers;
 import com.fis.project.flightbookingapp.model.Booking;
 import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.services.StageChangeService;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -37,7 +38,7 @@ public class BookFlightController implements Initializable {
     }
 
     @FXML
-    void goBack(MouseEvent event) throws IOException {
+    void goBack(ActionEvent event) throws IOException {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         FXMLLoader fxmlLoader = StageChangeService.changeScene(
                 stage,
@@ -54,7 +55,7 @@ public class BookFlightController implements Initializable {
     }
 
     @FXML
-    void goPay(MouseEvent event) {
+    void goPay(ActionEvent event) throws IOException {
         for (Booking booking : bookings) {
             booking.setSeatNumber(field1.getText().toString());
             if (priority.isSelected()) {
@@ -74,6 +75,16 @@ public class BookFlightController implements Initializable {
                 price *= 1.05;
             }
         }
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "finalize-booking.fxml",
+                "Checkout"
+        );
+        FinalizeBookingController controller = loader.getController();
+        controller.setData(client, bookings, price);
+
         System.out.println(bookings);
     }
 
