@@ -140,12 +140,19 @@ public class FinalizeBookingController {
     }
 
     @FXML
-    void pay(ActionEvent event) throws BookingAlreadyExistsException, NotInDatabaseException {
+    void pay(ActionEvent event) throws BookingAlreadyExistsException, NotInDatabaseException, IOException {
         for (Booking b : bookings) {
             BookingService.addBooking(b);
         }
 
-        // TODO Redirect to view bookings
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "see_bookings.fxml",
+                "Flight Booking App - Your bookings"
+        );
+        SeeBookingsController controller = loader.getController();
+        controller.setClient(client);
     }
 
     @FXML
