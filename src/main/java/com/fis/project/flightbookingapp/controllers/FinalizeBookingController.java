@@ -7,6 +7,7 @@ import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.model.CreditCard;
 import com.fis.project.flightbookingapp.services.BookingService;
 import com.fis.project.flightbookingapp.services.ClientUserService;
+import com.fis.project.flightbookingapp.services.FlightService;
 import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -20,6 +21,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class FinalizeBookingController {
@@ -58,7 +60,7 @@ public class FinalizeBookingController {
     private Button newCard;
 
     @FXML
-    private Text pageTittle;
+    private Text pageTitle;
 
     @FXML
     private Button payButton;
@@ -77,7 +79,17 @@ public class FinalizeBookingController {
         this.client = client;
         this.bookings = bookings;
         this.price = price;
+
         paymentOptions.getItems().addAll(client.getCreditCards().stream().map(CreditCard::getCardNumber).toList());
+
+        try {
+            pageTitle.setText("Your booking to " +
+                    FlightService.getFlightByNumber(bookings.get(0).getFlightNumber()).getArrivalAirport().getCity());
+        } catch (NotInDatabaseException e) {
+            System.out.println(e);
+        }
+        fligthDetails.setText(bookings.toString());
+        totalPrice.setText(String.format("€ %s", price));
     }
 
     @FXML
@@ -95,13 +107,15 @@ public class FinalizeBookingController {
                 cardHolderName,
                 expirationDate
         );
-        List<CreditCard> creditCards = client.getCreditCards();
+        List<CreditCard> creditCards = new ArrayList<>(client.getCreditCards());
         if (creditCards.contains(creditCard)) {
             System.out.println("Credit card already added");
         } else {
             creditCards.add(creditCard);
             client.setCreditCards(creditCards);
             ClientUserService.updateUser(client);
+            makeCardAdderFieldsVisible(false);
+            paymentOptions.getItems().add(creditCard.getCardNumber());
         }
     }
 
@@ -127,6 +141,8 @@ public class FinalizeBookingController {
         for (Booking b : bookings) {
             BookingService.addBooking(b);
         }
+
+        // TODO Redirect to view bookings
     }
 
     @FXML

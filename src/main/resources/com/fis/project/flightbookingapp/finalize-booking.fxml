@@ -18,7 +18,7 @@
    <children>
       <VBox alignment="CENTER" prefHeight="394.0" prefWidth="600.0">
          <children>
-            <Text fx:id="pageTittle" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+            <Text fx:id="pageTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
                <font>
                   <Font size="18.0" />
                </font>
