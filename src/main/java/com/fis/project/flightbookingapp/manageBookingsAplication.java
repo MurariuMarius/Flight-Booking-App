@@ -1,6 +1,6 @@
 package com.fis.project.flightbookingapp;
 
-import com.fis.project.flightbookingapp.controllers.SeeBookingsController;
+import com.fis.project.flightbookingapp.controllers.ManageBookingsController;
 import com.fis.project.flightbookingapp.exceptions.*;
 import com.fis.project.flightbookingapp.model.Booking;
 import com.fis.project.flightbookingapp.model.BookingStatus;
@@ -23,14 +23,14 @@ import java.util.Arrays;
 import java.util.Set;
 
 
-public class seeBookingsAplication extends Application {
+public class manageBookingsAplication extends Application {
     private Parent root;
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(seeBookingsAplication.class.getResource("see_bookings.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(manageBookingsAplication.class.getResource("see_bookings.fxml"));
         root = fxmlLoader.load();
-        SeeBookingsController seeBookingsController = fxmlLoader.getController();
-        seeBookingsController.setClient(new Client("Titi Titulescu", "parolaputernica", "+40256111222", "Vasile Parvan 2, Timisoara", "Romania", "titi@titulescu.ro"));
+        ManageBookingsController manageBookingsController = fxmlLoader.getController();
+        manageBookingsController.setClient(new Client("Titi Titulescu", "parolaputernica", "+40256111222", "Vasile Parvan 2, Timisoara", "Romania", "titi@titulescu.ro"));
         Scene scene = new Scene(root);
         stage.setTitle("Flight Booking App");
         stage.setScene(scene);

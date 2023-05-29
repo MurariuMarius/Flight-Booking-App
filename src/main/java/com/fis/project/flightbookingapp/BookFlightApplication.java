@@ -1,28 +1,14 @@
 package com.fis.project.flightbookingapp;
 
-import com.fis.project.flightbookingapp.controllers.BookFlightController;
-import com.fis.project.flightbookingapp.controllers.SeeBookingsController;
 import com.fis.project.flightbookingapp.exceptions.AirportAlreadyExistsException;
 import com.fis.project.flightbookingapp.exceptions.BookingAlreadyExistsException;
 import com.fis.project.flightbookingapp.exceptions.FlightAlreadyExistsException;
 import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
-import com.fis.project.flightbookingapp.model.Booking;
-import com.fis.project.flightbookingapp.model.Client;
-import com.fis.project.flightbookingapp.model.Flight;
-import com.fis.project.flightbookingapp.services.AirportService;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Set;
 
 public class BookFlightApplication extends Application {
     private Parent root;

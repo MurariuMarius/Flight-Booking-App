@@ -4,8 +4,10 @@ import com.fis.project.flightbookingapp.model.Booking;
 import com.fis.project.flightbookingapp.model.BookingStatus;
 import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.services.BookingService;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -14,9 +16,13 @@ import org.dizitart.no2.NitriteId;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class SeeBookingsController implements Initializable {
+import static com.fis.project.flightbookingapp.model.BookingStatus.CANCELLED;
+
+public class ManageBookingsController implements Initializable {
     @FXML
     private TableView<Booking> bookingTableView;
+    @FXML
+    private Button buttonCancel;
     @FXML
     private TableColumn<Booking, NitriteId> c1;
 
@@ -48,6 +54,18 @@ public class SeeBookingsController implements Initializable {
     }
     public void setClient(Client client){
         this.client = client;
+        setupTable();
+    }
+    @FXML
+    void cancelFlight(ActionEvent event) {
+        Booking booking = bookingTableView.getSelectionModel().getSelectedItem();
+        booking.setBookingStatus(CANCELLED);
+        BookingService.updateBooking(booking);
+
+
+        System.out.println(booking);
+        bookingTableView.getItems().clear();
+
         setupTable();
     }
 
