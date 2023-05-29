@@ -148,7 +148,7 @@ public class FinalizeBookingController {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         FXMLLoader loader = StageChangeService.changeScene(
                 stage,
-                "see_bookings.fxml",
+                "manage_bookings.fxml",
                 "Flight Booking App - Your bookings"
         );
         ManageBookingsController controller = loader.getController();
