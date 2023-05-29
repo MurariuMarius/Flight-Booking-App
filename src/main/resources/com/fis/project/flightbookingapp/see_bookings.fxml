@@ -18,7 +18,7 @@
             <TableColumn fx:id="c5" prefWidth="149.5" text="bookingStatus" />
         </columns>
       </TableView>
-      <Button layoutX="274.0" layoutY="442.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="235.0" text="Cancel selected flight" textFill="#0f0e0e">
+      <Button fx:id="buttonCancel" layoutX="274.0" layoutY="442.0" mnemonicParsing="false" onAction="#cancelFlight" prefHeight="66.0" prefWidth="235.0" text="Cancel selected flight" textFill="#0f0e0e">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>

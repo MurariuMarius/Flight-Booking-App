@@ -18,6 +18,8 @@ public class SeeBookingsController implements Initializable {
     @FXML
     private TableView<Booking> bookingTableView;
     @FXML
+    Booking booking = bookingTableView.getSelectionModel().getSelectedItem();
+    @FXML
     private TableColumn<Booking, NitriteId> c1;
 
     @FXML
