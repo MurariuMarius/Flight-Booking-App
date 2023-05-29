@@ -151,7 +151,7 @@ public class FinalizeBookingController {
                 "see_bookings.fxml",
                 "Flight Booking App - Your bookings"
         );
-        SeeBookingsController controller = loader.getController();
+        ManageBookingsController controller = loader.getController();
         controller.setClient(client);
     }
 
