@@ -68,6 +68,11 @@ public class AirlineMenuController {
 
     @FXML
     public void goViewPassengersPerFlight(ActionEvent actionEvent) throws IOException{
-        // TODO
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        StageChangeService.changeScene(
+                stage,
+                "view_passengers.fxml",
+                "View passengers per flight"
+        );
     }
 }

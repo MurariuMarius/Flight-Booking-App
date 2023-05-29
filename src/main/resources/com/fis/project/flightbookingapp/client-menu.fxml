@@ -20,7 +20,6 @@
         <children>
             <Button fx:id="buttonSearchFlights" mnemonicParsing="false" onAction="#goSearchFlights" prefHeight="41.0" prefWidth="198.0" text="Search flights" />
             <Button fx:id="buttonManageBookings" mnemonicParsing="false" onAction="#goManageBookings" prefHeight="42.0" prefWidth="199.0" text="Manage bookings" />
-            <Button fx:id="buttonViewBookings" mnemonicParsing="false" onAction="#goViewBookings" prefHeight="42.0" prefWidth="198.0" text="View bookings" />
         </children>
     </VBox>
 </AnchorPane>

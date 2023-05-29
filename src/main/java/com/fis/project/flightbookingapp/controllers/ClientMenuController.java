@@ -29,8 +29,15 @@ public class ClientMenuController {
     }
 
     @FXML
-    void goManageBookings(ActionEvent event) {
-        // TODO
+    void goManageBookings(ActionEvent event) throws IOException {
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader fxmlLoader = StageChangeService.changeScene(
+                stage,
+                "manage_bookings.fxml",
+                "Manage bookings"
+        );
+        ManageBookingsController manageBookingsController = fxmlLoader.getController();
+        manageBookingsController.setClient(client);
     }
 
     @FXML
@@ -43,11 +50,6 @@ public class ClientMenuController {
         );
         SearchFlightsController searchFlightsController = fxmlLoader.getController();
         searchFlightsController.setClient(client);
-    }
-
-    @FXML
-    void goViewBookings(ActionEvent event) {
-        // TODO
     }
 
 }
