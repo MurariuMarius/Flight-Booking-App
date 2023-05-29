@@ -7,6 +7,7 @@ import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.model.CreditCard;
 import com.fis.project.flightbookingapp.services.BookingService;
 import com.fis.project.flightbookingapp.services.ClientUserService;
+import com.fis.project.flightbookingapp.services.FlightService;
 import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,13 +15,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.lang.ref.Cleaner;
+import java.util.ArrayList;
 import java.util.List;
 
 public class FinalizeBookingController {
@@ -50,7 +52,7 @@ public class FinalizeBookingController {
     private TextField cardholderNameField;
 
     @FXML
-    private Text fligthDetails;
+    private ListView<Booking> bookingListView;
 
     @FXML
     private GridPane cardGridPane;
@@ -59,7 +61,7 @@ public class FinalizeBookingController {
     private Button newCard;
 
     @FXML
-    private Text pageTittle;
+    private Text pageTitle;
 
     @FXML
     private Button payButton;
@@ -78,12 +80,24 @@ public class FinalizeBookingController {
         this.client = client;
         this.bookings = bookings;
         this.price = price;
+
+        paymentOptions.getItems().addAll(client.getCreditCards().stream().map(CreditCard::getCardNumber).toList());
+
+        try {
+            pageTitle.setText("Your booking to " +
+                    FlightService.getFlightByNumber(bookings.get(0).getFlightNumber()).getArrivalAirport().getCity());
+        } catch (NotInDatabaseException e) {
+            System.out.println(e);
+        }
+
+        bookingListView.getItems().addAll(bookings);
+
+        totalPrice.setText(String.format("€ %.2f", price));
     }
 
     @FXML
     void initialize() {
-        makeCardAdderFiledsVisible(false);
-        paymentOptions.getItems().addAll(client.getCreditCards().stream().map(CreditCard::getCardNumber).toList());
+        makeCardAdderFieldsVisible(false);
     }
 
     @FXML
@@ -96,13 +110,15 @@ public class FinalizeBookingController {
                 cardHolderName,
                 expirationDate
         );
-        List<CreditCard> creditCards = client.getCreditCards();
+        List<CreditCard> creditCards = new ArrayList<>(client.getCreditCards());
         if (creditCards.contains(creditCard)) {
             System.out.println("Credit card already added");
         } else {
             creditCards.add(creditCard);
             client.setCreditCards(creditCards);
             ClientUserService.updateUser(client);
+            makeCardAdderFieldsVisible(false);
+            paymentOptions.getItems().add(creditCard.getCardNumber());
         }
     }
 
@@ -120,14 +136,23 @@ public class FinalizeBookingController {
 
     @FXML
     void openNewCardWindow(ActionEvent event) {
-        makeCardAdderFiledsVisible(true);
+        makeCardAdderFieldsVisible(true);
     }
 
     @FXML
-    void pay(ActionEvent event) throws BookingAlreadyExistsException, NotInDatabaseException {
+    void pay(ActionEvent event) throws BookingAlreadyExistsException, NotInDatabaseException, IOException {
         for (Booking b : bookings) {
             BookingService.addBooking(b);
         }
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "see_bookings.fxml",
+                "Flight Booking App - Your bookings"
+        );
+        SeeBookingsController controller = loader.getController();
+        controller.setClient(client);
     }
 
     @FXML
@@ -135,7 +160,7 @@ public class FinalizeBookingController {
 
     }
 
-    private void makeCardAdderFiledsVisible(boolean option) {
+    private void makeCardAdderFieldsVisible(boolean option) {
         cardGridPane.setVisible(option);
         addCardButton.setVisible(option);
     }
