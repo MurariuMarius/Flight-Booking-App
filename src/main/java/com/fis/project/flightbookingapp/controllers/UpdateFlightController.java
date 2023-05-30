@@ -4,6 +4,7 @@ import com.fis.project.flightbookingapp.exceptions.NotInDatabaseException;
 import com.fis.project.flightbookingapp.model.Flight;
 import com.fis.project.flightbookingapp.services.FlightService;
 import com.fis.project.flightbookingapp.services.StageChangeService;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -52,6 +53,15 @@ public class UpdateFlightController implements Initializable {
         );
         UpdatePageController updatePageController = loader.getController();
         updatePageController.updateFlight(flight);
+    }
+    @FXML
+    void goBack(ActionEvent event) throws IOException {
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "airline-menu.fxml",
+                "Menu"
+        );
     }
 
 
