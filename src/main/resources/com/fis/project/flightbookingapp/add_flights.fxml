@@ -4,93 +4,126 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.AddFlightsController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.AddFlightsController">
    <children>
       <AnchorPane layoutX="125.0" layoutY="43.0" prefHeight="25.0" prefWidth="308.0">
          <children>
-            <Label layoutX="-15.0" prefHeight="25.0" prefWidth="111.0" text="Flight number:">
+            <Label layoutY="1.0" prefHeight="25.0" prefWidth="111.0" text="Flight number:">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField fx:id="field1" layoutX="140.0" prefHeight="25.0" prefWidth="237.0" />
+            <TextField fx:id="field1" layoutX="140.0" layoutY="-3.0" prefHeight="32.0" prefWidth="237.0" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="107.0" layoutY="68.0" prefHeight="32.0" prefWidth="469.0">
-         <children>
-            <Label layoutY="7.0" text="Airline code:">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
-            <TextField fx:id="field2" layoutX="160.0" layoutY="8.0" prefHeight="25.0" prefWidth="237.0" />
-         </children>
-      </AnchorPane>
+      <AnchorPane layoutX="107.0" layoutY="68.0" prefHeight="32.0" prefWidth="469.0" />
       <AnchorPane layoutX="107.0" layoutY="101.0" prefHeight="32.0" prefWidth="469.0">
          <children>
-            <Label layoutY="8.0" text="Departure airport:">
+            <TextField fx:id="field2" layoutX="156.0" layoutY="-15.0" prefHeight="32.0" prefWidth="237.0" />
+            <Label layoutX="59.0" layoutY="-14.0" text="Airline code:">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField fx:id="field3" layoutX="160.0" layoutY="8.0" prefHeight="25.0" prefWidth="237.0" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="107.0" layoutY="134.0" prefHeight="32.0" prefWidth="469.0">
          <children>
-            <Label layoutY="7.0" text="Arrival airport:">
+            <TextField fx:id="field3" layoutX="159.0" layoutY="-4.0" prefHeight="32.0" prefWidth="237.0" promptText="ZRH" />
+            <Label layoutX="20.0" layoutY="4.0" text="Departure airport:">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <TextField fx:id="field4" layoutX="160.0" layoutY="8.0" prefHeight="25.0" prefWidth="237.0" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="107.0" layoutY="176.0" prefHeight="32.0" prefWidth="469.0">
+      <AnchorPane layoutX="104.0" layoutY="187.0" prefHeight="163.0" prefWidth="557.0">
          <children>
-            <AnchorPane layoutX="87.0" layoutY="-8.0" prefHeight="125.0" prefWidth="374.0">
+            <AnchorPane layoutX="148.0" layoutY="48.0" prefHeight="113.0" prefWidth="340.0">
                <children>
-                  <CheckBox fx:id="c1" layoutX="10.0" layoutY="6.0" mnemonicParsing="false" text="Monday" />
-                  <CheckBox fx:id="c2" layoutX="159.0" layoutY="6.0" mnemonicParsing="false" text="Tuesday" />
-                  <CheckBox fx:id="c7" layoutX="13.0" layoutY="79.0" mnemonicParsing="false" text="Sunday" />
-                  <CheckBox fx:id="c3" layoutX="10.0" layoutY="31.0" mnemonicParsing="false" text="Wednesday" />
-                  <CheckBox fx:id="c4" layoutX="159.0" layoutY="31.0" mnemonicParsing="false" text="Thursday" />
+                  <CheckBox fx:id="c1" layoutX="14.0" layoutY="4.0" mnemonicParsing="false" text="Monday">
+                     <font>
+                        <Font size="14.0" />
+                     </font></CheckBox>
+                  <CheckBox fx:id="c2" layoutX="159.0" layoutY="6.0" mnemonicParsing="false" text="Tuesday">
+                     <font>
+                        <Font size="14.0" />
+                     </font></CheckBox>
+                  <CheckBox fx:id="c7" layoutX="13.0" layoutY="91.0" mnemonicParsing="false" text="Sunday">
+                     <font>
+                        <Font size="14.0" />
+                     </font></CheckBox>
+                  <CheckBox fx:id="c3" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" text="Wednesday">
+                     <font>
+                        <Font size="14.0" />
+                     </font></CheckBox>
+                  <CheckBox fx:id="c4" layoutX="159.0" layoutY="31.0" mnemonicParsing="false" text="Thursday">
+                     <font>
+                        <Font size="14.0" />
+                     </font></CheckBox>
                   <AnchorPane layoutX="-95.0" layoutY="48.0" prefHeight="32.0" prefWidth="469.0">
                      <children>
-                        <CheckBox fx:id="c5" layoutX="108.0" layoutY="10.0" mnemonicParsing="false" text="Friday" />
-                        <CheckBox fx:id="c6" layoutX="255.0" layoutY="10.0" mnemonicParsing="false" text="Saturday" />
+                        <CheckBox fx:id="c5" layoutX="108.0" layoutY="10.0" mnemonicParsing="false" text="Friday">
+                           <font>
+                              <Font size="14.0" />
+                           </font></CheckBox>
+                        <CheckBox fx:id="c6" layoutX="255.0" layoutY="10.0" mnemonicParsing="false" text="Saturday">
+                           <font>
+                              <Font size="14.0" />
+                           </font></CheckBox>
+                        <Label layoutX="-84.0" layoutY="-2.0" prefHeight="25.0" prefWidth="180.0" text="Operating week day:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="210.0" fitWidth="258.0" layoutX="364.0" layoutY="-121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Airplane_silhouette.svg.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </AnchorPane>
-                  <Label layoutX="-55.0" layoutY="118.0" text="Departure time:">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="-28.0" layoutY="161.0" text="Arrival time:">
-                     <font>
-                        <Font size="16.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="field5" layoutX="69.0" layoutY="118.0" prefHeight="25.0" prefWidth="237.0" />
                </children>
             </AnchorPane>
-            <Label layoutX="-84.0" layoutY="27.0" prefHeight="25.0" prefWidth="237.0" text="Operating week day:">
+            <TextField fx:id="field4" layoutX="160.0" layoutY="-2.0" prefHeight="32.0" prefWidth="237.0" promptText="CLJ" />
+            <Label layoutX="47.0" layoutY="2.0" text="Arrival airport:">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <Button fx:id="button" layoutX="231.0" layoutY="405.0" mnemonicParsing="false" onAction="#addFlight" prefHeight="46.0" prefWidth="111.0" text="Add flight" />
-      <TextField fx:id="field6" layoutX="260.0" layoutY="324.0" prefHeight="25.0" prefWidth="237.0" />
-      <TextField fx:id="field7" layoutX="260.0" layoutY="364.0" prefHeight="25.0" prefWidth="237.0" />
-      <Label layoutX="203.0" layoutY="358.0" text="Price:">
+      <Button fx:id="button" layoutX="315.0" layoutY="506.0" mnemonicParsing="false" onAction="#addFlight" prefHeight="55.0" prefWidth="127.0" text="Add flight">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="field6" layoutX="260.0" layoutY="395.0" prefHeight="32.0" prefWidth="237.0" promptText="10:00" />
+      <TextField fx:id="field7" layoutX="260.0" layoutY="443.0" prefHeight="33.0" prefWidth="237.0" promptText="price" />
+      <Label layoutX="211.0" layoutY="443.0" text="Price:">
          <font>
             <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="399.0" text="Arrival time:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="field5" layoutX="260.0" layoutY="351.0" prefHeight="32.0" prefWidth="237.0" promptText="08:05" />
+      <Label layoutX="139.0" layoutY="355.0" text="Departure time:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="355.0" layoutY="6.0" text="Add flights">
+         <font>
+            <Font name="System Bold" size="18.0" />
          </font>
       </Label>
    </children>

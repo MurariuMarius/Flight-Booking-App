@@ -16,14 +16,14 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.FinalizeBookingController">
    <children>
-      <VBox alignment="CENTER" prefHeight="394.0" prefWidth="600.0">
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0">
          <children>
             <Text fx:id="pageTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
                <font>
-                  <Font size="18.0" />
+                  <Font size="24.0" />
                </font>
             </Text>
-            <VBox prefHeight="330.0" prefWidth="499.0">
+            <VBox prefHeight="503.0" prefWidth="700.0">
                <VBox.margin>
                   <Insets left="50.0" right="50.0" />
                </VBox.margin>
@@ -32,11 +32,14 @@
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
                   </Text>
-                  <ListView fx:id="bookingListView" prefHeight="62.0" prefWidth="499.0" />
-                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <ListView fx:id="bookingListView" prefHeight="126.0" prefWidth="700.0" />
+                  <HBox alignment="TOP_CENTER" prefHeight="122.0" prefWidth="700.0">
                      <children>
-                        <ComboBox fx:id="paymentOptions" onAction="#selectCard" prefWidth="150.0" promptText="Pay with">
+                        <ComboBox fx:id="paymentOptions" onAction="#selectCard" prefHeight="30.0" prefWidth="151.0" promptText="Pay with">
                            <opaqueInsets>
                               <Insets bottom="20.0" />
                            </opaqueInsets>
@@ -45,6 +48,9 @@
                            <HBox.margin>
                               <Insets left="20.0" right="20.0" />
                            </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
                         </Button>
                         <VBox prefHeight="100.0" prefWidth="134.0">
                            <children>
@@ -76,21 +82,49 @@
                     </rowConstraints>
                      <children>
                         <TextField fx:id="cardNumberField" GridPane.columnIndex="1" />
-                        <Text fx:id="cardNumber" strokeType="OUTSIDE" strokeWidth="0.0" text="Card number" />
+                        <Text fx:id="cardNumber" strokeType="OUTSIDE" strokeWidth="0.0" text="Card number">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
                         <TextField fx:id="cardExpirationDateField" layoutX="260.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Text fx:id="cardExpirationDate" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expiration date" GridPane.rowIndex="1" />
-                        <Text fx:id="cardhoderName" strokeType="OUTSIDE" strokeWidth="0.0" text="Cardholder name" GridPane.rowIndex="2" />
+                        <Text fx:id="cardExpirationDate" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expiration date" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                        <Text fx:id="cardhoderName" strokeType="OUTSIDE" strokeWidth="0.0" text="Cardholder name" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
                         <TextField fx:id="cardholderNameField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                      </children>
+                     <VBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </VBox.margin>
                   </GridPane>
-                  <Button fx:id="addCardButton" mnemonicParsing="false" onAction="#addNewCard" text="Add card" />
+                  <Button fx:id="addCardButton" mnemonicParsing="false" onAction="#addNewCard" text="Add card">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin></Button>
                   <HBox prefHeight="22.0" prefWidth="499.0">
                      <children>
-                        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelBooking" prefHeight="26.0" prefWidth="66.0" text="Cancel" />
-                        <Button fx:id="payButton" mnemonicParsing="false" onAction="#pay" prefHeight="26.0" prefWidth="63.0" text="PAY">
+                        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelBooking" prefHeight="29.0" prefWidth="78.0" text="Cancel">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
                            <HBox.margin>
-                              <Insets left="375.0" />
+                              <Insets left="100.0" />
                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="payButton" mnemonicParsing="false" onAction="#pay" prefHeight="29.0" prefWidth="82.0" text="PAY">
+                           <HBox.margin>
+                              <Insets left="250.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
                         </Button>
                      </children>
                      <VBox.margin>

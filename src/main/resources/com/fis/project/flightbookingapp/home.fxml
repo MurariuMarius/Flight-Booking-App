@@ -6,26 +6,38 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="1000.0" prefWidth="1000.0"
-            fx:controller="com.fis.project.flightbookingapp.controllers.HomeController">
+<BorderPane prefHeight="1000.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.fis.project.flightbookingapp.controllers.HomeController">
    <top>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0">
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="1050.0">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Booking App" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Booking App">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Text>
                   <Region prefHeight="100.0" prefWidth="331.0" />
                   <Button fx:id="loginButton" mnemonicParsing="false" onAction="#goToLoginPage" text="Log In" textAlignment="CENTER">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="signupButton" layoutX="430.0" layoutY="48.0" mnemonicParsing="false" onAction="#goToSignupPage" text="Sign Up" textAlignment="CENTER" />
+                  <Button fx:id="signupButton" layoutX="430.0" layoutY="48.0" mnemonicParsing="false" onAction="#goToSignupPage" text="Sign Up" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
                </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
             </HBox>
-            <fx:include source="search-flights.fxml"></fx:include>
+            <fx:include source="search-flights.fxml" />
          </children>
       </VBox>
    </top>

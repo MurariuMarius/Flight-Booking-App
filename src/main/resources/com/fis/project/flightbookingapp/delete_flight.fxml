@@ -6,18 +6,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.DeleteFlightController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.DeleteFlightController">
    <children>
-      <Label layoutX="92.0" layoutY="35.0" text="Select the flight that should be removed:">
+      <Label layoutX="212.0" layoutY="25.0" text="Select the flight that should be removed:">
          <font>
-            <Font size="21.0" />
+            <Font name="System Bold" size="21.0" />
          </font>
       </Label>
-      <ListView fx:id="listOfFlights" layoutX="47.0" layoutY="72.0" prefHeight="228.0" prefWidth="482.0" />
-      <Button layoutX="188.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#removeFlight" prefHeight="58.0" prefWidth="185.0" text="Remove flight">
+      <ListView fx:id="listOfFlights" layoutX="47.0" layoutY="72.0" prefHeight="392.0" prefWidth="697.0" />
+      <Button layoutX="308.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#removeFlight" prefHeight="58.0" prefWidth="185.0" text="Remove flight">
          <font>
-            <Font size="18.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
       </Button>
    </children>

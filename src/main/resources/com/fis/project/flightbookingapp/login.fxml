@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.LoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.LoginController">
    <children>
-      <VBox alignment="CENTER" layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Airplane_silhouette.svg.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="4.0" layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
          <children>
             <HBox alignment="TOP_RIGHT" prefHeight="57.0" prefWidth="600.0">
                <children>
@@ -15,6 +28,9 @@
                      <HBox.margin>
                         <Insets right="20.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
                   </Button>
                </children>
             </HBox>
@@ -22,12 +38,18 @@
                <VBox.margin>
                   <Insets bottom="50.0" />
                </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
             </Text>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
                   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
                         <Region prefHeight="200.0" prefWidth="10.0" />
                         <TextField fx:id="usernameField">
                            <opaqueInsets>
@@ -41,7 +63,10 @@
                   </HBox>
                   <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="200.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Text>
                         <Region prefHeight="32.0" prefWidth="26.0" />
                         <PasswordField fx:id="passwordField" />
                      </children>
@@ -50,14 +75,23 @@
                      <VBox.margin>
                         <Insets top="30.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
                   </Button>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Don't already have an account?" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Don't already have an account?">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
                         <Button fx:id="signupButton" mnemonicParsing="false" onAction="#goToSignupPage" text="Sign up">
                            <HBox.margin>
                               <Insets left="15.0" />
                            </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
                         </Button>
                      </children>
                   </HBox>
