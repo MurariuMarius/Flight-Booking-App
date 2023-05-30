@@ -10,8 +10,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.UpdatePageController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#goBack" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.UpdatePageController">
     <children>
+      <Button layoutX="177.0" layoutY="495.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="147.0" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
         <AnchorPane layoutX="125.0" layoutY="43.0" prefHeight="25.0" prefWidth="308.0" />
         <AnchorPane layoutX="107.0" layoutY="68.0" prefHeight="32.0" prefWidth="469.0">
             <children>
@@ -93,7 +98,7 @@
             </ImageView>
             </children>
         </AnchorPane>
-        <Button fx:id="button" layoutX="318.0" layoutY="495.0" mnemonicParsing="false" onAction="#goUpdate" prefHeight="46.0" prefWidth="147.0" text="Update flight">
+        <Button fx:id="button" layoutX="372.0" layoutY="495.0" mnemonicParsing="false" onAction="#goUpdate" prefHeight="46.0" prefWidth="147.0" text="Update flight">
          <font>
             <Font name="System Bold" size="18.0" />
          </font></Button>

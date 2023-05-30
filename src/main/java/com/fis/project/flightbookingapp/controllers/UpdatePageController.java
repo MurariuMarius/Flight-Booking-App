@@ -9,6 +9,8 @@ import com.fis.project.flightbookingapp.services.FlightService;
 import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
@@ -118,5 +120,14 @@ public class UpdatePageController {
     }
     void updateFlight(Flight flight){
         this.flight = flight;
+    }
+    @FXML
+    void goBack(ActionEvent event) throws IOException {
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "update_flights.fxml",
+                "Update"
+        );
     }
 }
