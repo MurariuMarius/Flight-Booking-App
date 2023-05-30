@@ -15,7 +15,7 @@
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Button>
-      <TableView fx:id="clientTableView" layoutX="28.0" layoutY="107.0" prefHeight="469.0" prefWidth="744.0">
+      <TableView fx:id="clientTableView" layoutX="28.0" layoutY="107.0" prefHeight="427.0" prefWidth="744.0">
         <columns>
           <TableColumn fx:id="c1" prefWidth="112.5" text="Username" />
           <TableColumn fx:id="c2" prefWidth="158.0" text="PhoneNumber" />
@@ -29,5 +29,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <Button layoutX="339.0" layoutY="534.0" mnemonicParsing="false" onAction="#goBack" prefHeight="54.0" prefWidth="123.0" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

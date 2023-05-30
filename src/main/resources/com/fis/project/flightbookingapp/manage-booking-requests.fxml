@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -22,7 +23,7 @@
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font></Text>
-                  <TableView fx:id="tableView" prefHeight="456.0" prefWidth="800.0">
+                  <TableView fx:id="tableView" prefHeight="444.0" prefWidth="800.0">
                     <columns>
                       <TableColumn fx:id="bookingId" prefWidth="96.0" text="Booking No." />
                       <TableColumn fx:id="clientUsername" prefWidth="54.39990234375" text="Client" />
@@ -38,6 +39,14 @@
                         <Insets left="50.0" right="50.0" />
                      </opaqueInsets>
                   </TableView>
+                  <Button mnemonicParsing="false" onAction="#goBack" prefHeight="51.0" prefWidth="117.0" text="Back">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
                </children>
                <opaqueInsets>
                   <Insets left="50.0" right="50.0" />
