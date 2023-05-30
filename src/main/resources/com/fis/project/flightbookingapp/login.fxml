@@ -71,7 +71,7 @@
                         <PasswordField fx:id="passwordField" />
                      </children>
                   </HBox>
-                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#login" text="Log In">
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#login" prefHeight="56.0" prefWidth="116.0" text="Log In">
                      <VBox.margin>
                         <Insets top="30.0" />
                      </VBox.margin>
@@ -79,13 +79,21 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
-                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <HBox alignment="CENTER" prefHeight="71.0" prefWidth="600.0">
                      <children>
+                        <Button mnemonicParsing="false" onAction="#goBack" prefHeight="49.0" prefWidth="83.0" text="Back">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Don't already have an account?">
                            <font>
                               <Font size="14.0" />
                            </font></Text>
-                        <Button fx:id="signupButton" mnemonicParsing="false" onAction="#goToSignupPage" text="Sign up">
+                        <Button fx:id="signupButton" mnemonicParsing="false" onAction="#goToSignupPage" prefHeight="46.0" prefWidth="75.0" text="Sign up">
                            <HBox.margin>
                               <Insets left="15.0" />
                            </HBox.margin>
