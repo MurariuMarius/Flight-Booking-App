@@ -51,5 +51,14 @@ public class ClientMenuController {
         SearchFlightsController searchFlightsController = fxmlLoader.getController();
         searchFlightsController.setClient(client);
     }
+    @FXML
+    void goBack(ActionEvent event) throws IOException {
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "home.fxml",
+                "Home"
+        );
+    }
 
 }
