@@ -6,8 +6,10 @@ import com.fis.project.flightbookingapp.services.ClientUserService;
 import com.fis.project.flightbookingapp.services.EmailValidationService;
 import com.fis.project.flightbookingapp.services.PhoneValidationService;
 import com.fis.project.flightbookingapp.services.StageChangeService;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -81,5 +83,14 @@ public class ClientSignUpController {
 
     void initData(Client client) {
         this.client = client;
+    }
+    @FXML
+    void goBack(ActionEvent event) throws IOException {
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "login.fxml",
+                "Login"
+        );
     }
 }

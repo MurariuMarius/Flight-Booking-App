@@ -83,6 +83,14 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
+            <Button mnemonicParsing="false" onAction="#goBack" prefHeight="44.0" prefWidth="142.0" text="Back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
             </children>
          <padding>
             <Insets left="150.0" right="150.0" />
