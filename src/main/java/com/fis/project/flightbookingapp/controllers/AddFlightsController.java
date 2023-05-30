@@ -8,6 +8,8 @@ import com.fis.project.flightbookingapp.services.AirportService;
 import com.fis.project.flightbookingapp.services.FlightService;
 import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
 import javafx.scene.control.CheckBox;
@@ -70,6 +72,15 @@ public class AddFlightsController {
                 stage,
                 "airline-menu.fxml",
                 "Airline Menu"
+        );
+    }
+    @FXML
+    void goBack(ActionEvent event) throws IOException {
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "airline-menu.fxml",
+                "Menu"
         );
     }
 

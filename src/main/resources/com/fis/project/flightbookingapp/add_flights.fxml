@@ -99,9 +99,9 @@
             </Label>
          </children>
       </AnchorPane>
-      <Button fx:id="button" layoutX="315.0" layoutY="506.0" mnemonicParsing="false" onAction="#addFlight" prefHeight="55.0" prefWidth="127.0" text="Add flight">
+      <Button fx:id="button" layoutX="338.0" layoutY="506.0" mnemonicParsing="false" onAction="#addFlight" prefHeight="55.0" prefWidth="127.0" text="Add flight">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="18.0" />
          </font></Button>
       <TextField fx:id="field6" layoutX="260.0" layoutY="395.0" prefHeight="32.0" prefWidth="237.0" promptText="10:00" />
       <TextField fx:id="field7" layoutX="260.0" layoutY="443.0" prefHeight="33.0" prefWidth="237.0" promptText="price" />
@@ -126,5 +126,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <Button layoutX="125.0" layoutY="506.0" mnemonicParsing="false" onAction="#goBack" prefHeight="55.0" prefWidth="127.0" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
