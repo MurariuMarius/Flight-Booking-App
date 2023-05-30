@@ -14,7 +14,12 @@
          </font>
       </Label>
       <ListView fx:id="listOfFlights" layoutX="47.0" layoutY="72.0" prefHeight="392.0" prefWidth="697.0" />
-      <Button layoutX="308.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#removeFlight" prefHeight="58.0" prefWidth="185.0" text="Remove flight">
+      <Button layoutX="414.0" layoutY="489.0" mnemonicParsing="false" onMouseClicked="#removeFlight" prefHeight="58.0" prefWidth="185.0" text="Remove flight">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonBack" layoutX="202.0" layoutY="489.0" mnemonicParsing="false" onAction="#goBack" prefHeight="58.0" prefWidth="185.0" text="Back">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
