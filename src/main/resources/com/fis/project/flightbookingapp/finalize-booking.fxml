@@ -18,6 +18,14 @@
    <children>
       <VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0">
          <children>
+            <Button mnemonicParsing="false" onAction="#goBack" prefHeight="41.0" prefWidth="98.0" text="Back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets right="600.0" />
+               </VBox.margin>
+            </Button>
             <Text fx:id="pageTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
                <font>
                   <Font size="24.0" />

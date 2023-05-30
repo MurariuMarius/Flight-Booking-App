@@ -164,5 +164,14 @@ public class FinalizeBookingController {
         cardGridPane.setVisible(option);
         addCardButton.setVisible(option);
     }
+    @FXML
+    void goBack(ActionEvent event) throws IOException {
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "book_flight.fxml",
+                "Book flight"
+        );
+    }
 
 }

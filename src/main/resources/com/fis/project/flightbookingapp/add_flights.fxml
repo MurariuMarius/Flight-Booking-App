@@ -45,7 +45,7 @@
       </AnchorPane>
       <AnchorPane layoutX="104.0" layoutY="187.0" prefHeight="163.0" prefWidth="557.0">
          <children>
-            <AnchorPane layoutX="148.0" layoutY="48.0" prefHeight="113.0" prefWidth="340.0">
+            <AnchorPane layoutX="148.0" layoutY="30.0" prefHeight="113.0" prefWidth="340.0">
                <children>
                   <CheckBox fx:id="c1" layoutX="14.0" layoutY="4.0" mnemonicParsing="false" text="Monday">
                      <font>
