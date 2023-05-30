@@ -45,7 +45,7 @@
             <Image url="@Airplane_silhouette.svg.png" />
          </image>
       </ImageView>
-      <Button layoutX="244.0" layoutY="338.0" mnemonicParsing="false" onAction="#goBack" prefHeight="46.0" prefWidth="106.0" text="Back">
+      <Button layoutX="244.0" layoutY="338.0" mnemonicParsing="false" onAction="#goBack" prefHeight="46.0" prefWidth="106.0" text="Log out">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
