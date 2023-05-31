@@ -129,5 +129,6 @@ public class UpdatePageController {
                 "update_flights.fxml",
                 "Update"
         );
+
     }
 }
