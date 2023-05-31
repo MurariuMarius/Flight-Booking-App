@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.AirlineSignupController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.AirlineSignupController">
     <children>
         <VBox alignment="CENTER" layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
             <children>
                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Airline Sign Up">
                     <VBox.margin>
-                        <Insets bottom="50.0" />
+                        <Insets bottom="10.0" top="10.0" />
                     </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
                 </Text>
                 <GridPane vgap="10.0">
                     <columnConstraints>
@@ -28,7 +37,10 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number" GridPane.rowIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
                         <TextField fx:id="phoneNumberField" GridPane.columnIndex="1" GridPane.rowIndex="1">
                             <opaqueInsets>
                                 <Insets />
@@ -38,31 +50,60 @@
                             <GridPane.margin>
                                 <Insets />
                             </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
                         </Text>
                         <TextField fx:id="addressField" layoutX="10.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
                         </TextField>
-                        <Text layoutX="10.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" GridPane.rowIndex="4" />
+                        <Text layoutX="10.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
                         <TextField fx:id="countryField" layoutX="115.0" layoutY="53.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
                         </TextField>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ICAO code" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ICAO code">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
                   <TextField fx:id="icaoCodeField" GridPane.columnIndex="1" />
                   <TextField fx:id="airOperatorCertificateField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="AOC" GridPane.rowIndex="5" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="AOC" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
                   <TextField fx:id="emailField" layoutX="115.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Text layoutX="10.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" GridPane.rowIndex="2" />
+                  <Text layoutX="10.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
                     </children>
                 </GridPane>
-                <Button fx:id="createAccountButton" mnemonicParsing="false" onAction="#createAirlineAccount" text="Create account">
+                <Button fx:id="createAccountButton" mnemonicParsing="false" onAction="#createAirlineAccount" prefHeight="51.0" prefWidth="143.0" text="Create account">
                     <VBox.margin>
-                        <Insets top="30.0" />
+                        <Insets bottom="10.0" top="30.0" />
                     </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
                 </Button>
+            <Button mnemonicParsing="false" onAction="#goBack" prefHeight="47.0" prefWidth="140.0" text="Back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
             </children>
             <padding>
                 <Insets left="150.0" right="150.0" />

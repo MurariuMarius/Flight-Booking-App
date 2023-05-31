@@ -4,12 +4,17 @@ import com.fis.project.flightbookingapp.model.Airline;
 import com.fis.project.flightbookingapp.model.Booking;
 import com.fis.project.flightbookingapp.model.BookingStatus;
 import com.fis.project.flightbookingapp.services.BookingService;
+import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.beans.binding.Bindings;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
@@ -72,6 +77,15 @@ public class BookingRequestsManagementController {
         tableView.getItems().addAll(bookings);
 
         System.out.println(bookings);
+    }
+    @FXML
+    void goBack(ActionEvent event) throws IOException {
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "airline-menu.fxml",
+                "Menu"
+        );
     }
 
 }

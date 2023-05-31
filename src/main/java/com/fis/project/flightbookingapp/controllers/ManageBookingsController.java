@@ -4,15 +4,20 @@ import com.fis.project.flightbookingapp.model.Booking;
 import com.fis.project.flightbookingapp.model.BookingStatus;
 import com.fis.project.flightbookingapp.model.Client;
 import com.fis.project.flightbookingapp.services.BookingService;
+import com.fis.project.flightbookingapp.services.StageChangeService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import org.dizitart.no2.NitriteId;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -67,6 +72,15 @@ public class ManageBookingsController implements Initializable {
         bookingTableView.getItems().clear();
 
         setupTable();
+    }
+    @FXML
+    void goBack(ActionEvent event) throws IOException {
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        FXMLLoader loader = StageChangeService.changeScene(
+                stage,
+                "client-menu.fxml",
+                "Menu"
+        );
     }
 
 }

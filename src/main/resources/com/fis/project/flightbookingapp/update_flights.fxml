@@ -7,15 +7,28 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.UpdateFlightController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fis.project.flightbookingapp.controllers.UpdateFlightController">
     <children>
-        <TextField fx:id="searchBar" layoutX="299.0" layoutY="24.0" prefHeight="35.0" prefWidth="200.0" />
-        <ListView fx:id="listView" layoutX="24.0" layoutY="69.0" prefHeight="309.0" prefWidth="553.0" />
-        <Button fx:id="buttonUpdate" layoutX="509.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#goUpdate" prefHeight="35.0" prefWidth="68.0" text="Update" />
-      <Label layoutX="60.0" layoutY="28.0" text="Flight no. to be updated:">
+        <TextField fx:id="searchBar" layoutX="293.0" layoutY="71.0" prefHeight="35.0" prefWidth="319.0" promptText="Flight no. to be updated:" />
+        <ListView fx:id="listView" layoutX="50.0" layoutY="127.0" prefHeight="390.0" prefWidth="699.0" />
+        <Button fx:id="buttonUpdate" layoutX="628.0" layoutY="71.0" mnemonicParsing="false" onMouseClicked="#goUpdate" prefHeight="35.0" prefWidth="121.0" text="Update">
          <font>
-            <Font size="18.0" />
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="50.0" layoutY="75.0" text="Flight no. to be updated:">
+         <font>
+            <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <Label layoutX="340.0" layoutY="24.0" text="Update flights">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="340.0" layoutY="527.0" mnemonicParsing="false" onAction="#goBack" prefHeight="49.0" prefWidth="121.0" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

@@ -18,12 +18,12 @@
             <TableColumn fx:id="c5" prefWidth="149.5" text="bookingStatus" />
         </columns>
       </TableView>
-      <Button fx:id="buttonCancel" layoutX="274.0" layoutY="454.0" mnemonicParsing="false" onAction="#cancelFlight" prefHeight="66.0" prefWidth="235.0" text="Cancel selected flight" textFill="#0f0e0e">
+      <Button fx:id="buttonCancel" layoutX="274.0" layoutY="475.0" mnemonicParsing="false" onAction="#cancelFlight" prefHeight="45.0" prefWidth="226.0" text="Cancel selected flight" textFill="#0f0e0e">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
-      <Label layoutX="54.0" layoutY="487.0" text="*Select one flight to cancel it:">
+      <Label layoutX="70.0" layoutY="488.0" text="*Select one flight to cancel it:">
          <font>
             <Font size="14.0" />
          </font>
@@ -33,5 +33,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <Button layoutX="29.0" layoutY="9.0" mnemonicParsing="false" onAction="#goBack" prefHeight="39.0" prefWidth="82.0" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
