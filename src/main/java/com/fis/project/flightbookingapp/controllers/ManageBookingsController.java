@@ -76,11 +76,17 @@ public class ManageBookingsController implements Initializable {
     @FXML
     void goBack(ActionEvent event) throws IOException {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+
         FXMLLoader loader = StageChangeService.changeScene(
                 stage,
                 "client-menu.fxml",
                 "Menu"
         );
+        ClientMenuController controller = loader.getController();
+        controller.initData(client);
+
+
     }
 
 }
