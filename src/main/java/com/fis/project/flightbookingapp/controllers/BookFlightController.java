@@ -47,6 +47,8 @@ public class BookFlightController implements Initializable {
         );
         SearchFlightsController searchFlightsController = fxmlLoader.getController();
         searchFlightsController.setClient(client);
+        SearchFlightsController controller = fxmlLoader.getController();
+        controller.setClient(client);
     }
     public void setData(Client client, List<Booking> bookings, double price){
         this.client = client;

@@ -476,5 +476,7 @@ public class SearchFlightsController implements Initializable {
                 "client-menu.fxml",
                 "Menu"
         );
+        ClientMenuController controller = loader.getController();
+        controller.initData(client);
     }
 }

@@ -47,54 +47,49 @@
          <children>
             <AnchorPane layoutX="148.0" layoutY="30.0" prefHeight="113.0" prefWidth="340.0">
                <children>
-                  <CheckBox fx:id="c1" layoutX="14.0" layoutY="4.0" mnemonicParsing="false" text="Monday">
+                  <CheckBox fx:id="c2" layoutX="125.0" layoutY="8.0" mnemonicParsing="false" text="Tuesday">
                      <font>
                         <Font size="14.0" />
                      </font></CheckBox>
-                  <CheckBox fx:id="c2" layoutX="159.0" layoutY="6.0" mnemonicParsing="false" text="Tuesday">
+                  <CheckBox fx:id="c7" layoutX="8.0" layoutY="89.0" mnemonicParsing="false" text="Sunday">
                      <font>
                         <Font size="14.0" />
                      </font></CheckBox>
-                  <CheckBox fx:id="c7" layoutX="13.0" layoutY="91.0" mnemonicParsing="false" text="Sunday">
+                  <CheckBox fx:id="c4" layoutX="7.0" layoutY="47.0" mnemonicParsing="false" text="Thursday">
                      <font>
                         <Font size="14.0" />
                      </font></CheckBox>
-                  <CheckBox fx:id="c3" layoutX="14.0" layoutY="31.0" mnemonicParsing="false" text="Wednesday">
+                  <CheckBox fx:id="c1" layoutX="5.0" layoutY="8.0" mnemonicParsing="false" text="Monday">
                      <font>
                         <Font size="14.0" />
-                     </font></CheckBox>
-                  <CheckBox fx:id="c4" layoutX="159.0" layoutY="31.0" mnemonicParsing="false" text="Thursday">
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="c3" layoutX="235.0" layoutY="8.0" mnemonicParsing="false" text="Wednesday">
                      <font>
                         <Font size="14.0" />
-                     </font></CheckBox>
-                  <AnchorPane layoutX="-95.0" layoutY="48.0" prefHeight="32.0" prefWidth="469.0">
-                     <children>
-                        <CheckBox fx:id="c5" layoutX="108.0" layoutY="10.0" mnemonicParsing="false" text="Friday">
-                           <font>
-                              <Font size="14.0" />
-                           </font></CheckBox>
-                        <CheckBox fx:id="c6" layoutX="255.0" layoutY="10.0" mnemonicParsing="false" text="Saturday">
-                           <font>
-                              <Font size="14.0" />
-                           </font></CheckBox>
-                        <Label layoutX="-84.0" layoutY="-2.0" prefHeight="25.0" prefWidth="180.0" text="Operating week day:">
-                           <font>
-                              <Font size="16.0" />
-                           </font>
-                        </Label>
-                        <ImageView fitHeight="210.0" fitWidth="258.0" layoutX="364.0" layoutY="-121.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Airplane_silhouette.svg.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="c6" layoutX="232.0" layoutY="45.0" mnemonicParsing="false" text="Saturday">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="c5" layoutX="118.0" layoutY="47.0" mnemonicParsing="false" text="Friday">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
                </children>
             </AnchorPane>
             <TextField fx:id="field4" layoutX="160.0" layoutY="-2.0" prefHeight="32.0" prefWidth="237.0" promptText="CLJ" />
             <Label layoutX="47.0" layoutY="2.0" text="Arrival airport:">
                <font>
                   <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="-57.0" layoutY="71.0" text="Operating day week:">
+               <font>
+                  <Font size="18.0" />
                </font>
             </Label>
          </children>
@@ -131,5 +126,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
+      <ImageView fitHeight="210.0" fitWidth="258.0" layoutX="570.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Airplane_silhouette.svg.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>

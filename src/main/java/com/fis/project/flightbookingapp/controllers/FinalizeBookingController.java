@@ -172,6 +172,8 @@ public class FinalizeBookingController {
                 "book_flight.fxml",
                 "Book flight"
         );
+        BookFlightController controller = loader.getController();
+        controller.setData(client,bookings,price);
     }
 
 }
