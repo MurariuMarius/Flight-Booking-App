@@ -119,6 +119,9 @@ public class SearchFlightsController implements Initializable {
     @FXML
     private Button bookFlightsButton;
 
+    @FXML
+    private Button goBackButton;
+
     private static final int searchResultLimit = 5;
     private Airport departureAirport = null;
     private Airport arrivalAirport = null;
@@ -201,10 +204,16 @@ public class SearchFlightsController implements Initializable {
         inboundFlightTableView.getSelectionModel().selectedItemProperty().addListener(((observableValue, oldValue, newValue) ->
                 inboundFlight = newValue
         ));
+
+        goBackButton.setVisible(false);
     }
 
     public void setClient(Client client) {
         this.client = client;
+
+        if (client != null) {
+            goBackButton.setVisible(true);
+        }
     }
 
     private void setOutboundFlightFieldsVisibility(boolean visible) {
