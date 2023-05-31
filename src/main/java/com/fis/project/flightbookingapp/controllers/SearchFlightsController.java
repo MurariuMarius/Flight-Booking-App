@@ -425,7 +425,7 @@ public class SearchFlightsController implements Initializable {
 
     @FXML
     public void bookFlights(ActionEvent event) throws IOException {
-        if (outboundFlightDate.compareTo(inboundFlightDate) > 0) {
+        if (!oneWayCheckBox.isSelected() && outboundFlightDate.compareTo(inboundFlightDate) > 0) {
             System.out.println("Invalid trip dates");
             return;
         }
@@ -466,7 +466,12 @@ public class SearchFlightsController implements Initializable {
                 "Book flight"
         );
         BookFlightController bookFlightController = fxmlLoader.getController();
-        bookFlightController.setData(client, bookings, inboundFlight.getPrice() + outboundFlight.getPrice());
+
+        if (oneWayCheckBox.isSelected()) {
+            bookFlightController.setData(client, bookings, outboundFlight.getPrice());
+        } else {
+            bookFlightController.setData(client, bookings, inboundFlight.getPrice() + outboundFlight.getPrice());
+        }
     }
     @FXML
     void goBack(ActionEvent event) throws IOException {

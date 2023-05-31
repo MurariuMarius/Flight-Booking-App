@@ -60,11 +60,13 @@ public class AirlineMenuController {
     @FXML
     public void goManageBookingRequests(ActionEvent actionEvent) throws IOException{
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        StageChangeService.changeScene(
+        FXMLLoader loader = StageChangeService.changeScene(
                 stage,
                 "manage-booking-requests.fxml",
                 "Manage booking requests"
         );
+        BookingRequestsManagementController controller = loader.getController();
+        controller.initData(airline);
     }
 
     @FXML

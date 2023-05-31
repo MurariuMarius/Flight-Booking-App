@@ -44,8 +44,11 @@ public class BookingRequestsManagementController {
     @FXML
     private TableColumn<Booking, Set<String>> travellers;
 
+    private Airline airline;
 
     public void initData(Airline airline) {
+
+        this.airline = airline;
 
         List<Booking> bookings = BookingService.getBookingsByStatus(BookingStatus.UNDER_REVIEW, airline);
 
@@ -86,6 +89,8 @@ public class BookingRequestsManagementController {
                 "airline-menu.fxml",
                 "Menu"
         );
+        AirlineMenuController controller = loader.getController();
+        controller.initData(airline);
     }
 
 }
